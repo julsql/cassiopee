@@ -1,0 +1,102 @@
+{
+    "id": "urn:ngsi-ld:Building:Test:SmartCitiesdomain:SmartBuildings:1L0beP91f1MgqXmMdjfOU3",
+    "type": "Building",
+    "name": {
+        "type": "Property",
+        "value": "Default Building"
+    },
+    "address": {
+        "type": "Property",
+        "value": "('Default Address Line',)example: Town of...example: County/Borough of..."
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "coordinates": [
+                [
+                    0.0,
+                    0.0
+                ]
+            ],
+            "type": "Point"
+        }
+    },
+    "floorsAboveGround": {
+        "type": "Property",
+        "value": 6
+    },
+    "floorsBelowGround": {
+        "type": "Property",
+        "value": 2
+    },
+    "@context": [
+        "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ],
+    "HasFloors": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Floor:Test:SmartCitiesdomain:SmartBuildings:1lutyQHC18IxZdxo8ft$Fk",
+            "urn:ngsi-ld:Floor:Test:SmartCitiesdomain:SmartBuildings:1QXmFWftT9yhs1P1cFTNhD",
+            "urn:ngsi-ld:Floor:Test:SmartCitiesdomain:SmartBuildings:3RyjwofOz3vvsZpar0bnNE",
+            "urn:ngsi-ld:Floor:Test:SmartCitiesdomain:SmartBuildings:3UJUMM1bDCBgmCqkHMEXhC",
+            "urn:ngsi-ld:Floor:Test:SmartCitiesdomain:SmartBuildings:0qhLuYaYTFh9RfDz4_Uz0J",
+            "urn:ngsi-ld:Floor:Test:SmartCitiesdomain:SmartBuildings:1UvglCkzrEARla$C$lIgDX",
+            "urn:ngsi-ld:Floor:Test:SmartCitiesdomain:SmartBuildings:0znMx7WDj4_PU8mJxrfoof",
+            "urn:ngsi-ld:Floor:Test:SmartCitiesdomain:SmartBuildings:3IPIuENYjCru0Ov14NXQhS"
+        ]
+    },
+    "HasRooms": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:1I4s2HTkb77fToChnTxgjN",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:0kmD6YDK9DJ8J_LINLNCuA",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:363LCOLA1FDePgYf2XClUf",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:1HZJoCjpDCKQDiVJlSbx6S",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:1k4o1LOlH7gx45Osed1$cm",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:0t$jBfRgf1e87Q$5$s7Fn$",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:2UIFFYciz58eaJHZ7LiIcF",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:3Y0NHhXJbB1P9G$$iahLiU",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:3pL25Afef6Te3TRu5ndaeO",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:3ue_vT2F10KB7EWdzgyUWi",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:00YJtnP_n9xOE3A7x$kCYz",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:3L3IOFLkP7sxGFdV2_5mz5",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:2c2xNlKMDBHhYP3AtKfv92",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:1LMezCXnDBj9dJb0c8kxay",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:3zC0YkWwP1p9sC7i7Jr1xJ",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:1BEiAMG8LDDuOMsQ9wpfFb",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:2pvMmN7h1DUOZEt4F1odm3",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:3mPsMKbQjAZxm6tAJRDrzE",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:0Sj0muLaj3c94aLXbm7WUC",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:3R8iv4$Nf1txWmWTvdQIPn",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:39ZBDZqAvBwPso5OL$Btw4",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:2QRYBt7ZX27ucT6ad85$nS",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:1ggdFyb39CGgVtcnkub1Qh",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:06Jlb1qy5ATAiqmt9JNPUv",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:2fbkOVJFn3J8ylwdqwquyk",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:3_Aikc7cjFfBFEhjcWUCL0",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:15XxohSuf7cQh_z9bgl7l6",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:1XHzJXplL4y8aopCtlPC6k",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:0PpIiZ6HPFa80fB0p2lQK_",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:0yzHkFqMrFA9qw4T0r83CJ",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:2y4XXNX1H4iOYGiSpn5sfN",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:2$UZQCF9n5peeGORxtOp$C",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:17TRo6vEr4bQu3omZzJG0U",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:14jkjtJK15sOP1oVSM$hlK",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:1Z_7cQ2FjDIeDugQQ9JChQ",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:1tQAZTEg54$uPGEYh$P5C3",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:0r0wFDHQjDgBSNOGcnH61_",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:0E_srW1Dr71vhVllCkHRfz",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:0qI5njd850CfwWACK9OPGa",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:2Yk9cvYTDBsPMVbbHUm2pD",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:3IYMWIXUP0wfbZVOk0CDtX",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:3Lb9KEFkj5cAJQ6WHGKVyF",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:1XIvXrqAnBVe$myLCJudIl",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:2tN5KIo59BSg42D_Ft1qcf",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:1$1OlXqJf1GBlag_eEa8Qj",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:3ZeSR_vx50sRk_vploYwWK",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:0TLYnjKkP09wcgipOEwj5u",
+            "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:3dwKm1d0H7UgpFPWG5dYZ8"
+        ]
+    }
+}
