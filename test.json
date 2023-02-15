@@ -1,0 +1,10 @@
+[
+    {
+        "id": "urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:BF2R0",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room number"
+        }
+    }
+]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]["foo", {"bar": ["baz", null, 1.0, 2]}]

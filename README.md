@@ -12,3 +12,9 @@
 
 - address
 - location
+
+## Questions
+
+- Les coordonnées
+- Les faces
+- Les id : le numéro
