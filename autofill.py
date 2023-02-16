@@ -1,9 +1,7 @@
-import json
 # Génère des fichiers JSON corrects pour représenter le bâtiment étoile
 
 floor = 2 # Étage dans lequel on ajoute les pièces
 
-filename = 'test.json'
 windows_file = "windows.json" # Fichier des fenêtres du bâtiment
 doors_file = "doors.json" # Fichier des portes du bâtiment
 rooms_file = "rooms.json" # Fichier des pièces du bâtiment
