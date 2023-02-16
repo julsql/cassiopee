@@ -1,0 +1,3 @@
+"urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:B1F2R1",
+"urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:B1F2R2",
+"urn:ngsi-ld:Room:Test:SmartCitiesdomain:SmartBuildings:B1F2R3",

@@ -13,8 +13,13 @@
 - address
 - location
 
+# roomes
+## Ce qu'il manque
+- Relation avec windows, doors…
+
 ## Questions
 
 - Les coordonnées
 - Les faces
 - Les id : le numéro
+- Elevator : Room ?

@@ -1,12 +1,13 @@
 import json
+# Génère des fichiers JSON corrects pour représenter le bâtiment étoile
+
+floor = 2 # Étage dans lequel on ajoute les pièces
 
 filename = 'test.json'
 windows_file = "windows.json" # Fichier des fenêtres du bâtiment
 doors_file = "doors.json" # Fichier des portes du bâtiment
 rooms_file = "rooms.json" # Fichier des pièces du bâtiment
-list_rooms_id = "rooms_id.txt" # Fichier de la liste des pièces ajoutées (pour l'ajouter dans les relations du l'étage)
-
-floor = 2 # Étage dans le quel on ajout les pièces
+list_rooms_id = "rooms_id_{}.txt".format(floor) # Fichier de la liste des pièces ajoutées (pour l'ajouter dans les relations du l'étage)
 
 id_floors = ["urn:ngsi-ld:Floor:Test:SmartCitiesdomain:SmartBuildings:3RyjwofOz3vvsZpar0bnNE", 
 "urn:ngsi-ld:Floor:Test:SmartCitiesdomain:SmartBuildings:3UJUMM1bDCBgmCqkHMEXhC", 
@@ -141,7 +142,7 @@ room_model = """,
 
 
 def write(filename, text):
-    """Fonction pour écrire dans un fichier"""
+    """Fonction pour écrire un texte dans un fichier"""
     if filename[-5:] == ".json":
         # Si on écrit dans un fichier JSON, on vérifie qu'il est valide
         with open(filename, 'r') as f:
@@ -167,7 +168,7 @@ def write(filename, text):
         f.write(text)
 
 def close(filenames):
-    """Fonction pour fermer un fochier JSON (ie. on ajoute ] à la fin)"""
+    """Fonction pour fermer un fichier JSON (ie. on ajoute ] à la fin)"""
     for filename in filenames:
         write(filename, "]")
 
@@ -191,19 +192,19 @@ def room(number : int, typ : str , windows : int, doors : int):
     for window in range(windows):
         # On ajoute au fichier JSON des fenêtres chaque fenêtre, on sauvegarde son id
         id_window = id_window_model + "B1F{}R{}W{}".format(floor, number, window + 1) # id de la fenêtre
-        id_windows += '"' + id_window + '",' # Sauvegarde de l'ID
-        write(windows_file, wind_model.replace("ID_WIND", id)) # Écriture dans le fichier JSON des fenêtres
+        id_windows += '"' + id_window + '",\n' # Sauvegarde de l'ID
+        write(windows_file, wind_model.replace("ID_WIND", id_window)) # Écriture dans le fichier JSON des fenêtres
 
     for door in range(doors):
-        # On ajoute au fichier JSON des portes chaque fenêtre, on sauvegarde son id
+        # On ajoute au fichier JSON des portes chaque porte, on sauvegarde son id
         id_door = id_door_model + "B1F{}R{}D{}".format(floor, number, door + 1)
         id_doors += '"' + id_door + '",\n'
-        write(doors_file, door_model.replace("ID_DOOR", id))
+        write(doors_file, door_model.replace("ID_DOOR", id_door))
 
     # On enlève les derniers caractères des id : ,\n
-    if len(id_windows) > 0 and id_windows[-2] == ",\n":
+    if len(id_windows) > 0 and id_windows[-2:] == ",\n":
         id_windows = id_windows[:-2]
-    if len(id_doors) > 0 and id_doors[-2] == ",\n":
+    if len(id_doors) > 0 and id_doors[-2:] == ",\n":
         id_doors = id_doors[:-2]
 
     # On ajoute la pièce dans le fichier JSON avec les bonnes valeurs
@@ -212,13 +213,13 @@ def room(number : int, typ : str , windows : int, doors : int):
     room_to_write = room_to_write.replace("ID_DOORS", id_doors).replace("ID_WINDOWS", id_windows).replace("NB_DOORS", str(doors)).replace("NB_WINDOWS", str(windows))
 
     write(rooms_file, room_to_write) # On écrit dans le fichier JSON des pièces
-    write(list_rooms_id, id + "\n") # On ajout l'id de la pièce pour l'ajouter manuellement dans les relations des étages
+    write(list_rooms_id, '"' + id_room + '",\n') # On ajout l'id de la pièce pour l'ajouter manuellement dans les relations des étages
 
-# clean([windows_file, doors_file, rooms_file, list_rooms_id])
+clean([windows_file, doors_file, rooms_file, list_rooms_id])
 
 room(1, "Laboratoire", 3, 2)
 room(2, "Serveur", 1, 3)
-room(2, "Closet", 0, 1)
+room(3, "Closet", 0, 1)
 
 close([windows_file, doors_file, rooms_file])
 
