@@ -1,4 +1,5 @@
 # Génère des fichiers JSON corrects pour représenter le bâtiment étoile
+import json
 
 floor = 2 # Étage dans lequel on ajoute les pièces
 
@@ -220,6 +221,17 @@ room(2, "Serveur", 1, 3)
 room(3, "Closet", 0, 1)
 
 close([windows_file, doors_file, rooms_file])
+string_content = ""
+with open("floors.json", 'r') as f:
+    line = f.readline().strip("\n")
+    while line != "":
+        string_content += line
 
+        line = f.readline().strip("\n")
+
+
+json_content = json.loads(string_content)
+print(json_content[0]['id'])
+# json.dumps(data) -> Converti du json en string
 
 # clean([windows_file, doors_file, rooms_file, list_rooms_id])

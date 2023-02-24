@@ -19,7 +19,7 @@
 
 ## Questions
 
-- Les coordonnées
-- Les faces
-- Les id : le numéro
-- Elevator : Room ?
+- Les coordonnées -> 2D : Les coordonnées des quatres points de la pièce
+- Les faces -> non
+- Les id : le numéro : unique, sinon pas important
+- Elevator : Room -> oui
