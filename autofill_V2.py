@@ -1,5 +1,6 @@
 # Génère des fichiers JSON corrects pour représenter le bâtiment étoile
 import json
+import re
 
 floor = 2 # Étage dans lequel on ajoute les pièces
 
@@ -44,9 +45,10 @@ def add(filename, json_array):
     """Fonction pour ajouter un tableau à un fichier JSON"""
 
     json_file = read(filename)
-    # Ajouter vérification id
     for data in json_file:
         if data["id"] == json_array["id"]:
+            # On vérifie l'id de chaque objet du fichier JSON
+            # Si l'id de l'objet qu'on veut ajouter existe déjà, on lève une erreur
             raise(ValueError("id non unique : {}".format(json_array["id"])))
 
     json_file.append(json_array)
@@ -56,7 +58,7 @@ def add(filename, json_array):
 
 
 def add_floors():
-    """Ajouter tous les étages"""
+    """Fonction pour ajouter tous les étages"""
 
     # Infos de tous les étages
     floors = [{"id": id_model.format("Floor", "B1F0a"), "name" : "TERRAIN", "description": "TERRAIN"},
@@ -81,8 +83,23 @@ def add_floors():
     return None
 
 
+
+def initialize():
+    """Fonction qui réinitialise tous les fichiers JSON et mettre le fichier du bâtiment et des étages à 0"""
+    clean([windows_file, doors_file, rooms_file, building_file, floors_file])
+    add_floors()
+    return None
+
+
+
+def clear_cache():
+    """Fonction qui vide les fichiers JSON"""
+    clean([windows_file, doors_file, rooms_file, building_file, floors_file])
+
+
+
 def coordinates(coor):
-    """Renvoie les quatre points de la pièce à partir :
+    """Fonction qui renvoie les quatre points de la pièce à partir :
     du point en bas à gauche
     de la longueur,
     de la largeur:
@@ -95,7 +112,7 @@ def coordinates(coor):
     length = coor[1]
     width = coor[2]
 
-    return [(a, b), (a+length, b), (a+width, b), (a+width, b+length)]
+    return [(a, b), (a+length, b), (a+length, b+width), (a, b+width)]
 
 
 
@@ -164,8 +181,77 @@ def add_room(number : int, typ : str , coor, windows : int, doors : int):
 
 
 
-clean([windows_file, doors_file, rooms_file, building_file, floors_file])
-# add_floors()
-# add_room(1, "Laboratoire", [(0, 0), 10, 5], 3, 2)
-# add_room(2, "Serveur", 1, 3)
-# add_room(3, "Closet", 0, 1)
+def verify_coordinates():
+    """Fonction qui vérifie qu'aucune pièce de se chevauche (dû à des erreurs dans les informations entrées)"""
+    
+    def check_overlap(rect1, rect2):
+        """Fonction qui vérifie si les deux rectangles se chevauchent ou non
+        rect1 et rect2 sont des listes de quatre tuples représentant les points des rectangles
+        Les tuples contiennent les coordonnées (x, y) des points"""
+
+        # Calcul des coordonnées des rectangles
+        x1, y1 = zip(*rect1)
+        x2, y2 = zip(*rect2)
+        min_x1, max_x1 = min(x1), max(x1)
+        min_y1, max_y1 = min(y1), max(y1)
+        min_x2, max_x2 = min(x2), max(x2)
+        min_y2, max_y2 = min(y2), max(y2)
+
+        # Vérification de la collision des rectangles
+        if max_x1 <= min_x2 or max_x2 <= min_x1:
+            return False
+        if max_y1 <= min_y2 or max_y2 <= min_y1:
+            return False
+        return True
+
+
+    def check_overlap_all(rectangles):
+        """Fonction qui vérifie si tous les rectangles se chevauchent ou non
+        rectangles est une liste de listes de quatre tuples représentant les points des rectangles
+        Les tuples contiennent les coordonnées (x, y) des points"""
+
+        overlap = set()
+        for key1, rect1 in rectangles.items():
+            for key2, rect2 in rectangles.items():
+                if key1 < key2 and check_overlap(rect1, rect2):
+                    overlap.add((key1, key2))
+        return overlap
+
+
+    def get_all_rectangles(floor):
+        """Fonction qui récupère la listes des coordoonées des pièces de l'étage floor
+        sous la forme d'un dictionnaire associant l'id de la pièce avec ses coordonnées"""
+
+        rooms_json = read(rooms_file)
+        rectangles = dict()
+        for room in rooms_json:
+            print(room["id"])
+            id_room = re.search(r':(\w+)$', room["id"]).group(1) # On récupère l'id de la pièce
+            floor_room = int(re.search(r'F(\d+)', room["id"]).group(1)) # On récupère l'étage de la pièce
+
+            if floor_room == floor:
+                # Si on est sur le bon étage, on récupère les coordonnées
+                rectangles[id_room] = room["relativePosition"]["value"]["coordinates"]
+        return rectangles
+    
+
+    for i in range(2, 3):
+        rectangles = get_all_rectangles(i)
+        print(rectangles)
+        overlap = check_overlap_all(rectangles)
+        if overlap == set():
+            print("Il n'y a aucun chevauchement dans les pièces du bâtiment")
+            return None
+        for i, j in overlap:
+            print("Les pièces {} et {} se chevauchent".format(i, j))
+        return None
+
+
+
+initialize()
+add_room(1, "Laboratoire", [(0, 0), 10, 5], 3, 2)
+add_room(2, "Serveur", [(10, 0), 10, 5], 1, 3)
+add_room(3, "Closet", [(10, 5), 5, 2], 0, 1)
+
+verify_coordinates()
+clear_cache()
