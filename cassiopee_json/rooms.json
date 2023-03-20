@@ -155,7 +155,7 @@
         },
         "description": {
             "type": "Property",
-            "value": "Local_Menage"
+            "value": "Local Menage"
         },
         "onFloor": {
             "type": "Relationship",
@@ -622,7 +622,7 @@
         },
         "description": {
             "type": "Property",
-            "value": "THD_Chercheurs"
+            "value": "THD Chercheurs"
         },
         "onFloor": {
             "type": "Relationship",
