@@ -143,7 +143,6 @@ def add_room(number : int, typ : str , coor, windows : int, doors : int):
     # Ajouter l'id de la pièce dans le fichier des étages
     floors_json = read(floors_file) # On récupère le JSON des étages
     for floor_json in floors_json:
-        print(floor_json["id"], id_floor)
         if floor_json["id"] == id_floor:
             # On est dans le bon étage
             floor_json["roomsOnFloor"]["object"].append(room_id) # On ajoute l'id de la pièce
@@ -226,7 +225,6 @@ def verify_coordinates():
         rooms_json = read(rooms_file)
         rectangles = dict()
         for room in rooms_json:
-            print(room["id"])
             id_room = re.search(r':(\w+)$', room["id"]).group(1) # On récupère l'id de la pièce
             floor_room = int(re.search(r'F(\d+)', room["id"]).group(1)) # On récupère l'étage de la pièce
 
@@ -238,7 +236,6 @@ def verify_coordinates():
 
     for i in range(2, 3):
         rectangles = get_all_rectangles(i)
-        print(rectangles)
         overlap = check_overlap_all(rectangles)
         if overlap == set():
             print("Il n'y a aucun chevauchement dans les pièces du bâtiment")
@@ -247,23 +244,27 @@ def verify_coordinates():
             print("Les pièces {} et {} se chevauchent".format(i, j))
         return None
 
-def add_floor(name, the_floor):
+
+
+def add_floor(filename, the_floor):
     global floor
     floor = the_floor
-    with open(name, 'r') as f:
+    with open(filename, 'r') as f:
         line = f.readline().strip("\n")
         while line != "":
             values = line.split(" ")
             number = int(values[0])
-            name = values[1]
+            name = values[1].replace("_", " ")
             coor = [(int(values[2])/100, int(values[3])/100), int(values[4])/100, int(values[5])/100]
             windows = int(values[6])
             doors = int(values[7])
-            print(number, name, coor, windows, doors)
             add_room(number, name, coor, windows, doors)
             line = f.readline().strip("\n")
     verify_coordinates()
+    print("le fichier {} a bien été ajouté".format(filename))
     return None
+
+
 
 initialize()
 add_floor("floor_3.txt", 3)
