@@ -1,1 +1,246 @@
-[]
+[
+    {
+        "id": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F0a",
+        "type": "Floor",
+        "name": {
+            "type": "Property",
+            "value": "TERRAIN"
+        },
+        "description": {
+            "type": "Property",
+            "value": "TERRAIN"
+        },
+        "withinBuilding": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Building:Test:SmartCitiesdomain:SmartBuildings:1L0beP91f1MgqXmMdjfOU3"
+        },
+        "roomsOnFloor": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfRooms": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F0b",
+        "type": "Floor",
+        "name": {
+            "type": "Property",
+            "value": "Sub-Structure (foundations)"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Sub-Structure (foundations)"
+        },
+        "withinBuilding": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Building:Test:SmartCitiesdomain:SmartBuildings:1L0beP91f1MgqXmMdjfOU3"
+        },
+        "roomsOnFloor": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfRooms": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F0",
+        "type": "Floor",
+        "name": {
+            "type": "Property",
+            "value": "Ground Floor"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Ground Floor"
+        },
+        "withinBuilding": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Building:Test:SmartCitiesdomain:SmartBuildings:1L0beP91f1MgqXmMdjfOU3"
+        },
+        "roomsOnFloor": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfRooms": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1",
+        "type": "Floor",
+        "name": {
+            "type": "Property",
+            "value": "Level 1"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Level 1"
+        },
+        "withinBuilding": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Building:Test:SmartCitiesdomain:SmartBuildings:1L0beP91f1MgqXmMdjfOU3"
+        },
+        "roomsOnFloor": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfRooms": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F2",
+        "type": "Floor",
+        "name": {
+            "type": "Property",
+            "value": "Level 2"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Level 2"
+        },
+        "withinBuilding": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Building:Test:SmartCitiesdomain:SmartBuildings:1L0beP91f1MgqXmMdjfOU3"
+        },
+        "roomsOnFloor": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfRooms": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F3",
+        "type": "Floor",
+        "name": {
+            "type": "Property",
+            "value": "Level 3"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Level 3"
+        },
+        "withinBuilding": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Building:Test:SmartCitiesdomain:SmartBuildings:1L0beP91f1MgqXmMdjfOU3"
+        },
+        "roomsOnFloor": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R1",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R2",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R3",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R4",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R5",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R6",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R7",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R8",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R9",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R10",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R11",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R12",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R13",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R14",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R15",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R16",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R17",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R18",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R19"
+            ]
+        },
+        "numberOfRooms": {
+            "type": "Property",
+            "value": 19
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F4",
+        "type": "Floor",
+        "name": {
+            "type": "Property",
+            "value": "Level 4"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Level 4"
+        },
+        "withinBuilding": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Building:Test:SmartCitiesdomain:SmartBuildings:1L0beP91f1MgqXmMdjfOU3"
+        },
+        "roomsOnFloor": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfRooms": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F5",
+        "type": "Floor",
+        "name": {
+            "type": "Property",
+            "value": "Roof Level"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Roof Level"
+        },
+        "withinBuilding": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Building:Test:SmartCitiesdomain:SmartBuildings:1L0beP91f1MgqXmMdjfOU3"
+        },
+        "roomsOnFloor": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfRooms": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    }
+]

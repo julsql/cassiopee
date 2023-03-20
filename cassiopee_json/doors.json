@@ -1,1 +1,359 @@
-[]
+[
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R1D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R1D2",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R2D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R3D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R4D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R5D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R6D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R7D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R8D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R9D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R10D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R11D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R11D2",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R13D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R13D2",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R13D3",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R15D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R16D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R17D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R18D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R18D2",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    }
+]
