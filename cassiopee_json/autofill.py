@@ -317,5 +317,7 @@ def add_relations_floor(filename, the_floor):
 
 
 initialize()
-add_floor("floors_3.txt", 3)
-add_relations_floor("relations_3", 3)
+add_floor("floor_2.txt", 3)
+add_floor("floor_3.txt", 3)
+add_floor("floor_4.txt", 3)
+add_relations_floor("relation_3.txt", 3)
