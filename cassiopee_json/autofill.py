@@ -1,3 +1,5 @@
+#!/opt/homebrew/bin/python3
+
 # Génère des fichiers JSON corrects pour représenter le bâtiment étoile
 import json
 import re
@@ -247,6 +249,8 @@ def verify_coordinates():
 
 
 def add_floor(filename, the_floor):
+    """Ajout un étage à partir d'un fichier contenant les pièces
+    room_nb room_name x y longueur largeur windows doors"""
     global floor
     floor = the_floor
     with open(filename, 'r') as f:
@@ -266,5 +270,52 @@ def add_floor(filename, the_floor):
 
 
 
+def add_relations(relation_1, relation_2):
+    """Ajoute les relations manquantes
+    relation_1 : room
+    relation_2 : door/window"""
+    type_1 = relation_1.split(":")[2]
+    assert type_1 == "Room"
+    type_2 = relation_2.split(":")[2]
+    if type_2 == "Window":
+        rooms_json = read(rooms_file) # On récupère le JSON des pièces
+        for room_json in rooms_json:
+            if room_json["id"] == relation_1:
+                # On est dans la bonne pièce
+                room_json["windowsInRoom"]["object"].append(relation_2) # On ajoute l'id de la pièce
+                room_json["numberOfWindows"]["value"] += 1 # On incrément le nombre de pièces reliées
+        write(rooms_file, rooms_json) # On l'écrit dans le fichier des pièces
+    elif type_2 == "Door":
+        rooms_json = read(rooms_file) # On récupère le JSON des pièces
+        for room_json in rooms_json:
+            if room_json["id"] == relation_1:
+                # On est dans la bonne pièce
+                room_json["DoorsInRoom"]["object"].append(relation_2) # On ajoute l'id de la pièce
+                room_json["numberOfDoors"]["value"] += 1 # On incrément le nombre de pièces reliées
+        write(rooms_file, rooms_json) # On l'écrit dans le fichier des pièces
+    return None
+
+
+
+def add_relations_floor(filename, the_floor):
+    """Ajout des relations à partir d'un fichier
+    relation_1 : room
+    relation_2 : door/window"""
+    global floor
+    floor = the_floor
+    with open(filename, 'r') as f:
+        line = f.readline().strip("\n")
+        while line != "":
+            values = line.split(" ")
+            relation_1 = values[0]
+            relation_2 = values[1]
+            add_relations(relation_1, relation_2)
+            line = f.readline().strip("\n")
+    print("les relations {} ont bien été ajouté".format(filename))
+    return None
+
+
+
 initialize()
-add_floor("floor_3.txt", 3)
+add_floor("floors_3.txt", 3)
+add_relations_floor("relations_3", 3)
