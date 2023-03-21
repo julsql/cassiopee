@@ -6,11 +6,12 @@ import re
 
 floor = 2 # Étage dans lequel on ajoute les pièces
 
-windows_file = "windows.json" # Fichier des fenêtres du bâtiment
-doors_file = "doors.json" # Fichier des portes du bâtiment
-rooms_file = "rooms.json" # Fichier des pièces du bâtiment
-building_file = "building.json" # Fichier des pièces du bâtiment
-floors_file = "floors.json" # Fichier des étages du bâtiment
+path = "json/"
+windows_file = path + "windows.json" # Fichier des fenêtres du bâtiment
+doors_file = path + "doors.json" # Fichier des portes du bâtiment
+rooms_file = path + "rooms.json" # Fichier des pièces du bâtiment
+building_file = path + "building.json" # Fichier des pièces du bâtiment
+floors_file = path + "floors.json" # Fichier des étages du bâtiment
 models_file = "models.json" # Fichier des pièces du bâtiment
 
 id_model = "urn:ngsi-ld:{0}:SmartCitiesdomain:SmartBuildings:{1}" # Model de l'ID d'un objet
@@ -184,7 +185,7 @@ def add_room(number : int, typ : str , coor, windows : int, doors : int):
 
 
 def verify_coordinates():
-    """Fonction qui vérifie qu'aucune pièce de se chevauche (dû à des erreurs dans les informations entrées)"""
+    """Fonction qui vérifie qu'aucune pièce de l'étage ne se chevauche (dû à des erreurs dans les informations entrées)"""
     
     def check_overlap(rect1, rect2):
         """Fonction qui vérifie si les deux rectangles se chevauchent ou non
@@ -235,16 +236,15 @@ def verify_coordinates():
                 rectangles[id_room] = room["relativePosition"]["value"]["coordinates"]
         return rectangles
     
-
-    for i in range(2, 3):
-        rectangles = get_all_rectangles(i)
+    for flr in range(1,5):
+        rectangles = get_all_rectangles(flr)
         overlap = check_overlap_all(rectangles)
         if overlap == set():
-            print("Il n'y a aucun chevauchement dans les pièces du bâtiment")
-            return None
+            print("Il n'y a aucun chevauchement dans les pièces de l'étage {}".format(flr))
         for i, j in overlap:
             print("Les pièces {} et {} se chevauchent".format(i, j))
-        return None
+        print()
+    return None
 
 
 
@@ -252,19 +252,21 @@ def add_floor(filename, the_floor):
     """Ajout un étage à partir d'un fichier contenant les pièces
     room_nb room_name x y longueur largeur windows doors"""
     global floor
-    floor = the_floor
+    floor = the_floor # On met à jour l'étage
     with open(filename, 'r') as f:
+        # On lit le fichier d'un étage
+        f.readline() # Première ligne inutile
         line = f.readline().strip("\n")
         while line != "":
+            # On récupère les valeurs de la ligne
             values = line.split(" ")
             number = int(values[0])
             name = values[1].replace("_", " ")
             coor = [(int(values[2])/100, int(values[3])/100), int(values[4])/100, int(values[5])/100]
             windows = int(values[6])
             doors = int(values[7])
-            add_room(number, name, coor, windows, doors)
+            add_room(number, name, coor, windows, doors) # On ajoute la pièce à partir des valeurs
             line = f.readline().strip("\n")
-    verify_coordinates()
     print("le fichier {} a bien été ajouté".format(filename))
     return None
 
@@ -274,24 +276,25 @@ def add_relations(relation_1, relation_2):
     """Ajoute les relations manquantes
     relation_1 : room
     relation_2 : door/window"""
+    # On récupère le type d'objet qu'on ajoute
     type_1 = relation_1.split(":")[2]
-    assert type_1 == "Room"
+    assert type_1 == "Room" # Le premier id doit être celui d'une pièce
     type_2 = relation_2.split(":")[2]
     if type_2 == "Window":
         rooms_json = read(rooms_file) # On récupère le JSON des pièces
         for room_json in rooms_json:
             if room_json["id"] == relation_1:
                 # On est dans la bonne pièce
-                room_json["windowsInRoom"]["object"].append(relation_2) # On ajoute l'id de la pièce
-                room_json["numberOfWindows"]["value"] += 1 # On incrément le nombre de pièces reliées
+                room_json["windowsInRoom"]["object"].append(relation_2) # On ajoute l'id de la fenêtre
+                room_json["numberOfWindows"]["value"] += 1 # On incrément le nombre de fenêtre reliées
         write(rooms_file, rooms_json) # On l'écrit dans le fichier des pièces
     elif type_2 == "Door":
         rooms_json = read(rooms_file) # On récupère le JSON des pièces
         for room_json in rooms_json:
             if room_json["id"] == relation_1:
                 # On est dans la bonne pièce
-                room_json["DoorsInRoom"]["object"].append(relation_2) # On ajoute l'id de la pièce
-                room_json["numberOfDoors"]["value"] += 1 # On incrément le nombre de pièces reliées
+                room_json["DoorsInRoom"]["object"].append(relation_2) # On ajoute l'id de la porte
+                room_json["numberOfDoors"]["value"] += 1 # On incrément le nombre de portes reliées
         write(rooms_file, rooms_json) # On l'écrit dans le fichier des pièces
     return None
 
@@ -302,22 +305,29 @@ def add_relations_floor(filename, the_floor):
     relation_1 : room
     relation_2 : door/window"""
     global floor
-    floor = the_floor
+    floor = the_floor # On met à jour l'étage
     with open(filename, 'r') as f:
+        # On lit le fichier des relations d'un étage
+        f.readline()
         line = f.readline().strip("\n")
         while line != "":
+            # On récupère les valeurs de la ligne
             values = line.split(" ")
             relation_1 = values[0]
             relation_2 = values[1]
-            add_relations(relation_1, relation_2)
+            add_relations(relation_1, relation_2) # On ajout la relation
             line = f.readline().strip("\n")
     print("les relations {} ont bien été ajouté".format(filename))
     return None
 
 
 
-initialize()
-add_floor("floor_2.txt", 3)
-add_floor("floor_3.txt", 3)
-add_floor("floor_4.txt", 3)
-add_relations_floor("relation_3.txt", 3)
+initialize() # On vide les fichiers JSON
+
+add_floor("txt/floor_2.txt", 2)
+add_floor("txt/floor_3.txt", 3)
+add_floor("txt/floor_4.txt", 4)
+add_relations_floor("txt/relation_3.txt", 3)
+
+print()
+verify_coordinates() # On vérifie que les pièces ne se chevauchent pas
