@@ -1,23 +1,19 @@
-#!/opt/homebrew/bin/python3
-
-# Génère des fichiers JSON corrects pour représenter le bâtiment étoile
+# Generate correct JSON files to represent the Étoile building
 import json
 import re
 
-floor = 2 # Étage dans lequel on ajoute les pièces
-
 path = "json/"
-windows_file = path + "windows.json" # Fichier des fenêtres du bâtiment
-doors_file = path + "doors.json" # Fichier des portes du bâtiment
-rooms_file = path + "rooms.json" # Fichier des pièces du bâtiment
-building_file = path + "building.json" # Fichier des pièces du bâtiment
-floors_file = path + "floors.json" # Fichier des étages du bâtiment
-models_file = "models.json" # Fichier des pièces du bâtiment
+windows_file = path + "windows.json" # Building Windows File
+doors_file = path + "doors.json" # Building Doors File
+rooms_file = path + "rooms.json" # Building Rooms File
+building_file = path + "building.json" # Building File
+floors_file = path + "floors.json" # Building Floors File
+templates_file = "templates.json" # JSON Models File
 
-id_model = "urn:ngsi-ld:{0}:SmartCitiesdomain:SmartBuildings:{1}" # Model de l'ID d'un objet
+id_model = "urn:ngsi-ld:{0}:SmartCitiesdomain:SmartBuildings:{1}" # model of an id
 
 def read(filename):
-    """Fonction pour convertir un fichier JSON en un tableau python"""
+    """Convert a JSON file in a python dictionary"""
 
     with open(filename, "r") as f:
         data = json.load(f)
@@ -26,9 +22,9 @@ def read(filename):
 
 
 def write(filename, json_array):
-    """Fonction pour écrire le tableau dans un fichier JSON"""
+    """Write a python dictionary in a JSON file"""
 
-    to_write = json.dumps(json_array, indent=4) # Converti du json en string avec mise en page
+    to_write = json.dumps(json_array, indent=4) # Convert JSON in String with tab
     with open(filename, 'w') as f:
         f.write(to_write)
     return None
@@ -36,7 +32,7 @@ def write(filename, json_array):
 
 
 def clean(file_array):
-    """Fonction pour vider les fichiers JSON en un tableau vide"""
+    """Clean the JSON files to an empty array"""
 
     for file in file_array:
         write(file, [])
@@ -45,13 +41,12 @@ def clean(file_array):
 
 
 def add(filename, json_array):
-    """Fonction pour ajouter un tableau à un fichier JSON"""
+    """Add a python dictionary to a JSON file"""
 
     json_file = read(filename)
     for data in json_file:
         if data["id"] == json_array["id"]:
-            # On vérifie l'id de chaque objet du fichier JSON
-            # Si l'id de l'objet qu'on veut ajouter existe déjà, on lève une erreur
+            # Check the uniqueness of an id
             raise(ValueError("id non unique : {}".format(json_array["id"])))
 
     json_file.append(json_array)
@@ -61,9 +56,9 @@ def add(filename, json_array):
 
 
 def add_floors():
-    """Fonction pour ajouter tous les étages"""
+    """Add all the empty floors"""
 
-    # Infos de tous les étages
+    # Floors data
     floors = [{"id": id_model.format("Floor", "B1F0a"), "name" : "TERRAIN", "description": "TERRAIN"},
     {"id": id_model.format("Floor", "B1F0b"), "name" : "Sub-Structure (foundations)", "description": "Sub-Structure (foundations)"},
     {"id": id_model.format("Floor", "B1F0"), "name" : "Ground Floor", "description": "Ground Floor"},
@@ -73,22 +68,22 @@ def add_floors():
     {"id": id_model.format("Floor", "B1F4"), "name" : "Level 4", "description": "Level 4"},
     {"id": id_model.format("Floor", "B1F5"), "name" : "Roof Level", "description": "Roof Level"}]
     
-    for etage in floors:
-        floor_model = read(models_file)["floors"] # On récupère le modèle JSON d'un étage
-        floor_model["id"] = etage["id"] # On lui donne le bon ID
-        floor_model["name"]["value"] = etage["name"] # On lui donne le bon nom
-        floor_model["description"]["value"] = etage["description"] # On lui donne la bonne description
-        add(floors_file, floor_model) # On ajoute cet étage dans le fichier JSON des étages
+    for floor in floors:
+        floor_model = read(templates_file)["floors"] # Get floor JSON template
+        floor_model["id"] = floor["id"] # Give the id
+        floor_model["name"]["value"] = floor["name"] # Give the name
+        floor_model["description"]["value"] = floor["description"] # Give the description
+        add(floors_file, floor_model) # Add this floor in the floors file
 
-    building_json = read(models_file)["building"] # On récupère le modèle JSON d'un bâtiment
-    building_json["HasFloors"]["object"] = [etage["id"] for etage in floors] # On lui ajoute les id des étages
-    write(building_file, building_json) # On l'écrit dans le fichier du bâtiment
+    building_json = read(templates_file)["building"] # Get building template
+    building_json["HasFloors"]["object"] = [floor["id"] for floor in floors] # Add floor id
+    write(building_file, building_json) # Write in the building file
     return None
 
 
 
 def initialize():
-    """Fonction qui réinitialise tous les fichiers JSON et mettre le fichier du bâtiment et des étages à 0"""
+    """Initialize JSON files and set building and floor file"""
     clean([windows_file, doors_file, rooms_file, building_file, floors_file])
     add_floors()
     return None
@@ -96,90 +91,89 @@ def initialize():
 
 
 def clear_cache():
-    """Fonction qui vide les fichiers JSON"""
+    """Empty all the JSON files"""
     clean([windows_file, doors_file, rooms_file, building_file, floors_file])
+    return None
 
 
 
 def coordinates(coor):
-    """Fonction qui renvoie les quatre points de la pièce à partir :
-    du point en bas à gauche
-    de la longueur,
-    de la largeur:
-    coor : [(a, b), length, width] -> 1st point, longueur, largeur
-    -> point en bas à gauche, en bas à droite, en haut à gauche, en haut à droite
+    """Give the 4 room points given:
+    Fonction qui renvoie les quatre points de la pièce à partir :
+    down left point, length, width
+    coor : [(a, b), length, width] -> 1st point, length, width
+    return point down-left, down-right, up-left, up-right
     """
 
     a = coor[0][0]
     b = coor[0][1]
     length = coor[1]
     width = coor[2]
-
     return [(a, b), (a+length, b), (a+length, b+width), (a, b+width)]
 
 
 
-def add_room(number : int, typ : str , coor, windows : int, doors : int):
-    """Fonction pour ajouter une pièce
-    number : le numéro de la chambre
-    typ : son type (ex : bureau)
-    coor : [(), length, width] (longueur->length largeur->width) : Coordonnées pièce
-    windows : le nombre de fenêtre à ajouter
-    doors : le nombre de porte à ajouter"""
+def add_room(number : int, typ : str , coor, windows : int, doors : int, floor):
+    """Add a room
+    number : room number
+    typ : room type (ex: bureau)
+    coor : [(), length, width] (longueur->length largeur->width) : Room coordinates
+    windows : windows number
+    doors : doors number"""
 
     id_floor = id_model.format("Floor", "B1F{}".format(floor))
 
-    # Ajouter la pièce
-    room_model = read(models_file)["rooms"] # On récupère le modèle JSON d'une pièce
-    room_id = id_model.format("Room", "B1F{}R{}".format(floor, number)) # On génère l'ID
-    room_model["id"] = room_id # On lui donne le bon ID
+    # Add the room
+    room_model = read(templates_file)["rooms"] # Get JSON room template
+    room_id = id_model.format("Room", "B1F{}R{}".format(floor, number)) # Generate the id
+    room_model["id"] = room_id # Give the id
     room_model["name"]["value"] = "Room {}".format(number)
     room_model["description"]["value"] = typ
     room_model["onFloor"]["object"] = id_floor
     room_model["relativePosition"]["value"]["coordinates"] = coordinates(coor)
 
-    # Ajouter l'id de la pièce dans le fichier du bâtiment
-    building_json = read(building_file) # On récupère le JSON du bâtiment
-    building_json["HasRooms"]["object"].append(room_id) # On lui ajoute l'ID de la pièce
-    write(building_file, building_json) # On l'écrit dans le fichier du bâtiment
+    # Add room id in the building file
+    building_json = read(building_file) # Get JSON building template
+    building_json["HasRooms"]["object"].append(room_id) # Add the room id
+    write(building_file, building_json) # Write in the building JSON file
 
-    # Ajouter l'id de la pièce dans le fichier des étages
-    floors_json = read(floors_file) # On récupère le JSON des étages
+    # Add room id in the building floor file
+    floors_json = read(floors_file) # Get floor JSON
     for floor_json in floors_json:
         if floor_json["id"] == id_floor:
-            # On est dans le bon étage
-            floor_json["roomsOnFloor"]["object"].append(room_id) # On ajoute l'id de la pièce
-            floor_json["numberOfRooms"]["value"] += 1 # On incrément le nombre de pièces reliées
-    write(floors_file, floors_json) # On l'écrit dans le fichier des pièces
+            # In the write floor
+            floor_json["roomsOnFloor"]["object"].append(room_id) # Add room id
+            floor_json["numberOfRooms"]["value"] += 1 # Increment room associate number
+    write(floors_file, floors_json) # Write in the rooms file
 
     id_windows = []
     id_doors = []
 
-    # Ajouter les fenêtres
+    # Add the windows
     for window in range(windows):
-        window_model = read(models_file)["windows"] # On récupère le modèle JSON d'une fenêtre
-        id = id_model.format("Window", "B1F{}R{}W{}".format(floor, number, window + 1)) # On génère l'ID
-        id_windows.append(id) # On ajoute l'id dans la liste des id des fenêtres
-        window_model["id"] = id # On lui donne le bon ID
-        add(windows_file, window_model) # On ajoute cette fenêtre dans le fichier JSON des fenêtres
+        window_model = read(templates_file)["windows"] # Get JSON windows template
+        id = id_model.format("Window", "B1F{}R{}W{}".format(floor, number, window + 1)) # Generate id
+        id_windows.append(id) # Add id in windows list
+        window_model["id"] = id # Give id
+        add(windows_file, window_model) # Add window in the windows JSON file
 
-    # Ajouter les portes
+    # Add the doors
     for door in range(doors):
-        door_model = read(models_file)["doors"] # On récupère le modèle JSON d'une porte
-        id = id_model.format("Door", "B1F{}R{}D{}".format(floor, number, door + 1)) # On génère l'ID
-        id_doors.append(id) # On ajoute l'id dans la liste des id des portes
-        door_model["id"] = id # On lui donne le bon ID
-        add(doors_file, door_model) # On ajoute cette porte dans le fichier JSON des portes
+        door_model = read(templates_file)["doors"] # Get JSON doors template
+        id = id_model.format("Door", "B1F{}R{}D{}".format(floor, number, door + 1)) # Generate id
+        id_doors.append(id) # Add id in doors list
+        door_model["id"] = id # Give id
+        add(doors_file, door_model) # Add door in the doors JSON file
 
-    # On ajoute les relations avec les fenêtres et les portes
+    # Add the relation between rooms and windows/doors
     room_model["windowsInRoom"]["object"] = id_windows
     room_model["DoorsInRoom"]["object"] = id_doors
 
-    # On ajoute le nombre de fenêtres et de portes
+    # Add number of windows/doors
     room_model["numberOfWindows"]["value"] = len(id_windows)
     room_model["numberOfDoors"]["value"] = len(id_doors)
     
-    add(rooms_file, room_model) # On ajoute cette pièce dans le fichier JSON des pièces
+    add(rooms_file, room_model) # Add the room into room json file
     return None
 
 
@@ -192,7 +186,7 @@ def verify_coordinates():
         rect1 et rect2 sont des listes de quatre tuples représentant les points des rectangles
         Les tuples contiennent les coordonnées (x, y) des points"""
 
-        # Calcul des coordonnées des rectangles
+        # Calculate rectangles coordinates
         x1, y1 = zip(*rect1)
         x2, y2 = zip(*rect2)
         min_x1, max_x1 = min(x1), max(x1)
@@ -200,7 +194,7 @@ def verify_coordinates():
         min_x2, max_x2 = min(x2), max(x2)
         min_y2, max_y2 = min(y2), max(y2)
 
-        # Vérification de la collision des rectangles
+        # Check rectangles collisions
         if max_x1 <= min_x2 or max_x2 <= min_x1:
             return False
         if max_y1 <= min_y2 or max_y2 <= min_y1:
@@ -209,9 +203,9 @@ def verify_coordinates():
 
 
     def check_overlap_all(rectangles):
-        """Fonction qui vérifie si tous les rectangles se chevauchent ou non
-        rectangles est une liste de listes de quatre tuples représentant les points des rectangles
-        Les tuples contiennent les coordonnées (x, y) des points"""
+        """Check the overlapping of the rectangles
+        rectangles: list of 4 tuples representing the 4 corner of the rectangle
+        tuple: coordinates of the points: (x, y)"""
 
         overlap = set()
         for key1, rect1 in rectangles.items():
@@ -222,17 +216,17 @@ def verify_coordinates():
 
 
     def get_all_rectangles(floor):
-        """Fonction qui récupère la listes des coordoonées des pièces de l'étage floor
-        sous la forme d'un dictionnaire associant l'id de la pièce avec ses coordonnées"""
+        """Get the list of the rooms coordinates of the floor
+        in a dictionary where the key is the room id and the value its coordinates"""
 
         rooms_json = read(rooms_file)
         rectangles = dict()
         for room in rooms_json:
-            id_room = re.search(r':(\w+)$', room["id"]).group(1) # On récupère l'id de la pièce
-            floor_room = int(re.search(r'F(\d+)', room["id"]).group(1)) # On récupère l'étage de la pièce
+            id_room = re.search(r':(\w+)$', room["id"]).group(1) # Get room id
+            floor_room = int(re.search(r'F(\d+)', room["id"]).group(1)) # get room floor id
 
             if floor_room == floor:
-                # Si on est sur le bon étage, on récupère les coordonnées
+                # If write floor: get coordinates
                 rectangles[id_room] = room["relativePosition"]["value"]["coordinates"]
         return rectangles
     
@@ -248,24 +242,24 @@ def verify_coordinates():
 
 
 
-def add_floor(filename, the_floor):
-    """Ajout un étage à partir d'un fichier contenant les pièces
+def add_floor(filename, floor):
+    """Add a floor from a file containing the rooms:
     room_nb room_name x y longueur largeur windows doors"""
-    global floor
-    floor = the_floor # On met à jour l'étage
+
     with open(filename, 'r') as f:
-        # On lit le fichier d'un étage
-        f.readline() # Première ligne inutile
+        # Read à floor txt file
+        f.readline() # First line useless
         line = f.readline().strip("\n")
         while line != "":
-            # On récupère les valeurs de la ligne
+            # Get line value
             values = line.split(" ")
             number = int(values[0])
             name = values[1].replace("_", " ")
             coor = [(int(values[2])/100, int(values[3])/100), int(values[4])/100, int(values[5])/100]
             windows = int(values[6])
             doors = int(values[7])
-            add_room(number, name, coor, windows, doors) # On ajoute la pièce à partir des valeurs
+            # Add the room in the JSON room file from the given values
+            add_room(number, name, coor, windows, doors, floor)
             line = f.readline().strip("\n")
     print("le fichier {} a bien été ajouté".format(filename))
     return None
@@ -273,61 +267,60 @@ def add_floor(filename, the_floor):
 
 
 def add_relations(relation_1, relation_2):
-    """Ajoute les relations manquantes
+    """Add the missing relations
     relation_1 : room
     relation_2 : door/window"""
-    # On récupère le type d'objet qu'on ajoute
+    # get the objects type
     type_1 = relation_1.split(":")[2]
-    assert type_1 == "Room" # Le premier id doit être celui d'une pièce
+    assert type_1 == "Room" # First id must be a room
     type_2 = relation_2.split(":")[2]
     if type_2 == "Window":
-        rooms_json = read(rooms_file) # On récupère le JSON des pièces
+        rooms_json = read(rooms_file) # Get the rooms JSON file
         for room_json in rooms_json:
             if room_json["id"] == relation_1:
-                # On est dans la bonne pièce
-                room_json["windowsInRoom"]["object"].append(relation_2) # On ajoute l'id de la fenêtre
-                room_json["numberOfWindows"]["value"] += 1 # On incrément le nombre de fenêtre reliées
-        write(rooms_file, rooms_json) # On l'écrit dans le fichier des pièces
+                # Right room
+                room_json["windowsInRoom"]["object"].append(relation_2) # Add windows id
+                room_json["numberOfWindows"]["value"] += 1 # Increment related windows number
+        write(rooms_file, rooms_json) # Write in the JSON rooms file
     elif type_2 == "Door":
-        rooms_json = read(rooms_file) # On récupère le JSON des pièces
+        rooms_json = read(rooms_file) # Get the rooms JSON file
         for room_json in rooms_json:
             if room_json["id"] == relation_1:
-                # On est dans la bonne pièce
-                room_json["DoorsInRoom"]["object"].append(relation_2) # On ajoute l'id de la porte
-                room_json["numberOfDoors"]["value"] += 1 # On incrément le nombre de portes reliées
-        write(rooms_file, rooms_json) # On l'écrit dans le fichier des pièces
+                # Right room
+                room_json["DoorsInRoom"]["object"].append(relation_2) # Add doors id
+                room_json["numberOfDoors"]["value"] += 1 # Increment related doors number
+        write(rooms_file, rooms_json) # Write in the JSON rooms file
     return None
 
 
 
-def add_relations_floor(filename, the_floor):
-    """Ajout des relations à partir d'un fichier
+def add_relations_floor(filename):
+    """Add the relations from a file
     relation_1 : room
     relation_2 : door/window"""
-    global floor
-    floor = the_floor # On met à jour l'étage
     with open(filename, 'r') as f:
-        # On lit le fichier des relations d'un étage
+        # Read a file txt floor relations
         f.readline()
         line = f.readline().strip("\n")
         while line != "":
-            # On récupère les valeurs de la ligne
+            # Get the line values
             values = line.split(" ")
             relation_1 = values[0]
             relation_2 = values[1]
-            add_relations(relation_1, relation_2) # On ajout la relation
+            # Add the relations the the JSON files
+            add_relations(relation_1, relation_2)
             line = f.readline().strip("\n")
     print("les relations {} ont bien été ajouté".format(filename))
     return None
 
 
 
-initialize() # On vide les fichiers JSON
+initialize() # Empty JSON files
 
 add_floor("txt/floor_2.txt", 2)
 add_floor("txt/floor_3.txt", 3)
 add_floor("txt/floor_4.txt", 4)
-add_relations_floor("txt/relation_3.txt", 3)
+add_relations_floor("txt/relation_3.txt")
 
 print()
-verify_coordinates() # On vérifie que les pièces ne se chevauchent pas
+verify_coordinates() # Check if rooms don't overlap
