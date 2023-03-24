@@ -1,4 +1,3 @@
-room_nb room_name x y longueur largeur windows doors
 1 Laboratoire 0 0 763 328 4 1 
 2 Bureau 763 0 386 328 2 1 
 3 Bureau 1149 0 545 328 2 1 
@@ -20,3 +19,4 @@ room_nb room_name x y longueur largeur windows doors
 19 Serveurs 684 482 188 382 0 1 
 20 Laboratoire 0 482 684 385 5 1 
 21 Sas 0 328 439 154 1 1
+22 Couloir 439 328 4136 154 0 0  
