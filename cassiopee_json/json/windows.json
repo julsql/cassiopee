@@ -1,5 +1,549 @@
 [
     {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R1W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R1W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R1W3",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R1W4",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R2W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R2W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R3W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R3W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R4W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R4W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R5W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R5W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R6W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R6W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R8W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R8W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R9W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R9W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R12W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R14W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R15W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R15W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R16W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R16W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R17W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R17W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R20W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R20W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R20W3",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R20W4",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R20W5",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R21W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
         "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F3R1W1",
         "type": "Window",
         "relativePosition": {
@@ -834,6 +1378,244 @@
     },
     {
         "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F3R17W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R5W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R6W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R7W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R8W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R9W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R10W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R11W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R11W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R11W3",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R11W4",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R16W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R17W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R18W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": []
+            }
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R19W1",
         "type": "Window",
         "relativePosition": {
             "type": "Property",

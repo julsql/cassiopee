@@ -1,25 +1,15 @@
 # cassiopee_json
 
-# Building
-## Ce qui manque
+## The files
 
-- category
-- data provider
-- description
-- InCommunity
+autofill.py creates the JSON file with the relations thanks to the text files in txt.
 
-## Ce qui est différent
+>It also adds relations for windows and doors that are in common with 2 rooms
 
-- address
-- location
+The files created are in JSON:
 
-# Rooms
-## Ce qu'il manque
-- Relation avec windows, doors…
-
-## Questions
-
-- Les coordonnées -> 2D : Les coordonnées des quatres points de la pièce
-- Les faces -> non
-- Les id : le numéro : unique, sinon pas important
-- Elevator : Room -> oui
+* building.json
+* floors.json
+* rooms.json
+* doors.json
+* windows.json
