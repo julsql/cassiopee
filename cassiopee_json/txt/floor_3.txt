@@ -9,7 +9,7 @@ room_nb room_name x y longueur largeur windows doors
 8 Bureau 3673 0 448 328 2 1
 9 Serveurs 4121 0 466 328 3 1
 10 THD_Chercheurs 4587 0 882 884 11 1
-11 Acces 3985 502 602 280 0 2
+11 Acces 3985 602 602 280 0 2
 12 Espace 3712 502 273 382 2 0
 13 Sanitaires 3382 502 330 382 0 3
 14 Ascenseurs 2843 502 539 382 1 0

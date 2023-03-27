@@ -10,7 +10,7 @@ room_nb room_name x y longueur largeur windows doors
 9 Bureau 3697 0 464 328 1 1
 10 Bureau 4161 0 404 328 1 1
 11 Bureau_chercheur 4565 0 883 884 4 1
-12 Acces 3905 492 602 323 0 1
+12 Acces 3905 549 602 323 0 1
 13 Espace 3645 492 260 382 0 0
 14 Sanitaires 3322 492 323 382 0 1
 15 Acces 2781 492 541 382 0 0
