@@ -5,14 +5,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -22,14 +22,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -39,14 +39,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -56,14 +56,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -73,14 +73,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -90,14 +90,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -107,14 +107,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -124,14 +124,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -141,14 +141,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -158,14 +158,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -175,14 +175,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -192,14 +192,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -209,14 +209,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -226,14 +226,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -243,14 +243,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -260,14 +260,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -277,14 +277,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -294,14 +294,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -311,14 +311,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -328,14 +328,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -345,14 +345,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -362,14 +362,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -379,14 +379,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -396,14 +396,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -413,14 +413,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -430,14 +430,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -447,14 +447,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -464,14 +464,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -481,14 +481,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -498,14 +498,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -515,14 +515,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -532,14 +532,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -549,14 +549,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -566,14 +566,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -583,14 +583,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -600,14 +600,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -617,14 +617,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -634,14 +634,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -651,14 +651,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -668,14 +668,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -685,14 +685,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -702,14 +702,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -719,14 +719,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -736,14 +736,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -753,14 +753,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -770,14 +770,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -787,14 +787,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -804,14 +804,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -821,14 +821,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -838,14 +838,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -855,14 +855,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -872,14 +872,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -889,14 +889,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -906,14 +906,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -923,14 +923,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -940,14 +940,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -957,14 +957,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -974,14 +974,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     },
@@ -991,14 +991,14 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Trimesh",
+                "type": "Polygon",
                 "measurementUnit": "m",
                 "Dimensions": "2D",
                 "coordinates": []
             }
         },
         "@context": [
-            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
             "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
         ]
     }

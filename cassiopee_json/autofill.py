@@ -3,8 +3,8 @@ import json
 import re
 import matplotlib.pyplot as plt
 
-# path = "/Users/juliettedebono/Documents/TSP/Cassioppée/cassiopee/cassiopee_json/"
-path = ""
+path = "/Users/juliettedebono/Documents/TSP/Cassioppée/cassiopee/cassiopee_json/"
+# path = ""
 path_json = path + "json/"
 windows_file = path_json + "windows.json" # Windows File
 doors_file = path_json + "doors.json" # Doors File
@@ -118,7 +118,7 @@ def coordinates(coor):
     z3 = ((a+length)/100, (b+width)/100)
     z4 = ((a)/100, (b+width)/100)
 
-    return [z1, z2, z3, z4]
+    return [z1, z2, z3, z4, z1]
 
 
 
