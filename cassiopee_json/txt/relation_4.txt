@@ -1,3 +1,4 @@
+id_pièce id_objet
 urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R22 urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R1D1
 urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R2 urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R3D2
 urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R22 urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R3D1

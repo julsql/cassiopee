@@ -149,12 +149,13 @@
                 "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R18",
                 "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R19",
                 "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R20",
-                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R21"
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R21",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R22"
             ]
         },
         "numberOfRooms": {
             "type": "Property",
-            "value": 21
+            "value": 22
         },
         "@context": [
             "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",

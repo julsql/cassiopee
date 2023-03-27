@@ -1,14 +1,16 @@
 # Generate correct JSON files to represent the Étoile building
 import json
 import re
+import matplotlib.pyplot as plt
 
-path = "json/"
-windows_file = path + "windows.json" # Building Windows File
-doors_file = path + "doors.json" # Building Doors File
-rooms_file = path + "rooms.json" # Building Rooms File
-building_file = path + "building.json" # Building File
-floors_file = path + "floors.json" # Building Floors File
-templates_file = "templates.json" # JSON Models File
+path = "/Users/juliettedebono/Documents/TSP/Cassioppée/cassiopee/cassiopee_json/"
+path_json = path + "json/"
+windows_file = path_json + "windows.json" # Windows File
+doors_file = path_json + "doors.json" # Doors File
+rooms_file = path_json + "rooms.json" # Rooms File
+floors_file = path_json + "floors.json" # Floors File
+building_file = path_json + "building.json" # Building File
+templates_file = path + "templates.json" # JSON Models File
 
 id_model = "urn:ngsi-ld:{0}:SmartCitiesdomain:SmartBuildings:{1}" # model of an id
 
@@ -104,12 +106,18 @@ def coordinates(coor):
     coor : [(a, b), length, width] -> 1st point, length, width
     return point down-left, down-right, up-left, up-right
     """
+    a = int(coor[0][0])
+    b = int(coor[0][1])
+    length = int(coor[1])
+    width = int(coor[2])
 
-    a = coor[0][0]
-    b = coor[0][1]
-    length = coor[1]
-    width = coor[2]
-    return [(a, b), (a+length, b), (a+length, b+width), (a, b+width)]
+    # zi = (xi, yi)
+    z1 = ((a)/100, (b)/100)
+    z2 = ((a+length)/100, (b)/100)
+    z3 = ((a+length)/100, (b+width)/100)
+    z4 = ((a)/100, (b+width)/100)
+
+    return [z1, z2, z3, z4]
 
 
 
@@ -181,6 +189,36 @@ def add_room(number : int, typ : str , coor, windows : int, doors : int, floor):
 def verify_coordinates():
     """Fonction qui vérifie qu'aucune pièce de l'étage ne se chevauche (dû à des erreurs dans les informations entrées)"""
     
+
+    def afficher(rectangles, titre):
+        """Affiche des rectangles sur un graphe
+        Coordonées sous la forme
+        [rect1, rect2, …]
+        avec rect = [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]"""
+
+        fig, ax = plt.subplots()
+
+        for key1, rect1 in rectangles.items():
+
+            try:
+                x = [rect1[i][0] for i in range(4)] + [rect1[0][0]]
+                y = [rect1[i][1] for i in range(4)] + [rect1[0][1]]
+
+                # Ajout des rectangles à l'axe
+                ax.plot(x, y, label=key1)
+            except:
+                None
+
+        # L'axe x et y sont identiques
+        ax.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
+        ax.set_aspect('equal')
+        ax.set_title(titre)
+
+        fig.subplots_adjust(left=0.1, right=0.78)
+        # Affichage de la figure
+        plt.show()
+
+
     def check_overlap(rect1, rect2):
         """Fonction qui vérifie si les deux rectangles se chevauchent ou non
         rect1 et rect2 sont des listes de quatre tuples représentant les points des rectangles
@@ -221,6 +259,7 @@ def verify_coordinates():
 
         rooms_json = read(rooms_file)
         rectangles = dict()
+        affichage = []
         for room in rooms_json:
             id_room = re.search(r':(\w+)$', room["id"]).group(1) # Get room id
             floor_room = int(re.search(r'F(\d+)', room["id"]).group(1)) # get room floor id
@@ -228,14 +267,21 @@ def verify_coordinates():
             if floor_room == floor:
                 # If write floor: get coordinates
                 rectangles[id_room] = room["relativePosition"]["value"]["coordinates"]
+                affichage.append(room["relativePosition"]["value"]["coordinates"])
+        afficher(rectangles, "Étage {}".format(floor))
         return rectangles
     
     for flr in range(1,5):
+
         rectangles = get_all_rectangles(flr)
         overlap = check_overlap_all(rectangles)
         if overlap == set():
             print("Il n'y a aucun chevauchement dans les pièces de l'étage {}".format(flr))
         for i, j in overlap:
+            # afficher([rectangles[i], rectangles[j]])
+            print("première pièce : ", rectangles[i])
+            print("deuxième pièce : ", rectangles[j])
+            afficher({i: rectangles[i], j: rectangles[j]}, "Pièce n°{} et {}".format(i, j))
             print("Les pièces {} et {} se chevauchent".format(i, j))
         print()
     return None
@@ -255,7 +301,7 @@ def add_floor(filename, floor):
             values = line.split(" ")
             number = int(values[0])
             name = values[1].replace("_", " ")
-            coor = [(int(values[2])/100, int(values[3])/100), int(values[4])/100, int(values[5])/100]
+            coor = [(values[2], values[3]), values[4], values[5]]
             windows = int(values[6])
             doors = int(values[7])
             # Add the room in the JSON room file from the given values
@@ -317,10 +363,14 @@ def add_relations_floor(filename):
 
 initialize() # Empty JSON files
 
-add_floor("txt/floor_2.txt", 2)
-add_floor("txt/floor_3.txt", 3)
-add_floor("txt/floor_4.txt", 4)
-add_relations_floor("txt/relation_3.txt")
+add_floor(path + "txt/floor_1.txt", 2)
+add_floor(path + "txt/floor_2.txt", 2)
+add_floor(path + "txt/floor_3.txt", 3)
+add_floor(path + "txt/floor_4.txt", 4)
+add_relations_floor(path + "txt/relation_1.txt")
+add_relations_floor(path + "txt/relation_2.txt")
+add_relations_floor(path + "txt/relation_3.txt")
+add_relations_floor(path + "txt/relation_4.txt")
 
 print()
 verify_coordinates() # Check if rooms don't overlap

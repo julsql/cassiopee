@@ -296,11 +296,11 @@
                         0.0
                     ],
                     [
-                        27.810000000000002,
+                        27.81,
                         0.0
                     ],
                     [
-                        27.810000000000002,
+                        27.81,
                         3.23
                     ],
                     [
@@ -686,20 +686,20 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        36.98,
+                        39.25,
                         4.82
                     ],
                     [
-                        39.8,
+                        45.27,
                         4.82
                     ],
                     [
-                        39.8,
-                        10.84
+                        45.27,
+                        8.64
                     ],
                     [
-                        36.98,
-                        10.84
+                        39.25,
+                        8.64
                     ]
                 ]
             }
@@ -750,19 +750,19 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        34.28,
+                        36.55,
                         4.82
                     ],
                     [
-                        36.980000000000004,
+                        39.25,
                         4.82
                     ],
                     [
-                        36.980000000000004,
+                        39.25,
                         8.64
                     ],
                     [
-                        34.28,
+                        36.55,
                         8.64
                     ]
                 ]
@@ -816,20 +816,20 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        30.47,
+                        33.24,
                         4.82
                     ],
                     [
-                        34.28,
+                        36.55,
                         4.82
                     ],
                     [
-                        34.28,
-                        8.530000000000001
+                        36.55,
+                        8.63
                     ],
                     [
-                        30.47,
-                        8.530000000000001
+                        33.24,
+                        8.63
                     ]
                 ]
             }
@@ -880,19 +880,19 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        25.07,
+                        27.84,
                         4.82
                     ],
                     [
-                        30.47,
+                        33.24,
                         4.82
                     ],
                     [
-                        30.47,
+                        33.24,
                         8.63
                     ],
                     [
-                        25.07,
+                        27.84,
                         8.63
                     ]
                 ]
@@ -900,7 +900,9 @@
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": []
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R13D1"
+            ]
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -910,7 +912,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 0
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -944,19 +946,19 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        20.22,
+                        22.99,
                         4.82
                     ],
                     [
-                        25.07,
+                        27.84,
                         4.82
                     ],
                     [
-                        25.07,
+                        27.84,
                         8.59
                     ],
                     [
-                        20.22,
+                        22.99,
                         8.59
                     ]
                 ]
@@ -1011,19 +1013,19 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        15.37,
+                        18.14,
                         4.82
                     ],
                     [
-                        20.22,
+                        22.99,
                         4.82
                     ],
                     [
-                        20.22,
+                        22.99,
                         8.64
                     ],
                     [
-                        15.37,
+                        18.14,
                         8.64
                     ]
                 ]
@@ -1078,20 +1080,20 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        11.97,
+                        14.74,
                         4.82
                     ],
                     [
-                        15.370000000000001,
+                        18.14,
                         4.82
                     ],
                     [
-                        15.370000000000001,
-                        8.67
+                        18.14,
+                        8.64
                     ],
                     [
-                        11.97,
-                        8.67
+                        14.74,
+                        8.64
                     ]
                 ]
             }
@@ -1149,16 +1151,16 @@
                         4.82
                     ],
                     [
-                        11.97,
+                        14.74,
                         4.82
                     ],
                     [
-                        11.97,
-                        8.67
+                        14.74,
+                        8.64
                     ],
                     [
                         8.72,
-                        8.67
+                        8.64
                     ]
                 ]
             }
@@ -1213,11 +1215,11 @@
                         4.82
                     ],
                     [
-                        8.719999999999999,
+                        8.72,
                         4.82
                     ],
                     [
-                        8.719999999999999,
+                        8.72,
                         8.64
                     ],
                     [
@@ -1364,7 +1366,9 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R21D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R21D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R1D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R20D1"
             ]
         },
         "windowsInRoom": {
@@ -1375,11 +1379,89 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 3
         },
         "numberOfWindows": {
             "type": "Property",
             "value": 1
+        },
+        "@context": [
+            "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R22",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 22"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Couloir"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F2"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        4.39,
+                        3.28
+                    ],
+                    [
+                        45.75,
+                        3.28
+                    ],
+                    [
+                        45.75,
+                        4.82
+                    ],
+                    [
+                        4.39,
+                        4.82
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R2D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R3D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R4D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R5D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R6D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R7D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R8D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R10D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R11D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R12D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R15D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R16D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R17D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R18D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R19D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 15
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
         },
         "@context": [
             "https://gitlab.isl.ics.forth.gr/api/v4/projects/82/repository/files/ngsild-models%2FBuilding%2Fcontext.json/raw",
@@ -1627,11 +1709,11 @@
                         0.0
                     ],
                     [
-                        23.380000000000003,
+                        23.38,
                         0.0
                     ],
                     [
-                        23.380000000000003,
+                        23.38,
                         3.28
                     ],
                     [
@@ -1828,11 +1910,11 @@
                         0.0
                     ],
                     [
-                        36.730000000000004,
+                        36.73,
                         0.0
                     ],
                     [
-                        36.730000000000004,
+                        36.73,
                         3.28
                     ],
                     [
@@ -1895,11 +1977,11 @@
                         0.0
                     ],
                     [
-                        41.209999999999994,
+                        41.21,
                         0.0
                     ],
                     [
-                        41.209999999999994,
+                        41.21,
                         3.28
                     ],
                     [
@@ -1962,11 +2044,11 @@
                         0.0
                     ],
                     [
-                        45.870000000000005,
+                        45.87,
                         0.0
                     ],
                     [
-                        45.870000000000005,
+                        45.87,
                         3.28
                     ],
                     [
@@ -2107,16 +2189,16 @@
                         5.02
                     ],
                     [
-                        45.870000000000005,
+                        45.87,
                         5.02
                     ],
                     [
-                        45.870000000000005,
-                        7.819999999999999
+                        45.87,
+                        7.82
                     ],
                     [
                         39.85,
-                        7.819999999999999
+                        7.82
                     ]
                 ]
             }
@@ -2172,11 +2254,11 @@
                         5.02
                     ],
                     [
-                        39.849999999999994,
+                        39.85,
                         5.02
                     ],
                     [
-                        39.849999999999994,
+                        39.85,
                         8.84
                     ],
                     [
@@ -2792,7 +2874,9 @@
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": []
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R3D2"
+            ]
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -2800,7 +2884,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 0
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -2967,11 +3051,11 @@
                         0.0
                     ],
                     [
-                        22.029999999999998,
+                        22.03,
                         0.0
                     ],
                     [
-                        22.029999999999998,
+                        22.03,
                         3.28
                     ],
                     [
@@ -3231,11 +3315,11 @@
                         0.0
                     ],
                     [
-                        41.910000000000004,
+                        41.91,
                         0.0
                     ],
                     [
-                        41.910000000000004,
+                        41.91,
                         3.28
                     ],
                     [
@@ -3297,11 +3381,11 @@
                         0.0
                     ],
                     [
-                        45.949999999999996,
+                        45.95,
                         0.0
                     ],
                     [
-                        45.949999999999996,
+                        45.95,
                         3.28
                     ],
                     [
@@ -3432,11 +3516,11 @@
                         4.92
                     ],
                     [
-                        42.92999999999999,
+                        42.93,
                         4.92
                     ],
                     [
-                        42.92999999999999,
+                        42.93,
                         8.15
                     ],
                     [
@@ -3496,11 +3580,11 @@
                         4.92
                     ],
                     [
-                        36.910000000000004,
+                        36.91,
                         4.92
                     ],
                     [
-                        36.910000000000004,
+                        36.91,
                         8.15
                     ],
                     [
@@ -3558,11 +3642,11 @@
                         4.92
                     ],
                     [
-                        34.309999999999995,
+                        34.31,
                         4.92
                     ],
                     [
-                        34.309999999999995,
+                        34.31,
                         8.74
                     ],
                     [
@@ -3638,7 +3722,9 @@
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": []
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R14D1"
+            ]
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -3646,7 +3732,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 0
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -4092,7 +4178,25 @@
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": []
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R1D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R3D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R4D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R5D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R6D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R7D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R8D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R9D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R10D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R11D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R12D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R16D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R17D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R18D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R19D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R20D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R21D1"
+            ]
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -4100,7 +4204,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 0
+            "value": 17
         },
         "numberOfWindows": {
             "type": "Property",
