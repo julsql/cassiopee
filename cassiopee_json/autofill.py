@@ -4,7 +4,7 @@ import re
 import matplotlib.pyplot as plt
 
 path = "/Users/juliettedebono/Documents/TSP/Cassioppée/cassiopee/cassiopee_json/"
-# path = ""
+path = ""
 path_json = path + "json/"
 windows_file = path_json + "windows.json" # Windows File
 doors_file = path_json + "doors.json" # Doors File
@@ -202,8 +202,8 @@ def verify_coordinates():
         for key1, rect1 in rectangles.items():
 
             try:
-                x = [rect1[i][0] for i in range(4)] + [rect1[0][0]]
-                y = [rect1[i][1] for i in range(4)] + [rect1[0][1]]
+                x = [rect1[i][0] for i in range(5)]
+                y = [-rect1[i][1] for i in range(5)]
 
                 # Ajout des rectangles à l'axe
                 ax.plot(x, y, label=key1)
