@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -20,14 +22,14 @@ class MyApp extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
-                    'Oeschinen Lake Campground',
+                    'Représentation du bâtiment Etoile',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 Text(
-                  'Kandersteg, Switzerland',
+                  'Ceci est un test pour le cassiopée',
                   style: TextStyle(
                     color: Colors.grey[500],
                   ),
@@ -40,68 +42,40 @@ class MyApp extends StatelessWidget {
             Icons.star,
             color: Colors.red[500],
           ),
-          const Text('41'),
+          const Text('1'),
         ],
       ),
     );
 
     Color color = Theme.of(context).primaryColor;
 
-    Widget buttonSection = Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        _buildButtonColumn(color, Icons.star, 'ABOUT THE STAR PROJECT'),
-      ],
-    );
-
     Widget textSection = const Padding(
       padding: EdgeInsets.all(32),
       child: Text(
-        'This application allows to visualize the different floors of the Etoile building and the IoT devices in the building.',
+        'Texte essai',
         softWrap: true,
       ),
     );
 
     return MaterialApp(
-      title: 'Visualizing the Etoile building',
+      title: 'Flutter layout demo',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Visualizing the Etoile building'),
+          title: const Text('Flutter layout demo'),
         ),
         body: ListView(
           children: [
             Image.asset(
               'images/Etoile.jpg',
+              width: 600,
               height: 240,
               fit: BoxFit.cover,
             ),
             titleSection,
-            buttonSection,
             textSection,
           ],
         ),
       ),
     );
   }
-}
-
-Column _buildButtonColumn(Color color, IconData icon, String label) {
-  return Column(
-    mainAxisSize: MainAxisSize.min,
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: [
-      Icon(icon, color: color),
-      Container(
-        margin: const EdgeInsets.only(top: 8),
-        child: Text(
-          label,
-          style: TextStyle(
-            fontSize: 12,
-            fontWeight: FontWeight.w400,
-            color: color,
-          ),
-        ),
-      ),
-    ],
-  );
 }
