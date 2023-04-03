@@ -9,6 +9,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return MaterialApp(
+      home: HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
     Widget titleSection = Container(
       padding: const EdgeInsets.all(32),
       child: Row(
@@ -47,8 +60,6 @@ class MyApp extends StatelessWidget {
       ),
     );
 
-    Color color = Theme.of(context).primaryColor;
-
     Widget textSection = const Padding(
       padding: EdgeInsets.all(32),
       child: Text(
@@ -57,24 +68,16 @@ class MyApp extends StatelessWidget {
       ),
     );
 
-    return MaterialApp(
-      title: 'Flutter layout demo',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter layout demo'),
-        ),
-        body: ListView(
-          children: [
-            Image.asset(
-              'images/Etoile.jpg',
-              width: 600,
-              height: 240,
-              fit: BoxFit.cover,
-            ),
-            titleSection,
-            textSection,
-          ],
-        ),
+    return Scaffold(
+      body: ListView(
+        children: [
+          Image.asset(
+            'images/test_banniere.jpg',
+            fit: BoxFit.cover,
+          ),
+          titleSection,
+          textSection,
+        ],
       ),
     );
   }
