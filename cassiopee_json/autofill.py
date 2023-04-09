@@ -4,7 +4,7 @@ import re
 import matplotlib.pyplot as plt
 
 path = "/Users/juliettedebono/Documents/TSP/Cassioppée/cassiopee/cassiopee_json/"
-path = ""
+# path = ""
 path_json = path + "json/"
 windows_file = path_json + "windows.json" # Windows File
 doors_file = path_json + "doors.json" # Doors File
@@ -100,7 +100,7 @@ def clear_cache():
 
 
 
-def coordinates(coor):
+def coordinates_room(coor):
     """Give the 4 room points given:
     Fonction qui renvoie les quatre points de la pièce à partir :
     down left point, length, width
@@ -122,7 +122,62 @@ def coordinates(coor):
 
 
 
-def add_room(number : int, typ : str , coor, windows : int, doors : int, floor):
+def coordinates_obj(coor_obj, coor_room, val, epaisseur):
+    """Give the 4 points of an object given:
+    value, type of the windows and wich wall
+    and the coordinates of the room
+    val match with type : val_windows = {1 : 3.5, 2 : 4.5, 3 : 5.5}
+    coor_wind : [a, type, wall]
+    coor_room : [(a, b), length, width] -> 1st point, length, width
+    return 2 points
+    """
+    a = int(coor_obj[0])
+    type = int(coor_obj[1])
+    wall = int(coor_obj[2])
+
+    x = int(coor_room[0][0])
+    y = int(coor_room[0][1])
+    length = int(coor_room[1])
+    width = int(coor_room[2])
+
+    # wall = 1 : mur gauche
+    # wall = 2 : mur haut
+    # wall = 3 : mur droit
+    # wall = 4 : mur bas
+
+    # type = 1 : petit fenêtre
+    # type = 2 : double fenêtre
+    # type = 3 : triple fenêtre
+
+    if wall == 1:
+        z1 = (x + a, y)
+        z2 = (x + a + val[type], y)
+        z3 = z2 + epaisseur
+        z4 = z1 + epaisseur
+
+    if wall == 2:
+        z1 = (x + length, y + a)
+        z2 = z1 + epaisseur
+        z4 = (x + length, y + a + val[type])
+        z3 = z4 + epaisseur
+
+    if wall == 3:
+        z1 = (x + a, y + width)
+        z2 = (x + a + val[type], y + width)
+        z3 = z2 + epaisseur
+        z4 = z1 + epaisseur
+
+    if wall == 4:
+        z4 = (x, y + a)
+        z3 = (x, y + a + val[type])
+        z1 = z4 - epaisseur
+        z2 = z3 - epaisseur
+
+    return [z1, z2, z1]
+
+
+
+def add_room(number : int, typ : str , coor, windows, doors, floor : int):
     """Add a room
     number : room number
     typ : room type (ex: bureau)
@@ -139,7 +194,7 @@ def add_room(number : int, typ : str , coor, windows : int, doors : int, floor):
     room_model["name"]["value"] = "Room {}".format(number)
     room_model["description"]["value"] = typ
     room_model["onFloor"]["object"] = id_floor
-    room_model["relativePosition"]["value"]["coordinates"] = coordinates(coor)
+    room_model["relativePosition"]["value"]["coordinates"] = coordinates_room(coor)
 
     # Add room id in the building file
     building_json = read(building_file) # Get JSON building template
@@ -159,11 +214,14 @@ def add_room(number : int, typ : str , coor, windows : int, doors : int, floor):
     id_doors = []
 
     # Add the windows
-    for window in range(windows):
+    for i in range(len(windows)):
+        window = windows[i]
         window_model = read(templates_file)["windows"] # Get JSON windows template
-        id = id_model.format("Window", "B1F{}R{}W{}".format(floor, number, window + 1)) # Generate id
+        id = id_model.format("Window", "B1F{}R{}W{}".format(floor, number, i + 1)) # Generate id
         id_windows.append(id) # Add id in windows list
         window_model["id"] = id # Give id
+        coor_wind = coordinates_wind(window[i], coor)
+        window_model["relativePosition"]["value"]["coordinates"] = coor_wind
         add(windows_file, window_model) # Add window in the windows JSON file
 
     # Add the doors
@@ -269,7 +327,7 @@ def verify_coordinates():
                 # If write floor: get coordinates
                 rectangles[id_room] = room["relativePosition"]["value"]["coordinates"]
                 affichage.append(room["relativePosition"]["value"]["coordinates"])
-        afficher(rectangles, "Étage {}".format(floor))
+        # afficher(rectangles, "Étage {}".format(floor))
         return rectangles
     
     for flr in range(1,5):
@@ -279,7 +337,7 @@ def verify_coordinates():
         if overlap == set():
             print("Il n'y a aucun chevauchement dans les pièces de l'étage {}".format(flr))
         for i, j in overlap:
-            afficher({i: rectangles[i], j: rectangles[j]}, "Pièce n°{} et {}".format(i, j))
+            # afficher({i: rectangles[i], j: rectangles[j]}, "Pièce n°{} et {}".format(i, j))
             print("Les pièces {} et {} se chevauchent".format(i, j))
         print()
     return None
@@ -289,22 +347,15 @@ def verify_coordinates():
 def add_floor(filename, floor):
     """Add a floor from a file containing the rooms:
     room_nb room_name x y longueur largeur windows doors"""
+    data = read(filename)
+    for room in data:
+        number = int(room[0])
+        name = room[1].replace("_", " ")
+        coor = [(room[2], room[3]), room[4], room[5]]
+        windows = 1 # room[6]
+        doors = 1 # room[7]
+        add_room(number, name, coor, windows, doors, floor)
 
-    with open(filename, 'r') as f:
-        # Read à floor txt file
-        f.readline() # First line useless
-        line = f.readline().strip("\n")
-        while line != "":
-            # Get line value
-            values = line.split(" ")
-            number = int(values[0])
-            name = values[1].replace("_", " ")
-            coor = [(values[2], values[3]), values[4], values[5]]
-            windows = int(values[6])
-            doors = int(values[7])
-            # Add the room in the JSON room file from the given values
-            add_room(number, name, coor, windows, doors, floor)
-            line = f.readline().strip("\n")
     print("le fichier {} a bien été ajouté".format(filename))
     return None
 
@@ -361,14 +412,16 @@ def add_relations_floor(filename):
 
 initialize() # Empty JSON files
 
-add_floor(path + "txt/floor_1.txt", 2)
-add_floor(path + "txt/floor_2.txt", 2)
-add_floor(path + "txt/floor_3.txt", 3)
-add_floor(path + "txt/floor_4.txt", 4)
-add_relations_floor(path + "txt/relation_1.txt")
-add_relations_floor(path + "txt/relation_2.txt")
-add_relations_floor(path + "txt/relation_3.txt")
-add_relations_floor(path + "txt/relation_4.txt")
+add_floor(path + "txt/floor_2.json", 2)
+
+#add_floor(path + "txt/floor_1.txt", 2)
+#add_floor(path + "txt/floor_2.txt", 2)
+#add_floor(path + "txt/floor_3.txt", 3)
+#add_floor(path + "txt/floor_4.txt", 4)
+#add_relations_floor(path + "txt/relation_1.txt")
+#add_relations_floor(path + "txt/relation_2.txt")
+#add_relations_floor(path + "txt/relation_3.txt")
+#add_relations_floor(path + "txt/relation_4.txt")
 
 print()
 verify_coordinates() # Check if rooms don't overlap
