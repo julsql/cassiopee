@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:etoile_project/widgets/nav-drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,9 +17,7 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatelessWidget {
-  const HomePage({
-    Key? key,
-  }) : super(key: key);
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -69,6 +68,8 @@ class HomePage extends StatelessWidget {
     );
 
     return Scaffold(
+      drawer: NavDrawer(),
+      appBar: AppBar(title: Text("Menu")),
       body: ListView(
         children: [
           Image.asset(
@@ -76,6 +77,36 @@ class HomePage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           titleSection,
+          textSection,
+        ],
+      ),
+    );
+  }
+}
+
+class AboutUs extends StatelessWidget {
+  const AboutUs({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    Widget textSection = const Padding(
+      padding: EdgeInsets.all(32),
+      child: Text(
+        'Texte essai',
+        softWrap: true,
+      ),
+    );
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Menu'),
+      ),
+      body: ListView(
+        children: [
+          Image.asset(
+            'images/test_banniere.jpg',
+            fit: BoxFit.cover,
+          ),
           textSection,
         ],
       ),
