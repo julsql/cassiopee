@@ -25,3 +25,4 @@ flutter:
   uses-material-design: true
   assets:
     - images/test_banniere.jpg
+    - images/floor1.jpg

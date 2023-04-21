@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import '../main.dart';
+import '../home.dart';
+import '../firstfloor.dart';
+import '../about.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -10,13 +13,23 @@ class NavDrawer extends StatelessWidget {
         children: <Widget>[
           ListTile(
             leading: Icon(Icons.input),
-            title: Text('Welcome'),
-            onTap: () => {},
+            title: Text('Welcome page'),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const HomePage()),
+              ),
+            },
           ),
           ListTile(
             leading: Icon(Icons.home_filled),
-            title: Text('Plan of the Etoile Building'),
-            onTap: () => {Navigator.of(context).pop()},
+            title: Text('First floor of the Etoile building'),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const FirstFloor()),
+              ),
+            },
           ),
           ListTile(
             leading: Icon(Icons.info),
