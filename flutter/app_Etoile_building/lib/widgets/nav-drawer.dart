@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../main.dart';
 import '../home.dart';
 import '../firstfloor.dart';
 import '../about.dart';
+import '../secondfloor.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -28,6 +28,16 @@ class NavDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const FirstFloor()),
+              ),
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.home_filled),
+            title: Text('Second floor of the Etoile building'),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SecondFloor()),
               ),
             },
           ),

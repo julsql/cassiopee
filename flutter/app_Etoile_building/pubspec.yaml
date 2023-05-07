@@ -26,3 +26,5 @@ flutter:
   assets:
     - images/test_banniere.jpg
     - images/floor1.jpg
+    - json/templates.json
+    - json/sample.json
