@@ -13,6 +13,9 @@ floors_file = path_json + "floors.json" # Floors File
 building_file = path_json + "building.json" # Building File
 templates_file = path + "templates.json" # JSON Models File
 
+wind_size = [30, 60, 120]
+door_size = [30, 40]
+
 id_model = "urn:ngsi-ld:{0}:SmartCitiesdomain:SmartBuildings:{1}" # model of an id
 
 def read(filename):
@@ -122,15 +125,17 @@ def coordinates_room(coor):
 
 
 
-def coordinates_obj(coor_obj, coor_room, val, epaisseur):
+def coordinates_obj(coor_obj, coor_room, obj):
     """Give the 4 points of an object given:
     value, type of the windows and wich wall
     and the coordinates of the room
     val match with type : val_windows = {1 : 3.5, 2 : 4.5, 3 : 5.5}
     coor_wind : [a, type, wall]
-    coor_room : [(a, b), length, width] -> 1st point, length, width
+    coor_room : [(x, y), length, width] -> 1st point, length, width
     return 2 points
     """
+    epaisseur = 11
+    err = 1
     a = int(coor_obj[0])
     type = int(coor_obj[1])
     wall = int(coor_obj[2])
@@ -140,40 +145,49 @@ def coordinates_obj(coor_obj, coor_room, val, epaisseur):
     length = int(coor_room[1])
     width = int(coor_room[2])
 
-    # wall = 1 : mur gauche
-    # wall = 2 : mur haut
-    # wall = 3 : mur droit
-    # wall = 4 : mur bas
+    if obj == "window":
+        val = wind_size
+    elif obj == "door":
+        val = door_size
+    else:
+        raise TypeError(obj + "n'est ni door ni window")
 
-    # type = 1 : petit fenêtre
-    # type = 2 : double fenêtre
-    # type = 3 : triple fenêtre
+    # wall = 0 : mur gauche
+    # wall = 1 : mur haut
+    # wall = 2 : mur droit
+    # wall = 3 : mur bas
+
+    # type = 0 : petit fenêtre
+    # type = 1 : double fenêtre
+    # type = 2 : triple fenêtre
+
+    l = val[type]
+
+    if wall == 0:
+        z1 = ((x + a)/100, (y - epaisseur)/100)
+        z2 = ((x + a)/100, (y + err)/100)
+        z3 = ((x + a + l)/100, (y + err)/100)
+        z4 = ((x + a + l)/100, (y - epaisseur)/100)
 
     if wall == 1:
-        z1 = (x + a, y)
-        z2 = (x + a + val[type], y)
-        z3 = z2 + epaisseur
-        z4 = z1 + epaisseur
+        z1 = ((x + length - err)/100, (y + a)/100)
+        z2 = ((x + length + epaisseur)/100, (y + a)/100)
+        z3 = ((x + length + epaisseur)/100, (y + a + l)/100)
+        z4 = ((x + length - err)/100, (y + a + l)/100)
 
     if wall == 2:
-        z1 = (x + length, y + a)
-        z2 = z1 + epaisseur
-        z4 = (x + length, y + a + val[type])
-        z3 = z4 + epaisseur
+        z1 = ((x + a)/100, (y + width - err)/100)
+        z2 = ((x + a)/100, (y + width + epaisseur)/100)
+        z3 = ((x + a + l)/100, (y + width + epaisseur)/100)
+        z4 = ((x + a + l)/100, (y + width - err)/100)
 
     if wall == 3:
-        z1 = (x + a, y + width)
-        z2 = (x + a + val[type], y + width)
-        z3 = z2 + epaisseur
-        z4 = z1 + epaisseur
+        z1 = ((x - epaisseur)/100, (y + a)/100)
+        z2 = ((x + err)/100, (y + a)/100)
+        z3 = ((x + err)/100, (y + a + l)/100)
+        z4 = ((x - epaisseur)/100, (y + a + l)/100)
 
-    if wall == 4:
-        z4 = (x, y + a)
-        z3 = (x, y + a + val[type])
-        z1 = z4 - epaisseur
-        z2 = z3 - epaisseur
-
-    return [z1, z2, z1]
+    return [z1, z2, z3, z4, z1]
 
 
 
@@ -182,8 +196,8 @@ def add_room(number : int, typ : str , coor, windows, doors, floor : int):
     number : room number
     typ : room type (ex: bureau)
     coor : [(), length, width] (longueur->length largeur->width) : Room coordinates
-    windows : windows number
-    doors : doors number"""
+    windows : windows charac for each window
+    doors : doors charac for each winddoorow"""
 
     id_floor = id_model.format("Floor", "B1F{}".format(floor))
 
@@ -195,6 +209,7 @@ def add_room(number : int, typ : str , coor, windows, doors, floor : int):
     room_model["description"]["value"] = typ
     room_model["onFloor"]["object"] = id_floor
     room_model["relativePosition"]["value"]["coordinates"] = coordinates_room(coor)
+    print(coor)
 
     # Add room id in the building file
     building_json = read(building_file) # Get JSON building template
@@ -220,17 +235,22 @@ def add_room(number : int, typ : str , coor, windows, doors, floor : int):
         id = id_model.format("Window", "B1F{}R{}W{}".format(floor, number, i + 1)) # Generate id
         id_windows.append(id) # Add id in windows list
         window_model["id"] = id # Give id
-        coor_wind = coordinates_wind(window[i], coor)
+        print(window)
+        coor_wind = coordinates_obj(window, coor, "window")
         window_model["relativePosition"]["value"]["coordinates"] = coor_wind
         add(windows_file, window_model) # Add window in the windows JSON file
 
     # Add the doors
-    for door in range(doors):
-        door_model = read(templates_file)["doors"] # Get JSON doors template
-        id = id_model.format("Door", "B1F{}R{}D{}".format(floor, number, door + 1)) # Generate id
-        id_doors.append(id) # Add id in doors list
+    for i in range(len(doors)):
+        door = doors[i]
+        door_model = read(templates_file)["doors"] # Get JSON windows template
+        id = id_model.format("Door", "B1F{}R{}D{}".format(floor, number, i + 1)) # Generate id
+        id_doors.append(id) # Add id in windows list
         door_model["id"] = id # Give id
-        add(doors_file, door_model) # Add door in the doors JSON file
+        print(door)
+        coor_door = coordinates_obj(door, coor, "door")
+        door_model["relativePosition"]["value"]["coordinates"] = coor_door
+        add(doors_file, door_model) # Add window in the windows JSON file
 
     # Add the relation between rooms and windows/doors
     room_model["windowsInRoom"]["object"] = id_windows
@@ -242,7 +262,6 @@ def add_room(number : int, typ : str , coor, windows, doors, floor : int):
     
     add(rooms_file, room_model) # Add the room into room json file
     return None
-
 
 
 def verify_coordinates():
@@ -299,15 +318,27 @@ def verify_coordinates():
         return True
 
 
-    def check_overlap_all(rectangles):
-        """Check the overlapping of the rectangles
-        rectangles: list of 4 tuples representing the 4 corner of the rectangle
+    def check_overlap_all(rooms):
+        """Check the overlapping of the rooms
+        rooms: list of 4 tuples representing the 4 corner of the rectangle
         tuple: coordinates of the points: (x, y)"""
 
         overlap = set()
-        for key1, rect1 in rectangles.items():
-            for key2, rect2 in rectangles.items():
+        for key1, rect1 in rooms.items():
+            for key2, rect2 in rooms.items():
                 if key1 < key2 and check_overlap(rect1, rect2):
+                    overlap.add((key1, key2))
+        return overlap
+    
+    def ajout_relation(winds, rooms):
+        """Check the overlapping of the rooms
+        rooms: list of 4 tuples representing the 4 corner of the rectangle
+        tuple: coordinates of the points: (x, y)"""
+
+        overlap = set()
+        for key1, rect1 in winds.items():
+            for key2, rect2 in rooms.items():
+                if check_overlap(rect1, rect2):
                     overlap.add((key1, key2))
         return overlap
 
@@ -317,28 +348,62 @@ def verify_coordinates():
         in a dictionary where the key is the room id and the value its coordinates"""
 
         rooms_json = read(rooms_file)
-        rectangles = dict()
-        affichage = []
+        winds_json = read(windows_file)
+        doors_json = read(doors_file)
+        rooms = dict()
+        doors = dict()
+        winds = dict()
+        affichage = dict()
         for room in rooms_json:
             id_room = re.search(r':(\w+)$', room["id"]).group(1) # Get room id
             floor_room = int(re.search(r'F(\d+)', room["id"]).group(1)) # get room floor id
 
             if floor_room == floor:
                 # If write floor: get coordinates
-                rectangles[id_room] = room["relativePosition"]["value"]["coordinates"]
-                affichage.append(room["relativePosition"]["value"]["coordinates"])
-        # afficher(rectangles, "Étage {}".format(floor))
-        return rectangles
-    
-    for flr in range(1,5):
+                rooms[id_room] = room["relativePosition"]["value"]["coordinates"]
+                affichage[id_room] = room["relativePosition"]["value"]["coordinates"]
+                for windid in room["windowsInRoom"]["object"]:
+                    for wind in winds_json:
+                        if wind["id"] == windid:
+                            id_wind = re.search(r':(\w+)$', windid).group(1) # Get room id
+                            winds[id_wind] = wind["relativePosition"]["value"]["coordinates"]
+                            affichage[id_wind] = wind["relativePosition"]["value"]["coordinates"]
+                for doorid in room["DoorsInRoom"]["object"]:
+                    for door in doors_json:
+                        if door["id"] == doorid:
+                            id_door = re.search(r':(\w+)$', doorid).group(1) # Get room id
+                            doors[id_door] = door["relativePosition"]["value"]["coordinates"]
+                            affichage[id_door] = door["relativePosition"]["value"]["coordinates"]
 
-        rectangles = get_all_rectangles(flr)
-        overlap = check_overlap_all(rectangles)
+        afficher(affichage, "Étage {}".format(floor))
+        return rooms, winds, doors
+    
+    for flr in range(2,3):
+
+        rooms, winds, doors = get_all_rectangles(flr)
+        overlap = check_overlap_all(rooms)
         if overlap == set():
             print("Il n'y a aucun chevauchement dans les pièces de l'étage {}".format(flr))
         for i, j in overlap:
-            # afficher({i: rectangles[i], j: rectangles[j]}, "Pièce n°{} et {}".format(i, j))
+            # afficher({i: rooms[i], j: rooms[j]}, "Pièce n°{} et {}".format(i, j))
             print("Les pièces {} et {} se chevauchent".format(i, j))
+        
+        relation = ajout_relation(winds, rooms)
+        if relation == set():
+            print("Il n'y a aucune relation à ajouter dans les pièces et les fenêtres de l'étage {}".format(flr))
+        for i, j in relation:
+            wind = "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:" + i
+            room = "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:" + j
+            add_relations(room, wind)
+
+        relation = ajout_relation(doors, rooms)
+        if relation == set():
+            print("Il n'y a aucune relation à ajouter dans les pièces et les portes de l'étage {}".format(flr))
+        for i, j in relation:
+            door = "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:" + i
+            room = "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:" + j
+            add_relations(room, door)
+
         print()
     return None
 
@@ -351,9 +416,9 @@ def add_floor(filename, floor):
     for room in data:
         number = int(room[0])
         name = room[1].replace("_", " ")
-        coor = [(room[2], room[3]), room[4], room[5]]
-        windows = 1 # room[6]
-        doors = 1 # room[7]
+        coor = [(room[2][0], room[2][1]), room[3], room[4]]
+        windows = room[5]
+        doors = room[6]
         add_room(number, name, coor, windows, doors, floor)
 
     print("le fichier {} a bien été ajouté".format(filename))
@@ -374,25 +439,29 @@ def add_relations(relation_1, relation_2):
         for room_json in rooms_json:
             if room_json["id"] == relation_1:
                 # Right room
-                room_json["windowsInRoom"]["object"].append(relation_2) # Add windows id
-                room_json["numberOfWindows"]["value"] += 1 # Increment related windows number
+                if relation_2 not in room_json["windowsInRoom"]["object"]:
+                    print("La fenêtre {} est également dans la pièce {}".format(relation_2.split(":")[-1], relation_1.split(":")[-1]))
+                    room_json["windowsInRoom"]["object"].append(relation_2) # Add windows id
+                    room_json["numberOfWindows"]["value"] += 1 # Increment related windows number
         write(rooms_file, rooms_json) # Write in the JSON rooms file
     elif type_2 == "Door":
         rooms_json = read(rooms_file) # Get the rooms JSON file
         for room_json in rooms_json:
             if room_json["id"] == relation_1:
                 # Right room
-                room_json["DoorsInRoom"]["object"].append(relation_2) # Add doors id
-                room_json["numberOfDoors"]["value"] += 1 # Increment related doors number
+                if relation_2 not in room_json["DoorsInRoom"]["object"]:
+                    print("La porte {} est également dans la pièce {}".format(relation_2.split(":")[-1], relation_1.split(":")[-1]))
+                    room_json["DoorsInRoom"]["object"].append(relation_2) # Add doors id
+                    room_json["numberOfDoors"]["value"] += 1 # Increment related doors number
         write(rooms_file, rooms_json) # Write in the JSON rooms file
     return None
 
 
-
+"""
 def add_relations_floor(filename):
-    """Add the relations from a file
+    "Add the relations from a file
     relation_1 : room
-    relation_2 : door/window"""
+    relation_2 : door/window"
     with open(filename, 'r') as f:
         # Read a file txt floor relations
         f.readline()
@@ -407,21 +476,15 @@ def add_relations_floor(filename):
             line = f.readline().strip("\n")
     print("les relations {} ont bien été ajouté".format(filename))
     return None
-
+"""
 
 
 initialize() # Empty JSON files
 
+add_floor(path + "txt/floor_1.json", 1)
 add_floor(path + "txt/floor_2.json", 2)
-
-#add_floor(path + "txt/floor_1.txt", 2)
-#add_floor(path + "txt/floor_2.txt", 2)
-#add_floor(path + "txt/floor_3.txt", 3)
-#add_floor(path + "txt/floor_4.txt", 4)
-#add_relations_floor(path + "txt/relation_1.txt")
-#add_relations_floor(path + "txt/relation_2.txt")
-#add_relations_floor(path + "txt/relation_3.txt")
-#add_relations_floor(path + "txt/relation_4.txt")
+add_floor(path + "txt/floor_3.json", 3)
+add_floor(path + "txt/floor_4.json", 4)
 
 print()
 verify_coordinates() # Check if rooms don't overlap
