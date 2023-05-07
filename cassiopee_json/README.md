@@ -38,3 +38,41 @@ ex :
 * Petit : 10,125 cm
 * Normal : 13,5 cm
 * Grand : 20,25 cm
+
+## Mesures
+
+### Grande Fenêtre
+
+* Hauteur: 177cm
+* Largeur : 190cm
+* Hauteur sous fenêtre : 81cm
+* Épaisseur mur : 10cm
+
+### Petite fenêtre
+
+* Hauteur : idem, 177cm
+* Largeur : 94cm
+
+### Triple fenêtre
+
+* Largeur : 288cm
+
+### Hauteur plafond
+
+* 363cm
+
+## Mur
+
+* Mur 1 : 10cm
+* Mur 2 : 14cm
+* Mur toilettes : 7.5cm
+
+### Porte
+
+* hauteur : 204cm
+* Largeur : 90cm
+
+### Placard couloir
+
+* largeur : 102cm
+* hauteur : 206cm
