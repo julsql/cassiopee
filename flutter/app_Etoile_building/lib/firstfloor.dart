@@ -26,7 +26,7 @@ class FirstFloor extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           textSection,
-          MonLogo(),
+          //MonLogo(),
           Transform.rotate(
             angle: 90 * 3.14159 / 180, // rotation de 90 degrés en radians
             child: Image(
@@ -39,6 +39,29 @@ class FirstFloor extends StatelessWidget {
     );
   }
 }
+
+class LinePainter extends CustomPainter {
+  final Offset p1;
+  final Offset p2;
+
+  LinePainter({required this.p1, required this.p2});
+
+  @override 
+  void paint(Canvas canvas, Size size){
+    final paint = Paint()
+      ..color = Colors.black
+      ..strokeWidth=3;
+
+    canvas.drawLine(p1, p2, paint);
+  }
+
+  @override 
+  bool shouldRepaint(LinePainter oldDelegate) =>
+    oldDelegate.p1!=p1 || oldDelegate.p2 != p2;
+
+  
+}
+
 
 class MonLogo extends StatelessWidget {
   @override
@@ -95,7 +118,7 @@ class Plan extends StatelessWidget {
         width: 200.0,
       ),
     );
-  }
+  }  
 }
 
 class PlanPainter extends CustomPainter {
