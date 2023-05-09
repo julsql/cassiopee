@@ -1,5 +1,19 @@
 # cassiopee_json
 
+## Remplir les étages
+
+chaque étage est un tableau de valeurs :
+
+    [id, nom, coin_bas_gauche, longueur, largeur, windows : [dist, type, mur], doors : [dist, type, mur]]
+
+ex :
+
+    [1, "Laboratoire", [0, 0], 763, 328, [[0, 1, 1], [0, 1, 1]], [[0, 1, 1], [0, 1, 1]]]
+
+Attention à prendre en compte l'épaisseur des murs : 13,5cm (l'ajouter quand vous mettez les coordoonées de la pièce)
+
+![aide pour les longueur/largeur](/cassiopee_json/2d-plans/aide.jpeg)
+
 ## The files
 
 autofill.py creates the JSON file with the relations thanks to the text files in json.
@@ -13,18 +27,6 @@ The files created are in JSON:
 * rooms.json
 * doors.json
 * windows.json
-
-## Remplir les étages
-
-chaque étage est un tableau de valeurs :
-
-    [id, nom, coor_bas_gauche, longueur, largeur, windows : [dist, type, mur], doors : [dist, type, mur]]
-
-ex :
-
-    [1, "Laboratoire", [0, 0], 763, 328, [[0, 1, 1], [0, 1, 1]], [[0, 1, 1], [0, 1, 1]]]
-
-![aide pour les longueur/largeur](/cassiopee_json/2d-plans/aide.jpeg)
 
 ## Epaisseur des murs
 
