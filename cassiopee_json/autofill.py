@@ -13,7 +13,7 @@ floors_file = path_json + "floors.json" # Floors File
 building_file = path_json + "building.json" # Building File
 templates_file = path + "templates.json" # JSON Models File
 
-wind_size = [30, 60, 120]
+wind_size = [94, 94*2, 288]
 door_size = [30, 40]
 
 id_model = "urn:ngsi-ld:{0}:SmartCitiesdomain:SmartBuildings:{1}" # model of an id
@@ -134,8 +134,10 @@ def coordinates_obj(coor_obj, coor_room, obj):
     coor_room : [(x, y), length, width] -> 1st point, length, width
     return 2 points
     """
-    epaisseur = 11
+    epaisseur = 15
     err = 1
+    print(coor_obj)
+    print(coor_obj[0])
     a = int(coor_obj[0])
     type = int(coor_obj[1])
     wall = int(coor_obj[2])
@@ -378,7 +380,7 @@ def verify_coordinates():
         afficher(affichage, "Étage {}".format(floor))
         return rooms, winds, doors
     
-    for flr in range(1, 5):
+    for flr in range(2, 5):
 
         rooms, winds, doors = get_all_rectangles(flr)
         overlap = check_overlap_all(rooms)
@@ -478,10 +480,9 @@ def add_relations_floor(filename):
     return None
 """
 
-
 initialize() # Empty JSON files
 
-add_floor(path + "txt/floor_1.json", 1)
+#add_floor(path + "txt/floor_1.json", 1)
 add_floor(path + "txt/floor_2.json", 2)
 add_floor(path + "txt/floor_3.json", 3)
 add_floor(path + "txt/floor_4.json", 4)
