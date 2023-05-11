@@ -23,7 +23,7 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.home_filled),
-            title: Text('First floor of the Etoile building'),
+            title: Text('First floor floorplan'),
             onTap: () => {
               Navigator.push(
                 context,

@@ -17,29 +17,111 @@
         "relativePosition": {
             "type": "Property",
             "value": {
-                "type": "Polygon",
+                "type": "Trimesh",
                 "measurementUnit": "m",
-                "Dimensions": "2D",
+                "Dimensions": "3D",
                 "coordinates": [
                     [
                         0.0,
-                        0.0
+                        0.0,
+                        0
                     ],
                     [
                         7.63,
-                        0.0
+                        0.0,
+                        0
                     ],
                     [
                         7.63,
-                        3.28
+                        3.28,
+                        0
                     ],
                     [
                         0.0,
-                        3.28
+                        3.28,
+                        0
                     ],
                     [
                         0.0,
-                        0.0
+                        0.0,
+                        3.63
+                    ],
+                    [
+                        7.63,
+                        0.0,
+                        3.63
+                    ],
+                    [
+                        7.63,
+                        3.28,
+                        3.63
+                    ],
+                    [
+                        0.0,
+                        3.28,
+                        3.63
+                    ]
+                ],
+                "faces": [
+                    [
+                        0,
+                        1,
+                        2
+                    ],
+                    [
+                        0,
+                        2,
+                        3
+                    ],
+                    [
+                        4,
+                        5,
+                        6
+                    ],
+                    [
+                        4,
+                        6,
+                        7
+                    ],
+                    [
+                        0,
+                        4,
+                        5
+                    ],
+                    [
+                        0,
+                        5,
+                        1
+                    ],
+                    [
+                        1,
+                        5,
+                        6
+                    ],
+                    [
+                        1,
+                        6,
+                        2
+                    ],
+                    [
+                        2,
+                        6,
+                        7
+                    ],
+                    [
+                        2,
+                        7,
+                        3
+                    ],
+                    [
+                        3,
+                        7,
+                        4
+                    ],
+                    [
+                        3,
+                        4,
+                        0
                     ]
                 ]
             }
@@ -47,22 +129,180 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R1D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R1D2"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R1W1",
+                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R1W2",
+                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R1W3",
+                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R1W4"
+            ]
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 2
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 4
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R2",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 2"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Laboratoire"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F2"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Trimesh",
+                "measurementUnit": "m",
+                "Dimensions": "3D",
+                "coordinates": [
+                    [
+                        7.73,
+                        0.0,
+                        0
+                    ],
+                    [
+                        11.01,
+                        0.0,
+                        0
+                    ],
+                    [
+                        11.01,
+                        3.28,
+                        0
+                    ],
+                    [
+                        7.73,
+                        3.28,
+                        0
+                    ],
+                    [
+                        7.73,
+                        0.0,
+                        3.63
+                    ],
+                    [
+                        11.01,
+                        0.0,
+                        3.63
+                    ],
+                    [
+                        11.01,
+                        3.28,
+                        3.63
+                    ],
+                    [
+                        7.73,
+                        3.28,
+                        3.63
+                    ]
+                ],
+                "faces": [
+                    [
+                        0,
+                        1,
+                        2
+                    ],
+                    [
+                        0,
+                        2,
+                        3
+                    ],
+                    [
+                        4,
+                        5,
+                        6
+                    ],
+                    [
+                        4,
+                        6,
+                        7
+                    ],
+                    [
+                        0,
+                        4,
+                        5
+                    ],
+                    [
+                        0,
+                        5,
+                        1
+                    ],
+                    [
+                        1,
+                        5,
+                        6
+                    ],
+                    [
+                        1,
+                        6,
+                        2
+                    ],
+                    [
+                        2,
+                        6,
+                        7
+                    ],
+                    [
+                        2,
+                        7,
+                        3
+                    ],
+                    [
+                        3,
+                        7,
+                        4
+                    ],
+                    [
+                        3,
+                        4,
+                        0
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R2D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R1D1"
             ]
         },
         "windowsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R1W1"
+                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R2W1",
+                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F2R1W2"
             ]
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 2
         },
         "numberOfWindows": {
             "type": "Property",
-            "value": 1
+            "value": 2
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
