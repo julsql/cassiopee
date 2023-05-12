@@ -100,11 +100,34 @@
         },
         "roomsOnFloor": {
             "type": "Relationship",
-            "object": []
+            "object": [
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R1",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R2",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R3",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R4",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R5",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R6",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R7",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R8",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R9",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R10",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R11",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R12",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R13",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R14",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R15",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R16",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R17",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R18",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R19",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R20",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R21",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R22"
+            ]
         },
         "numberOfRooms": {
             "type": "Property",
-            "value": 0
+            "value": 22
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Floor",

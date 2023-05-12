@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 path = "/Users/juliettedebono/Documents/TSP/Cassioppée/cassiopee/cassiopee_json/"
 # path = ""
-path_json = path + "json/"
+path_json = path + "json_ld/"
 windows_file = path_json + "windows.json" # Windows File
 doors_file = path_json + "doors.json" # Doors File
 rooms_file = path_json + "rooms.json" # Rooms File
@@ -14,7 +14,7 @@ building_file = path_json + "building.json" # Building File
 templates_file = path + "templates.json" # JSON Models File
 
 wind_size = [94, 94*2, 288]
-door_size = [30, 40]
+door_size = [90, 150]
 
 id_model = "urn:ngsi-ld:{0}:SmartCitiesdomain:SmartBuildings:{1}" # model of an id
 
@@ -132,7 +132,7 @@ def coordinates_obj(coor_obj, coor_room, obj):
     val match with type : val_windows = {1 : 3.5, 2 : 4.5, 3 : 5.5}
     coor_wind : [a, type, wall]
     coor_room : [(x, y), length, width] -> 1st point, length, width
-    return 2 points
+    return coordinates of the object
     """
     epaisseur = 15
     err = 1
@@ -285,16 +285,16 @@ def verify_coordinates():
                 y = [-rect1[i][1] for i in range(5)]
 
                 # Ajout des rectangles à l'axe
-                ax.plot(x, y, label=key1)
+                ax.plot(x, y)#, label=key1)
             except:
                 None
 
         # L'axe x et y sont identiques
-        ax.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
+        #ax.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
         ax.set_aspect('equal')
         ax.set_title(titre)
 
-        fig.subplots_adjust(left=0.1, right=0.78)
+        #fig.subplots_adjust(left=0.1, right=0.78)
         # Affichage de la figure
         plt.show()
 
@@ -380,7 +380,7 @@ def verify_coordinates():
         afficher(affichage, "Étage {}".format(floor))
         return rooms, winds, doors
     
-    for flr in range(2, 5):
+    for flr in range(1, 5):
 
         rooms, winds, doors = get_all_rectangles(flr)
         overlap = check_overlap_all(rooms)
@@ -482,10 +482,11 @@ def add_relations_floor(filename):
 
 initialize() # Empty JSON files
 
-#add_floor(path + "txt/floor_1.json", 1)
-add_floor(path + "txt/floor_2.json", 2)
-add_floor(path + "txt/floor_3.json", 3)
-add_floor(path + "txt/floor_4.json", 4)
+#add_floor(path + "json_hand/floor_0.json", 0)
+add_floor(path + "json_hand/floor_1.json", 1)
+add_floor(path + "json_hand/floor_2.json", 2)
+add_floor(path + "json_hand/floor_3.json", 3)
+add_floor(path + "json_hand/floor_4.json", 4)
 
 print()
 verify_coordinates() # Check if rooms don't overlap
