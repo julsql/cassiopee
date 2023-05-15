@@ -1,6 +1,6 @@
 import json
 
-path = "/Users/juliettedebono/Documents/TSP/Cassioppée/cassiopee/cassiopee_json/json_hand/"
+path = "/home/iris/cassiop/cassiopee/cassiopee_json/json_hand/"
 coef = 5
 
 def read(filename):
@@ -47,4 +47,4 @@ def add(coordinates_file, floor_file):
         floor_json[i][6] = coordinates_json[i][1]
     write(floor_file, floor_json)
 
-add(path + "coordinates_1.json", path + "floor_1.json")
+add(path + "coordinates_2.json", path + "floor_2.json")

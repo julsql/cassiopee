@@ -3,7 +3,7 @@ import json
 import re
 import matplotlib.pyplot as plt
 
-path = "/Users/juliettedebono/Documents/TSP/Cassioppée/cassiopee/cassiopee_json/"
+path = "/home/iris/cassiop/cassiopee/cassiopee_json/"
 # path = ""
 path_json = path + "json_ld/"
 windows_file = path_json + "windows.json" # Windows File
