@@ -10,62 +10,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        58.57,
-                        3.27
+                        10.54,
+                        0.05
                     ],
                     [
-                        58.57,
-                        3.43
+                        10.54,
+                        0.21
                     ],
                     [
-                        59.47,
-                        3.43
+                        11.44,
+                        0.21
                     ],
                     [
-                        59.47,
-                        3.27
+                        11.44,
+                        0.05
                     ],
                     [
-                        58.57,
-                        3.27
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R2D1",
-        "type": "Door",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        31.38,
-                        3.27
-                    ],
-                    [
-                        31.38,
-                        3.43
-                    ],
-                    [
-                        32.28,
-                        3.43
-                    ],
-                    [
-                        32.28,
-                        3.27
-                    ],
-                    [
-                        31.38,
-                        3.27
+                        10.54,
+                        0.05
                     ]
                 ]
             }
@@ -86,24 +48,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        35.37,
-                        3.27
+                        45.49,
+                        0.05
                     ],
                     [
-                        35.37,
-                        3.43
+                        45.49,
+                        0.21
                     ],
                     [
-                        36.27,
-                        3.43
+                        46.39,
+                        0.21
                     ],
                     [
-                        36.27,
-                        3.27
+                        46.39,
+                        0.05
                     ],
                     [
-                        35.37,
-                        3.27
+                        45.49,
+                        0.05
                     ]
                 ]
             }
@@ -124,24 +86,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        40.97,
-                        3.27
+                        2.64,
+                        16.44
                     ],
                     [
-                        40.97,
-                        3.43
+                        2.64,
+                        16.6
                     ],
                     [
-                        41.87,
-                        3.43
+                        3.54,
+                        16.6
                     ],
                     [
-                        41.87,
-                        3.27
+                        3.54,
+                        16.44
                     ],
                     [
-                        40.97,
-                        3.27
+                        2.64,
+                        16.44
                     ]
                 ]
             }
@@ -162,24 +124,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        46.54,
-                        3.22
+                        7.48,
+                        16.44
                     ],
                     [
-                        46.54,
-                        3.38
+                        7.48,
+                        16.6
                     ],
                     [
-                        47.44,
-                        3.38
+                        8.38,
+                        16.6
                     ],
                     [
-                        47.44,
-                        3.22
+                        8.38,
+                        16.44
                     ],
                     [
-                        46.54,
-                        3.22
+                        7.48,
+                        16.44
                     ]
                 ]
             }
@@ -200,24 +162,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        52.1,
-                        3.22
+                        11.45,
+                        16.44
                     ],
                     [
-                        52.1,
-                        3.38
+                        11.45,
+                        16.6
                     ],
                     [
-                        53.0,
-                        3.38
+                        12.35,
+                        16.6
                     ],
                     [
-                        53.0,
-                        3.22
+                        12.35,
+                        16.44
                     ],
                     [
-                        52.1,
-                        3.22
+                        11.45,
+                        16.44
                     ]
                 ]
             }
@@ -238,24 +200,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        57.65,
-                        3.22
+                        16.51,
+                        16.44
                     ],
                     [
-                        57.65,
-                        3.38
+                        16.51,
+                        16.6
                     ],
                     [
-                        58.55,
-                        3.38
+                        17.41,
+                        16.6
                     ],
                     [
-                        58.55,
-                        3.22
+                        17.41,
+                        16.44
                     ],
                     [
-                        57.65,
-                        3.22
+                        16.51,
+                        16.44
                     ]
                 ]
             }
@@ -276,24 +238,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        60.75,
-                        3.27
+                        1.39,
+                        18.22
                     ],
                     [
-                        60.75,
-                        3.43
+                        1.39,
+                        18.38
                     ],
                     [
-                        61.65,
-                        3.43
+                        2.29,
+                        18.38
                     ],
                     [
-                        61.65,
-                        3.27
+                        2.29,
+                        18.22
                     ],
                     [
-                        60.75,
-                        3.27
+                        1.39,
+                        18.22
                     ]
                 ]
             }
@@ -314,62 +276,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        46.88,
-                        969.0
+                        14.1,
+                        18.22
                     ],
                     [
-                        47.04,
-                        969.0
+                        14.1,
+                        18.38
                     ],
                     [
-                        47.04,
-                        969.9
+                        15.0,
+                        18.38
                     ],
                     [
-                        46.88,
-                        969.9
+                        15.0,
+                        18.22
                     ],
                     [
-                        46.88,
-                        969.0
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R11D1",
-        "type": "Door",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        1009.81,
-                        5.17
-                    ],
-                    [
-                        1009.81,
-                        5.33
-                    ],
-                    [
-                        1011.31,
-                        5.33
-                    ],
-                    [
-                        1011.31,
-                        5.17
-                    ],
-                    [
-                        1009.81,
-                        5.17
+                        14.1,
+                        18.22
                     ]
                 ]
             }
@@ -390,24 +314,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        510.31,
-                        5.17
+                        18.94,
+                        23.22
                     ],
                     [
-                        510.31,
-                        5.33
+                        19.1,
+                        23.22
                     ],
                     [
-                        511.21,
-                        5.33
+                        19.1,
+                        24.12
                     ],
                     [
-                        511.21,
-                        5.17
+                        18.94,
+                        24.12
                     ],
                     [
-                        510.31,
-                        5.17
+                        18.94,
+                        23.22
                     ]
                 ]
             }
@@ -428,24 +352,62 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        34.08,
-                        194.42
+                        18.94,
+                        26.44
                     ],
                     [
-                        34.24,
-                        194.42
+                        19.1,
+                        26.44
                     ],
                     [
-                        34.24,
-                        195.32
+                        19.1,
+                        27.34
                     ],
                     [
-                        34.08,
-                        195.32
+                        18.94,
+                        27.34
                     ],
                     [
-                        34.08,
-                        194.42
+                        18.94,
+                        26.44
+                    ]
+                ]
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R14D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        18.94,
+                        29.65
+                    ],
+                    [
+                        19.1,
+                        29.65
+                    ],
+                    [
+                        19.1,
+                        30.55
+                    ],
+                    [
+                        18.94,
+                        30.55
+                    ],
+                    [
+                        18.94,
+                        29.65
                     ]
                 ]
             }
@@ -466,24 +428,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        47.32,
-                        5.22
+                        18.94,
+                        33.53
                     ],
                     [
-                        47.32,
-                        5.38
+                        19.1,
+                        33.53
                     ],
                     [
-                        48.22,
-                        5.38
+                        19.1,
+                        34.43
                     ],
                     [
-                        48.22,
-                        5.22
+                        18.94,
+                        34.43
                     ],
                     [
-                        47.32,
-                        5.22
+                        18.94,
+                        33.53
                     ]
                 ]
             }
@@ -504,24 +466,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        42.34,
-                        5.17
+                        18.94,
+                        37.15
                     ],
                     [
-                        42.34,
-                        5.33
+                        19.1,
+                        37.15
                     ],
                     [
-                        43.24,
-                        5.33
+                        19.1,
+                        38.05
                     ],
                     [
-                        43.24,
-                        5.17
+                        18.94,
+                        38.05
                     ],
                     [
-                        42.34,
-                        5.17
+                        18.94,
+                        37.15
                     ]
                 ]
             }
@@ -542,24 +504,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        38.8,
-                        5.17
+                        1.6,
+                        39.15
                     ],
                     [
-                        38.8,
-                        5.33
+                        1.6,
+                        39.31
                     ],
                     [
-                        39.7,
-                        5.33
+                        2.5,
+                        39.31
                     ],
                     [
-                        39.7,
-                        5.17
+                        2.5,
+                        39.15
                     ],
                     [
-                        38.8,
-                        5.17
+                        1.6,
+                        39.15
                     ]
                 ]
             }
@@ -570,7 +532,7 @@
         ]
     },
     {
-        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R18D1",
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R23D1",
         "type": "Door",
         "relativePosition": {
             "type": "Property",
@@ -580,24 +542,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        150.87,
-                        5.17
+                        0.0,
+                        18.02
                     ],
                     [
-                        150.87,
-                        5.33
+                        0.0,
+                        18.18
                     ],
                     [
-                        152.37,
-                        5.33
+                        1.255,
+                        18.18
                     ],
                     [
-                        152.37,
-                        5.17
+                        1.255,
+                        18.02
                     ],
                     [
-                        150.87,
-                        5.17
+                        0.0,
+                        18.02
                     ]
                 ]
             }
@@ -608,7 +570,7 @@
         ]
     },
     {
-        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R19D1",
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R23D2",
         "type": "Door",
         "relativePosition": {
             "type": "Property",
@@ -618,138 +580,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        89.71,
-                        5.17
+                        0.0,
+                        39.13
                     ],
                     [
-                        89.71,
-                        5.33
+                        0.0,
+                        39.29
                     ],
                     [
-                        90.61,
-                        5.33
+                        1.255,
+                        39.29
                     ],
                     [
-                        90.61,
-                        5.17
+                        1.255,
+                        39.13
                     ],
                     [
-                        89.71,
-                        5.17
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R20D1",
-        "type": "Door",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        59.21,
-                        5.2
-                    ],
-                    [
-                        59.21,
-                        5.36
-                    ],
-                    [
-                        60.71,
-                        5.36
-                    ],
-                    [
-                        60.71,
-                        5.2
-                    ],
-                    [
-                        59.21,
-                        5.2
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R21D1",
-        "type": "Door",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        4.38,
-                        15.01
-                    ],
-                    [
-                        4.54,
-                        15.01
-                    ],
-                    [
-                        4.54,
-                        15.91
-                    ],
-                    [
-                        4.38,
-                        15.91
-                    ],
-                    [
-                        4.38,
-                        15.01
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R22D1",
-        "type": "Door",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        12.07,
-                        3.4
-                    ],
-                    [
-                        12.07,
-                        3.56
-                    ],
-                    [
-                        13.57,
-                        3.56
-                    ],
-                    [
-                        13.57,
-                        3.4
-                    ],
-                    [
-                        12.07,
-                        3.4
+                        0.0,
+                        39.13
                     ]
                 ]
             }
@@ -778,11 +626,11 @@
                         3.43
                     ],
                     [
-                        2.04,
+                        1.795,
                         3.43
                     ],
                     [
-                        2.04,
+                        1.795,
                         3.27
                     ],
                     [
@@ -1120,11 +968,11 @@
                         5.33
                     ],
                     [
-                        45.3,
+                        45.055,
                         5.33
                     ],
                     [
-                        45.3,
+                        45.055,
                         5.17
                     ],
                     [
@@ -1310,11 +1158,11 @@
                         5.33
                     ],
                     [
-                        11.61,
+                        11.365,
                         5.33
                     ],
                     [
-                        11.61,
+                        11.365,
                         5.17
                     ],
                     [
@@ -1386,11 +1234,11 @@
                         5.36
                     ],
                     [
-                        2.04,
+                        1.795,
                         5.36
                     ],
                     [
-                        2.04,
+                        1.795,
                         5.2
                     ],
                     [
@@ -1425,11 +1273,11 @@
                     ],
                     [
                         4.54,
-                        5.14
+                        4.895
                     ],
                     [
                         4.38,
-                        5.14
+                        4.895
                     ],
                     [
                         4.38,
@@ -2070,11 +1918,11 @@
                         5.03
                     ],
                     [
-                        11.66,
+                        11.415,
                         5.03
                     ],
                     [
-                        11.66,
+                        11.415,
                         4.87
                     ],
                     [
@@ -2526,11 +2374,11 @@
                         5.1
                     ],
                     [
-                        45.74,
+                        45.495,
                         5.1
                     ],
                     [
-                        45.74,
+                        45.495,
                         4.94
                     ],
                     [
@@ -2754,11 +2602,11 @@
                         5.1
                     ],
                     [
-                        11.79,
+                        11.545,
                         5.1
                     ],
                     [
-                        11.79,
+                        11.545,
                         4.94
                     ],
                     [
@@ -2792,11 +2640,11 @@
                         5.14
                     ],
                     [
-                        8.92,
+                        8.675,
                         5.14
                     ],
                     [
-                        8.92,
+                        8.675,
                         4.98
                     ],
                     [
