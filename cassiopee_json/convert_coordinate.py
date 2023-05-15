@@ -1,6 +1,8 @@
 import json
+import os
 
-path = "/home/iris/cassiop/cassiopee/cassiopee_json/json_hand/"
+path = os.getcwd() + "/cassiopee_json/json_hand/"
+
 coef = 5
 
 def read(filename):
@@ -40,11 +42,11 @@ def add(coordinates_file, floor_file):
     coef = coordinates_json[0]/coordinates_json[1]
 
     coordinates_json = convert(coordinates_json[2:], coef)
-    print(coordinates_json)
-    for i in range(len(coordinates_json)):
-        print(coordinates_json[i])
+    for i in range(min(len(coordinates_json), len(floor_json))):
+
         floor_json[i][5] = coordinates_json[i][0]
         floor_json[i][6] = coordinates_json[i][1]
     write(floor_file, floor_json)
 
+add(path + "coordinates_1.json", path + "floor_1.json")
 add(path + "coordinates_2.json", path + "floor_2.json")

@@ -122,12 +122,13 @@
                 "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R19",
                 "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R20",
                 "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R21",
-                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R22"
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R22",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R23"
             ]
         },
         "numberOfRooms": {
             "type": "Property",
-            "value": 22
+            "value": 23
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Floor",

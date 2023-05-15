@@ -1,271 +1,5 @@
 [
     {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R1W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        -0.15,
-                        141.34
-                    ],
-                    [
-                        0.01,
-                        141.34
-                    ],
-                    [
-                        0.01,
-                        142.28
-                    ],
-                    [
-                        -0.15,
-                        142.28
-                    ],
-                    [
-                        -0.15,
-                        141.34
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R1W2",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        94.22,
-                        -0.15
-                    ],
-                    [
-                        94.22,
-                        0.01
-                    ],
-                    [
-                        96.1,
-                        0.01
-                    ],
-                    [
-                        96.1,
-                        -0.15
-                    ],
-                    [
-                        94.22,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R1W3",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        29.28,
-                        -0.15
-                    ],
-                    [
-                        29.28,
-                        0.01
-                    ],
-                    [
-                        31.16,
-                        0.01
-                    ],
-                    [
-                        31.16,
-                        -0.15
-                    ],
-                    [
-                        29.28,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R2W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        7.83,
-                        -0.15
-                    ],
-                    [
-                        7.83,
-                        0.01
-                    ],
-                    [
-                        8.77,
-                        0.01
-                    ],
-                    [
-                        8.77,
-                        -0.15
-                    ],
-                    [
-                        7.83,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R2W2",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        267.59,
-                        -0.15
-                    ],
-                    [
-                        267.59,
-                        0.01
-                    ],
-                    [
-                        268.53,
-                        0.01
-                    ],
-                    [
-                        268.53,
-                        -0.15
-                    ],
-                    [
-                        267.59,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R3W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        11.82,
-                        -0.15
-                    ],
-                    [
-                        11.82,
-                        0.01
-                    ],
-                    [
-                        13.7,
-                        0.01
-                    ],
-                    [
-                        13.7,
-                        -0.15
-                    ],
-                    [
-                        11.82,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R3W2",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        531.34,
-                        -0.15
-                    ],
-                    [
-                        531.34,
-                        0.01
-                    ],
-                    [
-                        532.28,
-                        0.01
-                    ],
-                    [
-                        532.28,
-                        -0.15
-                    ],
-                    [
-                        531.34,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
         "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R4W1",
         "type": "Window",
         "relativePosition": {
@@ -276,1164 +10,252 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        64.53,
-                        -0.15
-                    ],
-                    [
-                        64.53,
-                        0.01
-                    ],
-                    [
-                        65.47,
-                        0.01
-                    ],
-                    [
-                        65.47,
-                        -0.15
-                    ],
-                    [
-                        64.53,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R4W2",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        454.17,
-                        -0.15
-                    ],
-                    [
-                        454.17,
-                        0.01
-                    ],
-                    [
-                        456.05,
-                        0.01
-                    ],
-                    [
-                        456.05,
-                        -0.15
-                    ],
-                    [
-                        454.17,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R5W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        459.74,
-                        -0.15
-                    ],
-                    [
-                        459.74,
-                        0.01
-                    ],
-                    [
-                        460.68,
-                        0.01
-                    ],
-                    [
-                        460.68,
-                        -0.15
-                    ],
-                    [
-                        459.74,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R5W2",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        129.31,
-                        -0.15
-                    ],
-                    [
-                        129.31,
-                        0.01
-                    ],
-                    [
-                        131.19,
-                        0.01
-                    ],
-                    [
-                        131.19,
-                        -0.15
-                    ],
-                    [
-                        129.31,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R6W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        406.73,
-                        -0.15
-                    ],
-                    [
-                        406.73,
-                        0.01
-                    ],
-                    [
-                        407.67,
-                        0.01
-                    ],
-                    [
-                        407.67,
-                        -0.15
-                    ],
-                    [
-                        406.73,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R6W2",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        87.76,
-                        -0.15
-                    ],
-                    [
-                        87.76,
-                        0.01
-                    ],
-                    [
-                        89.64,
-                        0.01
-                    ],
-                    [
-                        89.64,
-                        -0.15
-                    ],
-                    [
-                        87.76,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R8W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        344.07,
-                        -0.15
-                    ],
-                    [
-                        344.07,
-                        0.01
-                    ],
-                    [
-                        345.95,
-                        0.01
-                    ],
-                    [
-                        345.95,
-                        -0.15
-                    ],
-                    [
-                        344.07,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R9W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        65.44,
-                        -0.15
-                    ],
-                    [
-                        65.44,
-                        0.01
-                    ],
-                    [
-                        66.38,
-                        0.01
-                    ],
-                    [
-                        66.38,
-                        -0.15
-                    ],
-                    [
-                        65.44,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R9W2",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        136.11,
-                        -0.15
-                    ],
-                    [
-                        136.11,
-                        0.01
-                    ],
-                    [
-                        137.05,
-                        0.01
-                    ],
-                    [
-                        137.05,
-                        -0.15
-                    ],
-                    [
-                        136.11,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R10W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        47.15,
-                        -0.15
-                    ],
-                    [
-                        47.15,
-                        0.01
-                    ],
-                    [
-                        48.09,
-                        0.01
-                    ],
-                    [
-                        48.09,
-                        -0.15
-                    ],
-                    [
-                        47.15,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R10W2",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        318.88,
-                        -0.15
-                    ],
-                    [
-                        318.88,
-                        0.01
-                    ],
-                    [
-                        319.82,
-                        0.01
-                    ],
-                    [
-                        319.82,
-                        -0.15
-                    ],
-                    [
-                        318.88,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R10W3",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        306.79,
-                        -0.15
-                    ],
-                    [
-                        306.79,
-                        0.01
-                    ],
-                    [
-                        308.67,
-                        0.01
-                    ],
-                    [
-                        308.67,
-                        -0.15
-                    ],
-                    [
-                        306.79,
-                        -0.15
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R10W4",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        55.95,
-                        779.91
-                    ],
-                    [
-                        56.11,
-                        779.91
-                    ],
-                    [
-                        56.11,
-                        780.85
-                    ],
-                    [
-                        55.95,
-                        780.85
-                    ],
-                    [
-                        55.95,
-                        779.91
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R10W5",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        55.95,
-                        141.34
-                    ],
-                    [
-                        56.11,
-                        141.34
-                    ],
-                    [
-                        56.11,
-                        142.28
-                    ],
-                    [
-                        55.95,
-                        142.28
-                    ],
-                    [
-                        55.95,
-                        141.34
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R10W6",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        897.61,
-                        9.13
-                    ],
-                    [
-                        897.61,
-                        9.29
-                    ],
-                    [
-                        898.55,
-                        9.29
-                    ],
-                    [
-                        898.55,
-                        9.13
-                    ],
-                    [
-                        897.61,
-                        9.13
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R10W7",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        141.25,
-                        9.13
-                    ],
-                    [
-                        141.25,
-                        9.29
-                    ],
-                    [
-                        142.19,
-                        9.29
-                    ],
-                    [
-                        142.19,
-                        9.13
-                    ],
-                    [
-                        141.25,
-                        9.13
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R10W8",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        401.65,
-                        9.13
-                    ],
-                    [
-                        401.65,
-                        9.29
-                    ],
-                    [
-                        402.59,
-                        9.29
-                    ],
-                    [
-                        402.59,
-                        9.13
-                    ],
-                    [
-                        401.65,
-                        9.13
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R10W9",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        779.83,
-                        9.13
-                    ],
-                    [
-                        779.83,
-                        9.29
-                    ],
-                    [
-                        780.77,
-                        9.29
-                    ],
-                    [
-                        780.77,
-                        9.13
-                    ],
-                    [
-                        779.83,
-                        9.13
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R12W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        817.82,
-                        9.13
-                    ],
-                    [
-                        817.82,
-                        9.29
-                    ],
-                    [
-                        818.76,
-                        9.29
-                    ],
-                    [
-                        818.76,
-                        9.13
-                    ],
-                    [
-                        817.82,
-                        9.13
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R14W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        335.56,
-                        9.13
-                    ],
-                    [
-                        335.56,
-                        9.29
-                    ],
-                    [
-                        336.5,
-                        9.29
-                    ],
-                    [
-                        336.5,
-                        9.13
-                    ],
-                    [
-                        335.56,
-                        9.13
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R15W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        531.83,
-                        9.13
-                    ],
-                    [
-                        531.83,
-                        9.29
-                    ],
-                    [
-                        532.77,
-                        9.29
-                    ],
-                    [
-                        532.77,
-                        9.13
-                    ],
-                    [
-                        531.83,
-                        9.13
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R15W2",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        117.99,
-                        9.13
-                    ],
-                    [
-                        117.99,
-                        9.29
-                    ],
-                    [
-                        118.93,
-                        9.29
-                    ],
-                    [
-                        118.93,
-                        9.13
-                    ],
-                    [
-                        117.99,
-                        9.13
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R16W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        526.85,
-                        9.13
-                    ],
-                    [
-                        526.85,
-                        9.29
-                    ],
-                    [
-                        527.79,
-                        9.29
-                    ],
-                    [
-                        527.79,
-                        9.13
-                    ],
-                    [
-                        526.85,
-                        9.13
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R16W2",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        491.19,
-                        9.13
-                    ],
-                    [
-                        491.19,
-                        9.29
-                    ],
-                    [
-                        492.13,
-                        9.29
-                    ],
-                    [
-                        492.13,
-                        9.13
-                    ],
-                    [
-                        491.19,
-                        9.13
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R17W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        15.75,
-                        9.13
-                    ],
-                    [
-                        15.75,
-                        9.29
-                    ],
-                    [
-                        16.69,
-                        9.29
-                    ],
-                    [
-                        16.69,
-                        9.13
-                    ],
-                    [
-                        15.75,
-                        9.13
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R17W2",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        322.12,
-                        9.13
-                    ],
-                    [
-                        322.12,
-                        9.29
-                    ],
-                    [
-                        323.06,
-                        9.29
-                    ],
-                    [
-                        323.06,
-                        9.13
-                    ],
-                    [
-                        322.12,
-                        9.13
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R20W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        224.1,
-                        5.2
-                    ],
-                    [
-                        224.1,
-                        5.36
-                    ],
-                    [
-                        225.04,
-                        5.36
-                    ],
-                    [
-                        225.04,
-                        5.2
-                    ],
-                    [
-                        224.1,
-                        5.2
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R20W2",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        23.55,
-                        9.19
-                    ],
-                    [
-                        23.55,
-                        9.35
-                    ],
-                    [
-                        24.49,
-                        9.35
-                    ],
-                    [
-                        24.49,
-                        9.19
-                    ],
-                    [
-                        23.55,
-                        9.19
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R20W3",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        259.76,
-                        9.19
-                    ],
-                    [
-                        259.76,
-                        9.35
-                    ],
-                    [
-                        260.7,
-                        9.35
-                    ],
-                    [
-                        260.7,
-                        9.19
-                    ],
-                    [
-                        259.76,
-                        9.19
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R20W4",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        650.03,
-                        9.19
-                    ],
-                    [
-                        650.03,
-                        9.35
-                    ],
-                    [
-                        650.97,
-                        9.35
-                    ],
-                    [
-                        650.97,
-                        9.19
-                    ],
-                    [
-                        650.03,
-                        9.19
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R21W1",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
                         -0.15,
-                        74.85
+                        14.62
                     ],
                     [
                         0.01,
-                        74.85
+                        14.62
                     ],
                     [
                         0.01,
-                        75.79
+                        15.56
                     ],
                     [
                         -0.15,
-                        75.79
+                        15.56
                     ],
                     [
                         -0.15,
-                        74.85
+                        14.62
+                    ]
+                ]
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R22W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        0.22,
+                        40.92
+                    ],
+                    [
+                        0.22,
+                        41.08
+                    ],
+                    [
+                        1.16,
+                        41.08
+                    ],
+                    [
+                        1.16,
+                        40.92
+                    ],
+                    [
+                        0.22,
+                        40.92
+                    ]
+                ]
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R22W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        5.18,
+                        40.92
+                    ],
+                    [
+                        5.18,
+                        41.08
+                    ],
+                    [
+                        6.12,
+                        41.08
+                    ],
+                    [
+                        6.12,
+                        40.92
+                    ],
+                    [
+                        5.18,
+                        40.92
+                    ]
+                ]
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R22W3",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        11.03,
+                        40.92
+                    ],
+                    [
+                        11.03,
+                        41.08
+                    ],
+                    [
+                        11.97,
+                        41.08
+                    ],
+                    [
+                        11.97,
+                        40.92
+                    ],
+                    [
+                        11.03,
+                        40.92
+                    ]
+                ]
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R23W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        -0.15,
+                        20.81
+                    ],
+                    [
+                        0.01,
+                        20.81
+                    ],
+                    [
+                        0.01,
+                        21.75
+                    ],
+                    [
+                        -0.15,
+                        21.75
+                    ],
+                    [
+                        -0.15,
+                        20.81
+                    ]
+                ]
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R23W2",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        -0.15,
+                        26.99
+                    ],
+                    [
+                        0.01,
+                        26.99
+                    ],
+                    [
+                        0.01,
+                        27.93
+                    ],
+                    [
+                        -0.15,
+                        27.93
+                    ],
+                    [
+                        -0.15,
+                        26.99
+                    ]
+                ]
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R23W3",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        -0.15,
+                        34.83
+                    ],
+                    [
+                        0.01,
+                        34.83
+                    ],
+                    [
+                        0.01,
+                        35.77
+                    ],
+                    [
+                        -0.15,
+                        35.77
+                    ],
+                    [
+                        -0.15,
+                        34.83
                     ]
                 ]
             }

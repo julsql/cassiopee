@@ -2,10 +2,10 @@
 import json
 import re
 import matplotlib.pyplot as plt
+import os
 
-path = "/home/iris/cassiop/cassiopee/cassiopee_json/"
-path = "/Users/juliettedebono/Documents/TSP/Cassioppée/cassiopee/cassiopee_json/"
-# path = ""
+path = os.getcwd() + "/cassiopee_json/"
+
 path_json = path + "json_ld/"
 windows_file = path_json + "windows.json" # Windows File
 doors_file = path_json + "doors.json" # Doors File
@@ -15,7 +15,7 @@ building_file = path_json + "building.json" # Building File
 templates_file = path + "templates.json" # JSON Models File
 
 wind_size = [94, 94*2, 288]
-door_size = [90, 150]
+door_size = [90, 125.5]
 
 id_model = "urn:ngsi-ld:{0}:SmartCitiesdomain:SmartBuildings:{1}" # model of an id
 
@@ -137,8 +137,7 @@ def coordinates_obj(coor_obj, coor_room, obj):
     """
     epaisseur = 15
     err = 1
-    print(coor_obj)
-    print(coor_obj[0])
+    
     a = int(coor_obj[0])
     type = int(coor_obj[1])
     wall = int(coor_obj[2])
@@ -212,7 +211,6 @@ def add_room(number : int, typ : str , coor, windows, doors, floor : int):
     room_model["description"]["value"] = typ
     room_model["onFloor"]["object"] = id_floor
     room_model["relativePosition"]["value"]["coordinates"] = coordinates_room(coor)
-    print(coor)
 
     # Add room id in the building file
     building_json = read(building_file) # Get JSON building template
@@ -238,7 +236,6 @@ def add_room(number : int, typ : str , coor, windows, doors, floor : int):
         id = id_model.format("Window", "B1F{}R{}W{}".format(floor, number, i + 1)) # Generate id
         id_windows.append(id) # Add id in windows list
         window_model["id"] = id # Give id
-        print(window)
         coor_wind = coordinates_obj(window, coor, "window")
         window_model["relativePosition"]["value"]["coordinates"] = coor_wind
         add(windows_file, window_model) # Add window in the windows JSON file
@@ -250,7 +247,6 @@ def add_room(number : int, typ : str , coor, windows, doors, floor : int):
         id = id_model.format("Door", "B1F{}R{}D{}".format(floor, number, i + 1)) # Generate id
         id_doors.append(id) # Add id in windows list
         door_model["id"] = id # Give id
-        print(door)
         coor_door = coordinates_obj(door, coor, "door")
         door_model["relativePosition"]["value"]["coordinates"] = coor_door
         add(doors_file, door_model) # Add window in the windows JSON file
