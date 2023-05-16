@@ -48,23 +48,23 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        0.22,
+                        0.44,
                         40.92
                     ],
                     [
-                        0.22,
+                        0.44,
                         41.08
                     ],
                     [
-                        1.16,
+                        1.38,
                         41.08
                     ],
                     [
-                        1.16,
+                        1.38,
                         40.92
                     ],
                     [
-                        0.22,
+                        0.44,
                         40.92
                     ]
                 ]
@@ -86,23 +86,23 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        5.18,
+                        8.71,
                         40.92
                     ],
                     [
-                        5.18,
+                        8.71,
                         41.08
                     ],
                     [
-                        6.12,
+                        9.65,
                         41.08
                     ],
                     [
-                        6.12,
+                        9.65,
                         40.92
                     ],
                     [
-                        5.18,
+                        8.71,
                         40.92
                     ]
                 ]
@@ -124,23 +124,23 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        11.03,
+                        18.42,
                         40.92
                     ],
                     [
-                        11.03,
+                        18.42,
                         41.08
                     ],
                     [
-                        11.97,
+                        19.36,
                         41.08
                     ],
                     [
-                        11.97,
+                        19.36,
                         40.92
                     ],
                     [
-                        11.03,
+                        18.42,
                         40.92
                     ]
                 ]
@@ -256,6 +256,44 @@
                     [
                         -0.15,
                         34.83
+                    ]
+                ]
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R42W1",
+        "type": "Window",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        54.19,
+                        40.15
+                    ],
+                    [
+                        54.19,
+                        40.31
+                    ],
+                    [
+                        55.13,
+                        40.31
+                    ],
+                    [
+                        55.13,
+                        40.15
+                    ],
+                    [
+                        54.19,
+                        40.15
                     ]
                 ]
             }
