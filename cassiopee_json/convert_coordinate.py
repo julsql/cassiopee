@@ -49,4 +49,4 @@ def add(coordinates_file, floor_file):
     write(floor_file, floor_json)
 
 add(path + "coordinates_1.json", path + "floor_1.json")
-add(path + "coordinates_2.json", path + "floor_2.json")
+#add(path + "coordinates_2.json", path + "floor_2.json")

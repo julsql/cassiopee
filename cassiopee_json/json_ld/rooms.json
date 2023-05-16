@@ -1332,10 +1332,10 @@
             "type": "Relationship",
             "object": [
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R5D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R7D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R23D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R4D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R6D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R7D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R6D1"
             ]
         },
         "windowsInRoom": {
@@ -1403,11 +1403,11 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R12D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R16D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R15D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R13D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R14D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R12D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R14D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R13D1"
             ]
         },
         "windowsInRoom": {
@@ -1566,6 +1566,1691 @@
         "numberOfWindows": {
             "type": "Property",
             "value": 3
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R24",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 24"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Escalier 5"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        20.68,
+                        32.49
+                    ],
+                    [
+                        21.68,
+                        32.49
+                    ],
+                    [
+                        21.68,
+                        40.87
+                    ],
+                    [
+                        20.68,
+                        40.87
+                    ],
+                    [
+                        20.68,
+                        32.49
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R25",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 25"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Espace"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        21.98,
+                        32.49
+                    ],
+                    [
+                        36.01,
+                        32.49
+                    ],
+                    [
+                        36.01,
+                        40.87
+                    ],
+                    [
+                        21.98,
+                        40.87
+                    ],
+                    [
+                        21.98,
+                        32.49
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R25D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 1
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R26",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 26"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Espace vert"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        20.77,
+                        16.1
+                    ],
+                    [
+                        33.83,
+                        16.1
+                    ],
+                    [
+                        33.83,
+                        28.86
+                    ],
+                    [
+                        20.77,
+                        28.86
+                    ],
+                    [
+                        20.77,
+                        16.1
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R27",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 27"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Grand couloir"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R28",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 28"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Si\u00e8ges Amphi"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        38.01,
+                        17.92
+                    ],
+                    [
+                        56.04,
+                        17.92
+                    ],
+                    [
+                        56.04,
+                        33.63
+                    ],
+                    [
+                        38.01,
+                        33.63
+                    ],
+                    [
+                        38.01,
+                        17.92
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R29",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 29"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Sc\u00e8ne Amphi"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        40.81,
+                        13.41
+                    ],
+                    [
+                        53.49,
+                        13.41
+                    ],
+                    [
+                        53.49,
+                        17.72
+                    ],
+                    [
+                        40.81,
+                        17.72
+                    ],
+                    [
+                        40.81,
+                        13.41
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R30",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 30"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Espace Amphi"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        54.5,
+                        13.41
+                    ],
+                    [
+                        56.04,
+                        13.41
+                    ],
+                    [
+                        56.04,
+                        17.72
+                    ],
+                    [
+                        54.5,
+                        17.72
+                    ],
+                    [
+                        54.5,
+                        13.41
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R31",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 31"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Local gradateur"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        38.01,
+                        13.41
+                    ],
+                    [
+                        39.71,
+                        13.41
+                    ],
+                    [
+                        39.71,
+                        17.72
+                    ],
+                    [
+                        38.01,
+                        17.72
+                    ],
+                    [
+                        38.01,
+                        13.41
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R31D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 1
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R32",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 32"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Espace Amphi"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        36.12,
+                        13.41
+                    ],
+                    [
+                        37.88,
+                        13.41
+                    ],
+                    [
+                        37.88,
+                        17.72
+                    ],
+                    [
+                        36.12,
+                        17.72
+                    ],
+                    [
+                        36.12,
+                        13.41
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R32D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R31D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 2
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R33",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 33"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Couloir Amphi"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        36.12,
+                        17.92
+                    ],
+                    [
+                        37.88,
+                        17.92
+                    ],
+                    [
+                        37.88,
+                        35.86
+                    ],
+                    [
+                        36.12,
+                        35.86
+                    ],
+                    [
+                        36.12,
+                        17.92
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R34",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 34"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Couloir Amphi"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        54.51,
+                        33.63
+                    ],
+                    [
+                        56.05,
+                        33.63
+                    ],
+                    [
+                        56.05,
+                        36.86
+                    ],
+                    [
+                        54.51,
+                        36.86
+                    ],
+                    [
+                        54.51,
+                        33.63
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R34D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 1
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R35",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 35"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Espace Traduction"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        53.71,
+                        33.63
+                    ],
+                    [
+                        54.37,
+                        33.63
+                    ],
+                    [
+                        54.37,
+                        36.86
+                    ],
+                    [
+                        53.71,
+                        36.86
+                    ],
+                    [
+                        53.71,
+                        33.63
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R36",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 36"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Traduction"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        51.77,
+                        33.63
+                    ],
+                    [
+                        53.57,
+                        33.63
+                    ],
+                    [
+                        53.57,
+                        36.86
+                    ],
+                    [
+                        51.77,
+                        36.86
+                    ],
+                    [
+                        51.77,
+                        33.63
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R36D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 1
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R37",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 37"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Traduction"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        49.67,
+                        33.63
+                    ],
+                    [
+                        51.64,
+                        33.63
+                    ],
+                    [
+                        51.64,
+                        36.86
+                    ],
+                    [
+                        49.67,
+                        36.86
+                    ],
+                    [
+                        49.67,
+                        33.63
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R37D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 1
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R38",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 38"
+        },
+        "description": {
+            "type": "Property",
+            "value": "R\u00e9gie"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        44.48,
+                        33.63
+                    ],
+                    [
+                        49.53,
+                        33.63
+                    ],
+                    [
+                        49.53,
+                        36.86
+                    ],
+                    [
+                        44.48,
+                        36.86
+                    ],
+                    [
+                        44.48,
+                        33.63
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 1
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R39",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 39"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Traduction"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        42.38,
+                        33.63
+                    ],
+                    [
+                        44.35,
+                        33.63
+                    ],
+                    [
+                        44.35,
+                        36.86
+                    ],
+                    [
+                        42.38,
+                        36.86
+                    ],
+                    [
+                        42.38,
+                        33.63
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R39D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 1
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R40",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 40"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Traduction"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        40.44,
+                        33.63
+                    ],
+                    [
+                        42.24,
+                        33.63
+                    ],
+                    [
+                        42.24,
+                        36.86
+                    ],
+                    [
+                        40.44,
+                        36.86
+                    ],
+                    [
+                        40.44,
+                        33.63
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R40D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 1
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R41",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 41"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Espace Traduction"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        39.65,
+                        33.63
+                    ],
+                    [
+                        40.31,
+                        33.63
+                    ],
+                    [
+                        40.31,
+                        36.86
+                    ],
+                    [
+                        39.65,
+                        36.86
+                    ],
+                    [
+                        39.65,
+                        33.63
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R42",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 42"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Circulation 7"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        45.26,
+                        36.96
+                    ],
+                    [
+                        56.01,
+                        36.96
+                    ],
+                    [
+                        56.01,
+                        40.8
+                    ],
+                    [
+                        45.26,
+                        40.8
+                    ],
+                    [
+                        45.26,
+                        36.96
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R34D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R37D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R36D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F1R42W1"
+            ]
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 4
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 1
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R43",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 43"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Espace"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        36.32,
+                        36.96
+                    ],
+                    [
+                        45.22,
+                        36.96
+                    ],
+                    [
+                        45.22,
+                        38.76
+                    ],
+                    [
+                        36.32,
+                        38.76
+                    ],
+                    [
+                        36.32,
+                        36.96
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R40D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R48D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R39D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 4
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R44",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 44"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Escalier 5"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        39.58,
+                        38.96
+                    ],
+                    [
+                        45.04,
+                        38.96
+                    ],
+                    [
+                        45.04,
+                        40.79
+                    ],
+                    [
+                        39.58,
+                        40.79
+                    ],
+                    [
+                        39.58,
+                        38.96
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R45",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 45"
+        },
+        "description": {
+            "type": "Property",
+            "value": "LT"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        36.32,
+                        38.96
+                    ],
+                    [
+                        39.38,
+                        38.96
+                    ],
+                    [
+                        39.38,
+                        40.79
+                    ],
+                    [
+                        36.32,
+                        40.79
+                    ],
+                    [
+                        36.32,
+                        38.96
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R45D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 1
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R46",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 46"
+        },
+        "description": {
+            "type": "Property",
+            "value": "CFO"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        36.32,
+                        36.03
+                    ],
+                    [
+                        37.88,
+                        36.03
+                    ],
+                    [
+                        37.88,
+                        36.69
+                    ],
+                    [
+                        36.32,
+                        36.69
+                    ],
+                    [
+                        36.32,
+                        36.03
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R47",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 47"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Espace"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R48",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 48"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Espace"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        38.01,
+                        33.63
+                    ],
+                    [
+                        39.54,
+                        33.63
+                    ],
+                    [
+                        39.54,
+                        36.86
+                    ],
+                    [
+                        38.01,
+                        36.86
+                    ],
+                    [
+                        38.01,
+                        33.63
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R48D1"
+            ]
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 1
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
@@ -2536,9 +4221,7 @@
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R13D1"
-            ]
+            "object": []
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -2548,7 +4231,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "numberOfWindows": {
             "type": "Property",
@@ -3098,10 +4781,7 @@
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R10D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R21D1"
-            ]
+            "object": []
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -3109,7 +4789,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 2
+            "value": 0
         },
         "numberOfWindows": {
             "type": "Property",
@@ -3247,8 +4927,7 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R2D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R1D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R2D1"
             ]
         },
         "windowsInRoom": {
@@ -3261,7 +4940,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 2
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -4093,9 +5772,7 @@
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R13D1"
-            ]
+            "object": []
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -4105,7 +5782,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "numberOfWindows": {
             "type": "Property",
@@ -4444,21 +6121,7 @@
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R18D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R11D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R4D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R16D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R1D2",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R9D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R2D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R8D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R3D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R15D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R10D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R7D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F3R17D1"
-            ]
+            "object": []
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -4466,7 +6129,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 13
+            "value": 0
         },
         "numberOfWindows": {
             "type": "Property",
@@ -4607,8 +6270,7 @@
             "object": [
                 "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R2W1",
                 "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R2W2",
-                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R2W3",
-                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R1W5"
+                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F4R2W3"
             ]
         },
         "numberOfDoors": {
@@ -4617,7 +6279,7 @@
         },
         "numberOfWindows": {
             "type": "Property",
-            "value": 4
+            "value": 3
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
@@ -4672,8 +6334,7 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R3D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R2D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R3D1"
             ]
         },
         "windowsInRoom": {
@@ -4682,7 +6343,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 2
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -5515,9 +7176,7 @@
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R14D1"
-            ]
+            "object": []
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -5527,7 +7186,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "numberOfWindows": {
             "type": "Property",
@@ -6009,15 +7668,7 @@
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R5D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R4D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R8D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R3D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R10D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R1D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F4R9D1"
-            ]
+            "object": []
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -6025,7 +7676,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 7
+            "value": 0
         },
         "numberOfWindows": {
             "type": "Property",
