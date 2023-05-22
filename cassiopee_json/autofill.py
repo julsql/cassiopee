@@ -137,7 +137,6 @@ def coordinates_obj(coor_obj, coor_room, obj):
     """
     epaisseur = 15
     err = 1
-    
     a = int(coor_obj[0])
     type = int(coor_obj[1])
     wall = int(coor_obj[2])
@@ -382,7 +381,7 @@ def verify_coordinates():
         afficher(affichage, "Étage {}".format(floor))
         return rooms, winds, doors
     
-    for flr in range(1, 3):
+    for flr in range(2, 3):
 
         rooms, winds, doors = get_all_rectangles(flr)
         overlap = check_overlap_all(rooms)
