@@ -276,13 +276,18 @@ def verify_coordinates():
         fig, ax = plt.subplots()
 
         for key1, rect1 in rectangles.items():
+            color = "gray"
+            if "W" in key1:
+                color = "blue"
+            elif "D" in key1:
+                color = "red"
 
             try:
                 x = [rect1[i][0] for i in range(5)]
                 y = [-rect1[i][1] for i in range(5)]
 
                 # Ajout des rectangles à l'axe
-                ax.plot(x, y)#, label=key1)
+                ax.plot(x, y, color=color)#, label=key1)
             except:
                 None
 
@@ -377,7 +382,7 @@ def verify_coordinates():
         afficher(affichage, "Étage {}".format(floor))
         return rooms, winds, doors
     
-    for flr in range(1, 2):
+    for flr in range(1, 3):
 
         rooms, winds, doors = get_all_rectangles(flr)
         overlap = check_overlap_all(rooms)

@@ -1331,11 +1331,11 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R5D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R7D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R23D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R4D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R6D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R5D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R23D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R6D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R7D1"
             ]
         },
         "windowsInRoom": {
@@ -1404,10 +1404,10 @@
             "type": "Relationship",
             "object": [
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R16D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R13D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R15D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R12D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R14D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R13D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R12D1"
             ]
         },
         "windowsInRoom": {
@@ -2827,9 +2827,9 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R34D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R37D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R36D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R37D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R34D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1"
             ]
         },
@@ -2900,9 +2900,9 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R40D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R48D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R40D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R39D1"
             ]
         },
@@ -4221,7 +4221,9 @@
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": []
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R13D1"
+            ]
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -4231,7 +4233,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 0
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -4781,7 +4783,10 @@
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": []
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R21D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R10D1"
+            ]
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -4789,7 +4794,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 0
+            "value": 2
         },
         "numberOfWindows": {
             "type": "Property",
