@@ -15,7 +15,8 @@ building_file = path_json + "building.json" # Building File
 templates_file = path + "templates.json" # JSON Models File
 
 wind_size = [94, 94*2, 288]
-door_size = [90, 125.5]
+door_size = [90, 125.5, 154]
+epaisseur = 15
 
 id_model = "urn:ngsi-ld:{0}:SmartCitiesdomain:SmartBuildings:{1}" # model of an id
 
@@ -135,7 +136,6 @@ def coordinates_obj(coor_obj, coor_room, obj):
     coor_room : [(x, y), length, width] -> 1st point, length, width
     return coordinates of the object
     """
-    epaisseur = 15
     err = 1
     a = int(coor_obj[0])
     type = int(coor_obj[1])
@@ -463,17 +463,33 @@ def additional_doors(filename):
     add_door = read(filename)
     doors = read(doors_file)
     rooms = read(rooms_file)
+    door_template = read(templates_file)["doors"]
     for door in add_door:
-        doors.append(door)
-        # Utilisation des expressions régulières pour extraire la valeur
-        room_nb = re.search(r":([^:]+)D", door['id']).group(1)
+        id_room = id_model.format("Room", f"B1F{door[0]}R{door[1]}")
+        id_door = id_model.format("Door", f"B1F{door[0]}R{door[1]}D1")
+        door_model = door_template
+        door_model['id'] =  id_door
+        2828.4, 366
+        a = door[2][0]
+        b = door[2][1]
+        l = door_size[door[3]]
+        
+        door_model['relativePosition']['value']['coordinates'] = [
+            [a/100, b/100],
+            [int(a+epaisseur)/100, b/100],
+            [int(a+epaisseur)/100, int(b+l)/100],
+            [a/100, int(b+l)/100],
+            [a/100, b/100],
+            ]
 
-        id_room = id_model.format("Room", room_nb)
-        print(id_room)
-        for room in rooms:
-            if room['id'] == id_room:
-                room['DoorsInRoom']['object'].append(door['id'])
-                room['numberOfDoors']["value"] += 1
+        doors.append(door_model)
+
+        for i in range(len(rooms)):
+            if rooms[i]['id'] == id_room:
+                print(id_room)
+                rooms[i]['DoorsInRoom']['object'].append(door_model['id'])
+                rooms[i]['numberOfDoors']["value"] += 1
+
     write(doors_file, doors)
     write(rooms_file, rooms)
 
