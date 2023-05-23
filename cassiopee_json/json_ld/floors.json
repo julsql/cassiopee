@@ -249,12 +249,14 @@
                 "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R16",
                 "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R17",
                 "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R18",
-                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R19"
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R19",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R20",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R21"
             ]
         },
         "numberOfRooms": {
             "type": "Property",
-            "value": 19
+            "value": 21
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Floor",
@@ -300,12 +302,14 @@
                 "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R19",
                 "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R20",
                 "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R21",
-                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R22"
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R22",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R23",
+                "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R24"
             ]
         },
         "numberOfRooms": {
             "type": "Property",
-            "value": 22
+            "value": 24
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Floor",

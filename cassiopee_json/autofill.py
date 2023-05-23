@@ -4,7 +4,7 @@ import re
 import matplotlib.pyplot as plt
 import os
 
-path = os.getcwd() + "/cassiopee_json/"
+path = os.getcwd() + "/"
 
 path_json = path + "json_ld/"
 windows_file = path_json + "windows.json" # Windows File
@@ -198,7 +198,7 @@ def add_room(number : int, typ : str , coor, windows, doors, floor : int):
     typ : room type (ex: bureau)
     coor : [(), length, width] (longueur->length largeur->width) : Room coordinates
     windows : windows charac for each window
-    doors : doors charac for each winddoorow"""
+    doors : doors charac for each door"""
 
     id_floor = id_model.format("Floor", "B1F{}".format(floor))
 
@@ -381,7 +381,7 @@ def verify_coordinates():
         afficher(affichage, "Étage {}".format(floor))
         return rooms, winds, doors
     
-    for flr in range(2, 3):
+    for flr in range(2, 5):
 
         rooms, winds, doors = get_all_rectangles(flr)
         overlap = check_overlap_all(rooms)
@@ -459,27 +459,25 @@ def add_relations(relation_1, relation_2):
         write(rooms_file, rooms_json) # Write in the JSON rooms file
     return None
 
+def additional_doors(filename):
+    add_door = read(filename)
+    doors = read(doors_file)
+    rooms = read(rooms_file)
+    for door in add_door:
+        doors.append(door)
+        # Utilisation des expressions régulières pour extraire la valeur
+        room_nb = re.search(r":([^:]+)D", door['id']).group(1)
 
-"""
-def add_relations_floor(filename):
-    "Add the relations from a file
-    relation_1 : room
-    relation_2 : door/window"
-    with open(filename, 'r') as f:
-        # Read a file txt floor relations
-        f.readline()
-        line = f.readline().strip("\n")
-        while line != "":
-            # Get the line values
-            values = line.split(" ")
-            relation_1 = values[0]
-            relation_2 = values[1]
-            # Add the relations the the JSON files
-            add_relations(relation_1, relation_2)
-            line = f.readline().strip("\n")
-    print("les relations {} ont bien été ajouté".format(filename))
-    return None
-"""
+        id_room = id_model.format("Room", room_nb)
+        print(id_room)
+        for room in rooms:
+            if room['id'] == id_room:
+                room['DoorsInRoom']['object'].append(door['id'])
+                room['numberOfDoors']["value"] += 1
+    write(doors_file, doors)
+    write(rooms_file, rooms)
+
+
 
 initialize() # Empty JSON files
 
@@ -488,6 +486,9 @@ add_floor(path + "json_hand/floor_1.json", 1)
 add_floor(path + "json_hand/floor_2.json", 2)
 add_floor(path + "json_hand/floor_3.json", 3)
 add_floor(path + "json_hand/floor_4.json", 4)
+
+
+additional_doors(path + "json_hand/doors.json")
 
 print()
 verify_coordinates() # Check if rooms don't overlap

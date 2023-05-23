@@ -1341,23 +1341,23 @@
                 "coordinates": [
                     [
                         46.88,
-                        3.54
+                        3.57
                     ],
                     [
                         47.04,
-                        3.54
+                        3.57
                     ],
                     [
                         47.04,
-                        4.44
+                        4.47
                     ],
                     [
                         46.88,
-                        4.44
+                        4.47
                     ],
                     [
                         46.88,
-                        3.54
+                        3.57
                     ]
                 ]
             }
@@ -1395,6 +1395,44 @@
                     ],
                     [
                         43.8,
+                        5.17
+                    ]
+                ]
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R12D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        39.36,
+                        5.17
+                    ],
+                    [
+                        39.36,
+                        5.33
+                    ],
+                    [
+                        40.26,
+                        5.33
+                    ],
+                    [
+                        40.26,
+                        5.17
+                    ],
+                    [
+                        39.36,
                         5.17
                     ]
                 ]
@@ -3068,6 +3106,44 @@
                     [
                         7.42,
                         4.98
+                    ]
+                ]
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F2R22D1",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        28.284,
+                        3.66
+                    ],
+                    [
+                        28.434,
+                        3.66
+                    ],
+                    [
+                        28.434,
+                        5.015
+                    ],
+                    [
+                        28.284,
+                        5.015
+                    ],
+                    [
+                        28.284,
+                        3.66
                     ]
                 ]
             }
