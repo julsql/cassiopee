@@ -463,10 +463,15 @@ def additional_doors(filename):
     add_door = read(filename)
     doors = read(doors_file)
     rooms = read(rooms_file)
+    les_rooms = []
     for door in add_door:
         door_template = read(templates_file)["doors"]
         id_room = id_model.format("Room", f"B1F{door[0]}R{door[1]}")
-        id_door = id_model.format("Door", f"B1F{door[0]}R{door[1]}D1")
+        if id_room in les_rooms:
+            id_door = id_model.format("Door", f"B1F{door[0]}R{door[1]}D11")
+        else:
+            id_door = id_model.format("Door", f"B1F{door[0]}R{door[1]}D10")
+            les_rooms.append(id_room)
         door_model = door_template
         door_model['id'] =  id_door
         a = door[2][0]
