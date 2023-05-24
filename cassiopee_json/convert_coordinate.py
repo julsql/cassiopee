@@ -1,7 +1,7 @@
 import json
 import os
 
-path = os.getcwd() + "/cassiopee_json/json_hand/"
+path = os.getcwd() + "/json_hand/"
 
 coef = 5
 

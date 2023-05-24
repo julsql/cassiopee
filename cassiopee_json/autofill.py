@@ -463,24 +463,32 @@ def additional_doors(filename):
     add_door = read(filename)
     doors = read(doors_file)
     rooms = read(rooms_file)
-    door_template = read(templates_file)["doors"]
     for door in add_door:
+        door_template = read(templates_file)["doors"]
         id_room = id_model.format("Room", f"B1F{door[0]}R{door[1]}")
         id_door = id_model.format("Door", f"B1F{door[0]}R{door[1]}D1")
         door_model = door_template
         door_model['id'] =  id_door
-        2828.4, 366
         a = door[2][0]
         b = door[2][1]
         l = door_size[door[3]]
         
-        door_model['relativePosition']['value']['coordinates'] = [
-            [a/100, b/100],
-            [int(a+epaisseur)/100, b/100],
-            [int(a+epaisseur)/100, int(b+l)/100],
-            [a/100, int(b+l)/100],
-            [a/100, b/100],
-            ]
+        if door[4] == 0:
+            door_model['relativePosition']['value']['coordinates'] = [
+                [a/100, b/100],
+                [int(a+epaisseur)/100, b/100],
+                [int(a+epaisseur)/100, int(b+l)/100],
+                [a/100, int(b+l)/100],
+                [a/100, b/100],
+                ]
+        else:
+            door_model['relativePosition']['value']['coordinates'] = [
+                [a/100, b/100],
+                [int(a+l)/100, b/100],
+                [int(a+l)/100, int(b+epaisseur)/100],
+                [a/100, int(b+epaisseur)/100],
+                [a/100, b/100],
+                ]
 
         doors.append(door_model)
 
