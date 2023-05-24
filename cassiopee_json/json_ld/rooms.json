@@ -552,7 +552,7 @@
         },
         "description": {
             "type": "Property",
-            "value": "Escalier 3"
+            "value": "SAS"
         },
         "onFloor": {
             "type": "Relationship",
@@ -566,23 +566,23 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        6.55,
+                        10.25,
                         18.37
                     ],
                     [
-                        13.8,
+                        13.95,
                         18.37
                     ],
                     [
-                        13.8,
+                        13.95,
                         21.35
                     ],
                     [
-                        6.55,
+                        10.25,
                         21.35
                     ],
                     [
-                        6.55,
+                        10.25,
                         18.37
                     ]
                 ]
@@ -1332,10 +1332,10 @@
             "type": "Relationship",
             "object": [
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R20D10",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R6D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R5D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R7D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R4D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R6D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R7D1"
             ]
         },
         "windowsInRoom": {
@@ -1403,11 +1403,11 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R14D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R13D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R15D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R14D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R12D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R16D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R13D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R16D1"
             ]
         },
         "windowsInRoom": {
@@ -2288,7 +2288,7 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R34D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R34D10"
             ]
         },
         "windowsInRoom": {
@@ -2830,8 +2830,7 @@
             "object": [
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R37D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R36D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R34D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1"
             ]
         },
         "windowsInRoom": {
@@ -2842,7 +2841,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 4
+            "value": 3
         },
         "numberOfWindows": {
             "type": "Property",
@@ -2901,10 +2900,9 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R48D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R39D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R40D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R39D1"
             ]
         },
         "windowsInRoom": {
@@ -2913,7 +2911,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 4
+            "value": 3
         },
         "numberOfWindows": {
             "type": "Property",
@@ -3238,7 +3236,7 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R48D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R48D10"
             ]
         },
         "windowsInRoom": {
@@ -3248,6 +3246,72 @@
         "numberOfDoors": {
             "type": "Property",
             "value": 1
+        },
+        "numberOfWindows": {
+            "type": "Property",
+            "value": 0
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R49",
+        "type": "Room",
+        "name": {
+            "type": "Property",
+            "value": "Room 49"
+        },
+        "description": {
+            "type": "Property",
+            "value": "Escalier 3"
+        },
+        "onFloor": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Floor:SmartCitiesdomain:SmartBuildings:B1F1"
+        },
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        6.55,
+                        18.37
+                    ],
+                    [
+                        10.25,
+                        18.37
+                    ],
+                    [
+                        10.25,
+                        21.35
+                    ],
+                    [
+                        6.55,
+                        21.35
+                    ],
+                    [
+                        6.55,
+                        18.37
+                    ]
+                ]
+            }
+        },
+        "DoorsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "windowsInRoom": {
+            "type": "Relationship",
+            "object": []
+        },
+        "numberOfDoors": {
+            "type": "Property",
+            "value": 0
         },
         "numberOfWindows": {
             "type": "Property",
