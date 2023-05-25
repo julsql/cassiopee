@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../home.dart';
-import '../firstfloor.dart';
+//import '../firstfloor.dart';
 import '../about.dart';
 import '../secondfloor.dart';
 
@@ -21,7 +21,7 @@ class NavDrawer extends StatelessWidget {
               ),
             },
           ),
-          ListTile(
+          /*ListTile(
             leading: Icon(Icons.home_filled),
             title: Text('First floor floorplan'),
             onTap: () => {
@@ -30,7 +30,7 @@ class NavDrawer extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => const FirstFloor()),
               ),
             },
-          ),
+          ),*/
           ListTile(
             leading: Icon(Icons.home_filled),
             title: Text('Second floor of the Etoile building'),
