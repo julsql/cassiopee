@@ -4,7 +4,7 @@ import re
 import matplotlib.pyplot as plt
 import os
 
-path = os.getcwd() + "/cassiopee_json/"
+path = os.getcwd() + "/"
 
 path_json = path + "json_ld/"
 windows_file = path_json + "windows.json" # Windows File
@@ -15,7 +15,8 @@ building_file = path_json + "building.json" # Building File
 templates_file = path + "templates.json" # JSON Models File
 
 wind_size = [94, 94*2, 288]
-door_size = [90, 125.5]
+door_size = [90, 125.5, 154]
+epaisseur = 15
 
 id_model = "urn:ngsi-ld:{0}:SmartCitiesdomain:SmartBuildings:{1}" # model of an id
 
@@ -135,9 +136,7 @@ def coordinates_obj(coor_obj, coor_room, obj):
     coor_room : [(x, y), length, width] -> 1st point, length, width
     return coordinates of the object
     """
-    epaisseur = 15
     err = 1
-    
     a = int(coor_obj[0])
     type = int(coor_obj[1])
     wall = int(coor_obj[2])
@@ -199,7 +198,7 @@ def add_room(number : int, typ : str , coor, windows, doors, floor : int):
     typ : room type (ex: bureau)
     coor : [(), length, width] (longueur->length largeur->width) : Room coordinates
     windows : windows charac for each window
-    doors : doors charac for each winddoorow"""
+    doors : doors charac for each door"""
 
     id_floor = id_model.format("Floor", "B1F{}".format(floor))
 
@@ -276,13 +275,18 @@ def verify_coordinates():
         fig, ax = plt.subplots()
 
         for key1, rect1 in rectangles.items():
+            color = "gray"
+            if "W" in key1:
+                color = "blue"
+            elif "D" in key1:
+                color = "red"
 
             try:
                 x = [rect1[i][0] for i in range(5)]
                 y = [-rect1[i][1] for i in range(5)]
 
                 # Ajout des rectangles à l'axe
-                ax.plot(x, y)#, label=key1)
+                ax.plot(x, y, color=color)#, label=key1)
             except:
                 None
 
@@ -377,7 +381,7 @@ def verify_coordinates():
         afficher(affichage, "Étage {}".format(floor))
         return rooms, winds, doors
     
-    for flr in range(1, 2):
+    for flr in range(1, 5):
 
         rooms, winds, doors = get_all_rectangles(flr)
         overlap = check_overlap_all(rooms)
@@ -455,27 +459,54 @@ def add_relations(relation_1, relation_2):
         write(rooms_file, rooms_json) # Write in the JSON rooms file
     return None
 
+def additional_doors(filename):
+    add_door = read(filename)
+    doors = read(doors_file)
+    rooms = read(rooms_file)
+    les_rooms = []
+    for door in add_door:
+        door_template = read(templates_file)["doors"]
+        id_room = id_model.format("Room", f"B1F{door[0]}R{door[1]}")
+        if id_room in les_rooms:
+            id_door = id_model.format("Door", f"B1F{door[0]}R{door[1]}D11")
+        else:
+            id_door = id_model.format("Door", f"B1F{door[0]}R{door[1]}D10")
+            les_rooms.append(id_room)
+        door_model = door_template
+        door_model['id'] =  id_door
+        a = door[2][0]
+        b = door[2][1]
+        l = door_size[door[3]]
+        
+        if door[4] == 0:
+            door_model['relativePosition']['value']['coordinates'] = [
+                [a/100, b/100],
+                [int(a+epaisseur)/100, b/100],
+                [int(a+epaisseur)/100, int(b+l)/100],
+                [a/100, int(b+l)/100],
+                [a/100, b/100],
+                ]
+        else:
+            door_model['relativePosition']['value']['coordinates'] = [
+                [a/100, b/100],
+                [int(a+l)/100, b/100],
+                [int(a+l)/100, int(b+epaisseur)/100],
+                [a/100, int(b+epaisseur)/100],
+                [a/100, b/100],
+                ]
 
-"""
-def add_relations_floor(filename):
-    "Add the relations from a file
-    relation_1 : room
-    relation_2 : door/window"
-    with open(filename, 'r') as f:
-        # Read a file txt floor relations
-        f.readline()
-        line = f.readline().strip("\n")
-        while line != "":
-            # Get the line values
-            values = line.split(" ")
-            relation_1 = values[0]
-            relation_2 = values[1]
-            # Add the relations the the JSON files
-            add_relations(relation_1, relation_2)
-            line = f.readline().strip("\n")
-    print("les relations {} ont bien été ajouté".format(filename))
-    return None
-"""
+        doors.append(door_model)
+
+        for i in range(len(rooms)):
+            if rooms[i]['id'] == id_room:
+                print(id_room)
+                rooms[i]['DoorsInRoom']['object'].append(door_model['id'])
+                rooms[i]['numberOfDoors']["value"] += 1
+
+    write(doors_file, doors)
+    write(rooms_file, rooms)
+
+
 
 initialize() # Empty JSON files
 
@@ -484,6 +515,9 @@ add_floor(path + "json_hand/floor_1.json", 1)
 add_floor(path + "json_hand/floor_2.json", 2)
 add_floor(path + "json_hand/floor_3.json", 3)
 add_floor(path + "json_hand/floor_4.json", 4)
+
+
+additional_doors(path + "json_hand/doors.json")
 
 print()
 verify_coordinates() # Check if rooms don't overlap

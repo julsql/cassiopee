@@ -97,6 +97,7 @@
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R46",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R47",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R48",
+            "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F1R49",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R1",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R2",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R3",
@@ -119,6 +120,8 @@
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R20",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R21",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R22",
+            "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R23",
+            "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F2R24",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R1",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R2",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R3",
@@ -138,6 +141,8 @@
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R17",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R18",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R19",
+            "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R20",
+            "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F3R21",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R1",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R2",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R3",
@@ -159,7 +164,9 @@
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R19",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R20",
             "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R21",
-            "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R22"
+            "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R22",
+            "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R23",
+            "urn:ngsi-ld:Room:SmartCitiesdomain:SmartBuildings:B1F4R24"
         ]
     }
 }
