@@ -6,6 +6,9 @@
       <excludeFolder url="file://$MODULE_DIR$/flutter_json_test/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/flutter_json_test/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/flutter_json_test/build" />
+      <excludeFolder url="file://$MODULE_DIR$/app_Etoile_building/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/app_Etoile_building/build" />
+      <excludeFolder url="file://$MODULE_DIR$/app_Etoile_building/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
