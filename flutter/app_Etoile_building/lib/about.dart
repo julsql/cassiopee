@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:etoile_project/widgets/nav-drawer.dart';
 
 // About Us
 

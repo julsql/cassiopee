@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import '../home.dart';
-import '../firstfloor.dart';
 import '../about.dart';
-import '../secondfloor.dart';
+import '../floor.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -23,11 +22,21 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.home_filled),
-            title: Text('First floor floorplan'),
+            title: Text('Ground floor of the Etoile building'),
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const FirstFloor()),
+                MaterialPageRoute(builder: (context) => const Floor(0)),
+              ),
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.home_filled),
+            title: Text('First floor of the Etoile building'),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Floor(1)),
               ),
             },
           ),
@@ -37,7 +46,27 @@ class NavDrawer extends StatelessWidget {
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const SecondFloor()),
+                MaterialPageRoute(builder: (context) => const Floor(2)),
+              ),
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.home_filled),
+            title: Text('Third floor of the Etoile building'),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Floor(3)),
+              ),
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.home_filled),
+            title: Text('Fourth floor of the Etoile building'),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Floor(4)),
               ),
             },
           ),
