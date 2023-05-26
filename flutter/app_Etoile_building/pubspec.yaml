@@ -25,6 +25,6 @@ flutter:
   uses-material-design: true
   assets:
     - images/test_banniere.jpg
-    - images/floor1.jpg
-    - json/templates.json
-    - json/sample.json
+    - json/rooms.json
+    - json/doors.json
+    - json/windows.json

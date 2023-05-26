@@ -54,6 +54,10 @@ Dans le répertoire racine du projet Futter :
 
     ```flutter run -d chrome```
 
+Lorsqu'on modifie pudspec.yaml :
+
+    ```flutter pub get```
+
 ## Comment fonctionne Flutter
 
 les widgets basiques :
