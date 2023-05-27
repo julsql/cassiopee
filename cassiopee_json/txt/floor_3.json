@@ -1,6 +1,0 @@
-[
-    /* [id, nom, coin_bas_gauche, longueur, largeur, windows : [dist, type, mur], doors : [dist, type, mur]] */
-    [1, "Laboratoire", 0, 883, 884, [], []]
-
-
-]
