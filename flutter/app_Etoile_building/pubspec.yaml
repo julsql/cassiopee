@@ -9,11 +9,13 @@ environment:
   sdk: '>=2.19.2 <4.0.0'
 
 dependencies:
+
   flutter:
     sdk: flutter
 
   english_words: ^4.0.0
   provider: ^6.0.0
+  flutter_cube: ^0.1.1
 
 dev_dependencies:
   flutter_test:
@@ -28,3 +30,16 @@ flutter:
     - json/rooms.json
     - json/doors.json
     - json/windows.json
+    - obj/floor_1_rooms.obj
+    - obj/floor_1_doors.obj
+    - obj/floor_1_windows.obj
+    - obj/floor_2_rooms.obj
+    - obj/floor_2_doors.obj
+    - obj/floor_2_windows.obj
+    - obj/floor_3_rooms.obj
+    - obj/floor_3_doors.obj
+    - obj/floor_3_windows.obj
+    - obj/floor_4_rooms.obj
+    - obj/floor_4_doors.obj
+    - obj/floor_4_windows.obj
+    - obj/floor_colors.mtl

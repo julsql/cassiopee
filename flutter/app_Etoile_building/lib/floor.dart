@@ -64,15 +64,16 @@ class FloorState extends State<Floor> {
       ..style = PaintingStyle.stroke
       ..strokeWidth = 2.0;
 
+    const int coef = 15;
+
     final path = Path();
-    path.moveTo(rectanglePoints[0][0]*10, rectanglePoints[0][1]*10);
+    path.moveTo(rectanglePoints[0][0]*coef, rectanglePoints[0][1]*coef);
 
     for (int i = 1; i < rectanglePoints.length; i++) {
-      final x = rectanglePoints[i][0]*10;
-      final y = rectanglePoints[i][1]*10;
+      final x = rectanglePoints[i][0]*coef;
+      final y = rectanglePoints[i][1]*coef;
       path.lineTo(x, y);
     }
-    
 
     path.close();
 
@@ -99,20 +100,20 @@ class FloorState extends State<Floor> {
   }
 
   void drawObjects(Canvas canvas, Size size, List objects, Color color) {
-    List<List<List<double>>> objectsFloor = [];
+    List<List<List<double>>> listCoordinates = [];
     for (int i=0; i<objects.length; i++) {
       String id = objects[i]["id"];
       if (isFloor(id)) {
-        final List<List<double>> object = (objects[i]["relativePosition"]["value"]["coordinates"] as List)
+        final List<List<double>> coordinates = (objects[i]["relativePosition"]["value"]["coordinates"] as List)
         .map<List<double>>((dynamic point) =>
         (point as List).map<double>((dynamic value) => value.toDouble()).toList()).toList();
-        objectsFloor.add(object);
+        listCoordinates.add(coordinates);
       }
     }
 
-    for (int i=0; i<objectsFloor.length; i++) {
-      final List<List<double>> rectanglePoints = objectsFloor[i];
-      drawRectangles(canvas, size, rectanglePoints, color);
+    for (int i=0; i<listCoordinates.length; i++) {
+      final List<List<double>> coordinates = listCoordinates[i];
+      drawRectangles(canvas, size, coordinates, color);
     }
   }
 
@@ -160,7 +161,6 @@ class _MyPainter extends CustomPainter {
 
    @override
    void paint(Canvas canvas, Size size) {
-     
      floorState.drawFloor(canvas, size, rooms, doors, windows);
    }
 
