@@ -1,3 +1,5 @@
+mtllib floor_colors.mtl
+usemtl gray_material
 # https://github.com/mikedh/trimesh
 v 0.00000000 0.00000000 0.00000000
 v 8.83000000 0.00000000 0.00000000

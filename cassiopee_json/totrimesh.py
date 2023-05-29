@@ -125,12 +125,17 @@ def add_color(file, color):
         f.writelines(content)
 
 
+face_colors = np.array([0.5, 0.5, 0.5, 0.1])  # Gris pour les faces (RVB : 0.5, 0.5, 0.5)
+edge_color = np.array([0.0, 0.0, 1.0, 1.0])  # Noir pour les arêtes (RVB : 0.0, 0.0, 0.0)
+
+
 def create_obj(floor):
     trimesh_list = get_trimesh(rooms_file_tri, floor)
     # Exporter l'objet trimesh au format .obj
     merged = trimesh.util.concatenate(trimesh_list)
     output_path = f'flutter/app_Etoile_building/obj/floor_{floor}_rooms.obj'
     merged.export(output_path)
+    add_color(output_path, "gray")
 
     trimesh_list = get_trimesh(doors_file_tri, floor)
     # Exporter l'objet trimesh au format .obj
