@@ -23,23 +23,23 @@
                 "coordinates": [
                     [
                         0.21,
-                        48.58
+                        0.21
                     ],
                     [
-                        7.97,
-                        48.58
+                        7.47,
+                        0.21
                     ],
                     [
-                        7.97,
-                        55.84
-                    ],
-                    [
-                        0.21,
-                        55.84
+                        7.47,
+                        7.97
                     ],
                     [
                         0.21,
-                        48.58
+                        7.97
+                    ],
+                    [
+                        0.21,
+                        0.21
                     ]
                 ]
             }
@@ -47,7 +47,8 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R1D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R1D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R35D1"
             ]
         },
         "windowsInRoom": {
@@ -56,7 +57,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 2
         },
         "numberOfWindows": {
             "type": "Property",
@@ -90,24 +91,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        0.0,
-                        44.7
+                        7.34,
+                        0.0
                     ],
                     [
-                        3.32,
-                        44.7
+                        10.93,
+                        0.0
                     ],
                     [
-                        3.32,
-                        48.29
+                        10.93,
+                        3.32
                     ],
                     [
-                        0.0,
-                        48.29
+                        7.34,
+                        3.32
                     ],
                     [
-                        0.0,
-                        44.7
+                        7.34,
+                        0.0
                     ]
                 ]
             }
@@ -160,24 +161,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        0.0,
-                        38.21
+                        11.1,
+                        0.0
                     ],
                     [
-                        3.32,
-                        38.21
+                        17.42,
+                        0.0
                     ],
                     [
-                        3.32,
-                        44.53
+                        17.42,
+                        3.32
                     ],
                     [
-                        0.0,
-                        44.53
+                        11.1,
+                        3.32
                     ],
                     [
-                        0.0,
-                        38.21
+                        11.1,
+                        0.0
                     ]
                 ]
             }
@@ -185,8 +186,7 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R3D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R5D2"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R3D1"
             ]
         },
         "windowsInRoom": {
@@ -199,7 +199,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 2
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -233,24 +233,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        0.0,
-                        34.43
+                        17.61,
+                        0.0
                     ],
                     [
-                        3.32,
-                        34.43
+                        21.2,
+                        0.0
                     ],
                     [
-                        3.32,
-                        38.02
+                        21.2,
+                        3.32
                     ],
                     [
-                        0.0,
-                        38.02
+                        17.61,
+                        3.32
                     ],
                     [
-                        0.0,
-                        34.43
+                        17.61,
+                        0.0
                     ]
                 ]
             }
@@ -264,7 +264,8 @@
         "windowsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R4W1"
+                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R4W1",
+                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R3W2"
             ]
         },
         "numberOfDoors": {
@@ -273,7 +274,7 @@
         },
         "numberOfWindows": {
             "type": "Property",
-            "value": 1
+            "value": 2
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
@@ -303,24 +304,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        0.14,
-                        29.45
+                        21.44,
+                        0.14
                     ],
                     [
-                        12.54,
-                        29.45
+                        26.18,
+                        0.14
                     ],
                     [
-                        12.54,
-                        34.19
+                        26.18,
+                        12.54
                     ],
                     [
-                        0.14,
-                        34.19
+                        21.44,
+                        12.54
                     ],
                     [
-                        0.14,
-                        29.45
+                        21.44,
+                        0.14
                     ]
                 ]
             }
@@ -376,24 +377,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        0.04,
-                        27.22
+                        26.52,
+                        0.04
                     ],
                     [
-                        3.42,
-                        27.22
+                        28.41,
+                        0.04
                     ],
                     [
-                        3.42,
-                        29.11
+                        28.41,
+                        3.42
                     ],
                     [
-                        0.04,
-                        29.11
+                        26.52,
+                        3.42
                     ],
                     [
-                        0.04,
-                        27.22
+                        26.52,
+                        0.04
                     ]
                 ]
             }
@@ -444,24 +445,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        0.04,
-                        23.65
+                        28.71,
+                        0.04
                     ],
                     [
-                        3.25,
-                        23.65
+                        31.98,
+                        0.04
                     ],
                     [
-                        3.25,
-                        26.92
+                        31.98,
+                        3.25
                     ],
                     [
-                        0.04,
-                        26.92
+                        28.71,
+                        3.25
                     ],
                     [
-                        0.04,
-                        23.65
+                        28.71,
+                        0.04
                     ]
                 ]
             }
@@ -514,24 +515,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        0.04,
-                        17.01
+                        32.16,
+                        0.04
                     ],
                     [
-                        3.37,
-                        17.01
+                        38.62,
+                        0.04
                     ],
                     [
-                        3.37,
-                        23.47
+                        38.62,
+                        3.37
                     ],
                     [
-                        0.04,
-                        23.47
+                        32.16,
+                        3.37
                     ],
                     [
-                        0.04,
-                        17.01
+                        32.16,
+                        0.04
                     ]
                 ]
             }
@@ -585,24 +586,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        0.04,
-                        10.34
+                        38.83,
+                        0.04
                     ],
                     [
-                        3.37,
-                        10.34
+                        45.29,
+                        0.04
                     ],
                     [
-                        3.37,
-                        16.8
+                        45.29,
+                        3.37
                     ],
                     [
-                        0.04,
-                        16.8
+                        38.83,
+                        3.37
                     ],
                     [
-                        0.04,
-                        10.34
+                        38.83,
+                        0.04
                     ]
                 ]
             }
@@ -656,24 +657,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        0.04,
-                        7.42
+                        45.49,
+                        0.04
                     ],
                     [
-                        3.37,
-                        7.42
+                        48.21,
+                        0.04
                     ],
                     [
-                        3.37,
-                        10.14
+                        48.21,
+                        3.37
                     ],
                     [
-                        0.04,
-                        10.14
+                        45.49,
+                        3.37
                     ],
                     [
-                        0.04,
-                        7.42
+                        45.49,
+                        0.04
                     ]
                 ]
             }
@@ -682,8 +683,7 @@
             "type": "Relationship",
             "object": [
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R10D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R10D2",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R17D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R10D2"
             ]
         },
         "windowsInRoom": {
@@ -694,7 +694,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 3
+            "value": 2
         },
         "numberOfWindows": {
             "type": "Property",
@@ -728,33 +728,31 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        0.04,
-                        0.0
+                        48.49,
+                        0.04
                     ],
                     [
-                        3.37,
-                        0.0
+                        55.63,
+                        0.04
                     ],
                     [
-                        3.37,
-                        7.14
+                        55.63,
+                        3.37
                     ],
                     [
-                        0.04,
-                        7.14
+                        48.49,
+                        3.37
                     ],
                     [
-                        0.04,
-                        0.0
+                        48.49,
+                        0.04
                     ]
                 ]
             }
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R17D1"
-            ]
+            "object": []
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -765,7 +763,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "numberOfWindows": {
             "type": "Property",
@@ -799,24 +797,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        3.38,
-                        0.0
+                        52.22,
+                        3.38
                     ],
                     [
-                        12.49,
-                        0.0
+                        55.63,
+                        3.38
                     ],
                     [
-                        12.49,
-                        3.41
+                        55.63,
+                        12.49
                     ],
                     [
-                        3.38,
-                        3.41
+                        52.22,
+                        12.49
                     ],
                     [
-                        3.38,
-                        0.0
+                        52.22,
+                        3.38
                     ]
                 ]
             }
@@ -827,9 +825,7 @@
         },
         "windowsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R11W2"
-            ]
+            "object": []
         },
         "numberOfDoors": {
             "type": "Property",
@@ -837,7 +833,7 @@
         },
         "numberOfWindows": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
@@ -867,24 +863,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        3.51,
-                        3.58
+                        49.13,
+                        3.51
                     ],
                     [
-                        4.96,
-                        3.58
+                        52.05,
+                        3.51
                     ],
                     [
-                        4.96,
-                        6.5
+                        52.05,
+                        4.96
                     ],
                     [
-                        3.51,
-                        6.5
+                        49.13,
+                        4.96
                     ],
                     [
-                        3.51,
-                        3.58
+                        49.13,
+                        3.51
                     ]
                 ]
             }
@@ -935,24 +931,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        5.15,
-                        3.59
+                        49.22,
+                        5.15
                     ],
                     [
-                        7.83,
-                        3.59
+                        52.04,
+                        5.15
                     ],
                     [
-                        7.83,
-                        6.41
+                        52.04,
+                        7.83
                     ],
                     [
-                        5.15,
-                        6.41
+                        49.22,
+                        7.83
                     ],
                     [
-                        5.15,
-                        3.59
+                        49.22,
+                        5.15
                     ]
                 ]
             }
@@ -1003,24 +999,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        7.99,
-                        3.58
+                        49.22,
+                        7.99
                     ],
                     [
-                        8.62,
-                        3.58
+                        52.05,
+                        7.99
                     ],
                     [
-                        8.62,
-                        6.41
+                        52.05,
+                        8.62
                     ],
                     [
-                        7.99,
-                        6.41
+                        49.22,
+                        8.62
                     ],
                     [
-                        7.99,
-                        3.58
+                        49.22,
+                        7.99
                     ]
                 ]
             }
@@ -1069,24 +1065,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        8.7,
-                        3.59
+                        49.22,
+                        8.7
                     ],
                     [
-                        12.5,
-                        3.59
+                        52.04,
+                        8.7
                     ],
                     [
-                        12.5,
-                        6.41
+                        52.04,
+                        12.5
                     ],
                     [
-                        8.7,
-                        6.41
+                        49.22,
+                        12.5
                     ],
                     [
-                        8.7,
-                        3.59
+                        49.22,
+                        8.7
                     ]
                 ]
             }
@@ -1137,24 +1133,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        3.5,
-                        6.51
+                        48.45,
+                        3.5
                     ],
                     [
-                        12.5,
-                        6.51
+                        49.12,
+                        3.5
                     ],
                     [
-                        12.5,
-                        7.18
+                        49.12,
+                        12.5
                     ],
                     [
-                        3.5,
-                        7.18
+                        48.45,
+                        12.5
                     ],
                     [
-                        3.5,
-                        6.51
+                        48.45,
+                        3.5
                     ]
                 ]
             }
@@ -1205,24 +1201,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        3.59,
-                        7.45
+                        30.46,
+                        3.59
                     ],
                     [
-                        4.94,
-                        7.45
+                        48.18,
+                        3.59
                     ],
                     [
-                        4.94,
-                        25.17
+                        48.18,
+                        4.94
                     ],
                     [
-                        3.59,
-                        25.17
+                        30.46,
+                        4.94
                     ],
                     [
-                        3.59,
-                        7.45
+                        30.46,
+                        3.59
                     ]
                 ]
             }
@@ -1271,24 +1267,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        5.22,
-                        7.45
+                        45.65,
+                        5.22
                     ],
                     [
-                        8.45,
-                        7.45
+                        48.18,
+                        5.22
                     ],
                     [
-                        8.45,
-                        9.98
+                        48.18,
+                        8.45
                     ],
                     [
-                        5.22,
-                        9.98
+                        45.65,
+                        8.45
                     ],
                     [
-                        5.22,
-                        7.45
+                        45.65,
+                        5.22
                     ]
                 ]
             }
@@ -1339,24 +1335,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        5.22,
-                        10.24
+                        40.59,
+                        5.22
                     ],
                     [
-                        8.1,
-                        10.24
+                        45.39,
+                        5.22
                     ],
                     [
-                        8.1,
-                        15.04
+                        45.39,
+                        8.1
                     ],
                     [
-                        5.22,
-                        15.04
+                        40.59,
+                        8.1
                     ],
                     [
-                        5.22,
-                        10.24
+                        40.59,
+                        5.22
                     ]
                 ]
             }
@@ -1370,9 +1366,7 @@
         },
         "windowsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R9W2"
-            ]
+            "object": []
         },
         "numberOfDoors": {
             "type": "Property",
@@ -1380,7 +1374,7 @@
         },
         "numberOfWindows": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
@@ -1410,24 +1404,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        5.22,
-                        15.3
+                        38.97,
+                        5.22
                     ],
                     [
-                        8.45,
-                        15.3
+                        40.33,
+                        5.22
                     ],
                     [
-                        8.45,
-                        16.66
+                        40.33,
+                        8.45
                     ],
                     [
-                        5.22,
-                        16.66
+                        38.97,
+                        8.45
                     ],
                     [
-                        5.22,
-                        15.3
+                        38.97,
+                        5.22
                     ]
                 ]
             }
@@ -1476,33 +1470,31 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        8.46,
-                        7.45
+                        38.99,
+                        8.46
                     ],
                     [
-                        12.81,
-                        7.45
+                        48.18,
+                        8.46
                     ],
                     [
-                        12.81,
-                        16.64
+                        48.18,
+                        12.81
                     ],
                     [
-                        8.46,
-                        16.64
+                        38.99,
+                        12.81
                     ],
                     [
-                        8.46,
-                        7.45
+                        38.99,
+                        8.46
                     ]
                 ]
             }
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R20D2"
-            ]
+            "object": []
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -1510,7 +1502,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "numberOfWindows": {
             "type": "Property",
@@ -1544,24 +1536,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        12.82,
-                        0.03
+                        37.48,
+                        12.82
                     ],
                     [
-                        17.69,
-                        0.03
+                        55.6,
+                        12.82
                     ],
                     [
-                        17.69,
-                        18.15
+                        55.6,
+                        17.69
                     ],
                     [
-                        12.82,
-                        18.15
+                        37.48,
+                        17.69
                     ],
                     [
-                        12.82,
-                        0.03
+                        37.48,
+                        12.82
                     ]
                 ]
             }
@@ -1612,24 +1604,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        10.18,
-                        16.65
+                        37.49,
+                        10.18
                     ],
                     [
-                        12.82,
-                        16.65
+                        38.98,
+                        10.18
                     ],
                     [
-                        12.82,
-                        18.14
+                        38.98,
+                        12.82
                     ],
                     [
-                        10.18,
-                        18.14
+                        37.49,
+                        12.82
                     ],
                     [
-                        10.18,
-                        16.65
+                        37.49,
+                        10.18
                     ]
                 ]
             }
@@ -1678,24 +1670,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        5.22,
-                        16.91
+                        33.48,
+                        5.22
                     ],
                     [
-                        10.02,
-                        16.91
+                        38.72,
+                        5.22
                     ],
                     [
-                        10.02,
-                        22.15
+                        38.72,
+                        10.02
                     ],
                     [
-                        5.22,
-                        22.15
+                        33.48,
+                        10.02
                     ],
                     [
-                        5.22,
-                        16.91
+                        33.48,
+                        5.22
                     ]
                 ]
             }
@@ -1704,23 +1696,20 @@
             "type": "Relationship",
             "object": [
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R25D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R25D2",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R9D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R25D2"
             ]
         },
         "windowsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R8W2"
-            ]
+            "object": []
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 3
+            "value": 2
         },
         "numberOfWindows": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
@@ -1750,24 +1739,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        5.05,
-                        22.41
+                        32.31,
+                        5.05
                     ],
                     [
-                        8.22,
-                        22.41
+                        33.22,
+                        5.05
                     ],
                     [
-                        8.22,
-                        23.32
+                        33.22,
+                        8.22
                     ],
                     [
-                        5.05,
-                        23.32
+                        32.31,
+                        8.22
                     ],
                     [
-                        5.05,
-                        22.41
+                        32.31,
+                        5.05
                     ]
                 ]
             }
@@ -1816,31 +1805,33 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        3.52,
-                        25.42
+                        26.51,
+                        3.52
                     ],
                     [
-                        6.07,
-                        25.42
+                        30.21,
+                        3.52
                     ],
                     [
-                        6.07,
-                        29.12
+                        30.21,
+                        6.07
                     ],
                     [
-                        3.52,
-                        29.12
+                        26.51,
+                        6.07
                     ],
                     [
-                        3.52,
-                        25.42
+                        26.51,
+                        3.52
                     ]
                 ]
             }
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": []
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R6D1"
+            ]
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -1848,7 +1839,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 0
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -1882,24 +1873,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        8.23,
-                        22.42
+                        26.37,
+                        8.23
                     ],
                     [
-                        10.18,
-                        22.42
+                        33.21,
+                        8.23
                     ],
                     [
-                        10.18,
-                        29.26
+                        33.21,
+                        10.18
                     ],
                     [
-                        8.23,
-                        29.26
+                        26.37,
+                        10.18
                     ],
                     [
-                        8.23,
-                        22.42
+                        26.37,
+                        8.23
                     ]
                 ]
             }
@@ -1948,33 +1939,31 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        10.22,
-                        18.25
+                        26.52,
+                        10.22
                     ],
                     [
-                        17.91,
-                        18.25
+                        37.38,
+                        10.22
                     ],
                     [
-                        17.91,
-                        29.11
+                        37.38,
+                        17.91
                     ],
                     [
-                        10.22,
-                        29.11
+                        26.52,
+                        17.91
                     ],
                     [
-                        10.22,
-                        18.25
+                        26.52,
+                        10.22
                     ]
                 ]
             }
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R25D2"
-            ]
+            "object": []
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -1982,7 +1971,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "numberOfWindows": {
             "type": "Property",
@@ -2016,24 +2005,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        12.79,
-                        29.13
+                        21.17,
+                        12.79
                     ],
                     [
-                        17.92,
-                        29.13
+                        26.5,
+                        12.79
                     ],
                     [
-                        17.92,
-                        34.46
+                        26.5,
+                        17.92
                     ],
                     [
-                        12.79,
-                        34.46
+                        21.17,
+                        17.92
                     ],
                     [
-                        12.79,
-                        29.13
+                        21.17,
+                        12.79
                     ]
                 ]
             }
@@ -2082,24 +2071,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        5.22,
-                        34.53
+                        20.09,
+                        5.22
                     ],
                     [
-                        10.01,
-                        34.53
+                        21.1,
+                        5.22
                     ],
                     [
-                        10.01,
-                        35.54
+                        21.1,
+                        10.01
                     ],
                     [
-                        5.22,
-                        35.54
+                        20.09,
+                        10.01
                     ],
                     [
-                        5.22,
-                        34.53
+                        20.09,
+                        5.22
                     ]
                 ]
             }
@@ -2148,24 +2137,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        5.22,
-                        35.68
+                        16.7,
+                        5.22
                     ],
                     [
-                        9.91,
-                        35.68
+                        19.95,
+                        5.22
                     ],
                     [
-                        9.91,
-                        38.93
+                        19.95,
+                        9.91
                     ],
                     [
-                        5.22,
-                        38.93
+                        16.7,
+                        9.91
                     ],
                     [
-                        5.22,
-                        35.68
+                        16.7,
+                        5.22
                     ]
                 ]
             }
@@ -2178,9 +2167,7 @@
         },
         "windowsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R3W2"
-            ]
+            "object": []
         },
         "numberOfDoors": {
             "type": "Property",
@@ -2188,7 +2175,7 @@
         },
         "numberOfWindows": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
@@ -2218,24 +2205,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        4.96,
-                        39.13
+                        15.12,
+                        4.96
                     ],
                     [
-                        8.24,
-                        39.13
+                        16.5,
+                        4.96
                     ],
                     [
-                        8.24,
-                        40.51
+                        16.5,
+                        8.24
                     ],
                     [
-                        4.96,
-                        40.51
+                        15.12,
+                        8.24
                     ],
                     [
-                        4.96,
-                        39.13
+                        15.12,
+                        4.96
                     ]
                 ]
             }
@@ -2243,8 +2230,7 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R33D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R32D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R33D1"
             ]
         },
         "windowsInRoom": {
@@ -2253,7 +2239,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 2
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -2287,24 +2273,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        5.22,
-                        40.77
+                        10.06,
+                        5.22
                     ],
                     [
-                        8.1,
-                        40.77
+                        14.86,
+                        5.22
                     ],
                     [
-                        8.1,
-                        45.57
+                        14.86,
+                        8.1
                     ],
                     [
-                        5.22,
-                        45.57
+                        10.06,
+                        8.1
                     ],
                     [
-                        5.22,
-                        40.77
+                        10.06,
+                        5.22
                     ]
                 ]
             }
@@ -2312,8 +2298,7 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R34D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R3D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R34D1"
             ]
         },
         "windowsInRoom": {
@@ -2322,7 +2307,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 2
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -2356,24 +2341,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        4.89,
-                        46.93
+                        7.32,
+                        4.89
                     ],
                     [
-                        8.13,
-                        46.93
+                        8.7,
+                        4.89
                     ],
                     [
-                        8.13,
-                        48.31
+                        8.7,
+                        8.13
                     ],
                     [
-                        4.89,
-                        48.31
+                        7.32,
+                        8.13
                     ],
                     [
-                        4.89,
-                        46.93
+                        7.32,
+                        4.89
                     ]
                 ]
             }
@@ -2381,7 +2366,8 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R35D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R35D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R1D1"
             ]
         },
         "windowsInRoom": {
@@ -2390,7 +2376,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 2
         },
         "numberOfWindows": {
             "type": "Property",
@@ -2424,24 +2410,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        10.09,
-                        34.54
+                        7.33,
+                        10.09
                     ],
                     [
-                        12.67,
-                        34.54
+                        21.09,
+                        10.09
                     ],
                     [
-                        12.67,
-                        48.3
+                        21.09,
+                        12.67
                     ],
                     [
-                        10.09,
-                        48.3
+                        7.33,
+                        12.67
                     ],
                     [
-                        10.09,
-                        34.54
+                        7.33,
+                        10.09
                     ]
                 ]
             }
@@ -2453,7 +2439,7 @@
         "windowsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R38W1"
+                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R3W3"
             ]
         },
         "numberOfDoors": {
@@ -2492,24 +2478,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        8.31,
-                        48.58
+                        0.21,
+                        8.31
                     ],
                     [
-                        12.54,
-                        48.58
+                        7.47,
+                        8.31
                     ],
                     [
-                        12.54,
-                        55.84
+                        7.47,
+                        12.54
                     ],
                     [
-                        8.31,
-                        55.84
+                        0.21,
+                        12.54
                     ],
                     [
-                        8.31,
-                        48.58
+                        0.21,
+                        8.31
                     ]
                 ]
             }
@@ -2560,31 +2546,33 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        12.69,
-                        34.55
+                        0.2,
+                        12.69
                     ],
                     [
-                        17.69,
-                        34.55
+                        21.48,
+                        12.69
                     ],
                     [
-                        17.69,
-                        55.83
+                        21.48,
+                        17.69
                     ],
                     [
-                        12.69,
-                        55.83
+                        0.2,
+                        17.69
                     ],
                     [
-                        12.69,
-                        34.55
+                        0.2,
+                        12.69
                     ]
                 ]
             }
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": []
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R41D1"
+            ]
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -2594,7 +2582,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 0
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -2628,24 +2616,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        17.87,
-                        51.92
+                        0.19,
+                        17.87
                     ],
                     [
-                        20.61,
-                        51.92
+                        4.09,
+                        17.87
                     ],
                     [
-                        20.61,
-                        55.82
+                        4.09,
+                        20.61
                     ],
                     [
-                        17.87,
-                        55.82
+                        0.19,
+                        20.61
                     ],
                     [
-                        17.87,
-                        51.92
+                        0.19,
+                        17.87
                     ]
                 ]
             }
@@ -2694,24 +2682,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        17.89,
-                        46.82
+                        3.87,
+                        17.89
                     ],
                     [
-                        20.64,
-                        46.82
+                        8.81,
+                        17.89
                     ],
                     [
-                        20.64,
-                        51.76
+                        8.81,
+                        20.64
                     ],
                     [
-                        17.89,
-                        51.76
+                        3.87,
+                        20.64
                     ],
                     [
-                        17.89,
-                        46.82
+                        3.87,
+                        17.89
                     ]
                 ]
             }
@@ -2760,24 +2748,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        17.71,
-                        44.87
+                        8.99,
+                        17.71
                     ],
                     [
-                        20.79,
-                        44.87
+                        10.76,
+                        17.71
                     ],
                     [
-                        20.79,
-                        46.64
+                        10.76,
+                        20.79
                     ],
                     [
-                        17.71,
-                        46.64
+                        8.99,
+                        20.79
                     ],
                     [
-                        17.71,
-                        44.87
+                        8.99,
+                        17.71
                     ]
                 ]
             }
@@ -2828,24 +2816,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        17.89,
-                        40.77
+                        10.96,
+                        17.89
                     ],
                     [
-                        20.64,
-                        40.77
+                        14.86,
+                        17.89
                     ],
                     [
-                        20.64,
-                        44.67
+                        14.86,
+                        20.64
                     ],
                     [
-                        17.89,
-                        44.67
+                        10.96,
+                        20.64
                     ],
                     [
-                        17.89,
-                        40.77
+                        10.96,
+                        17.89
                     ]
                 ]
             }
@@ -2896,33 +2884,31 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        17.89,
-                        35.71
+                        14.98,
+                        17.89
                     ],
                     [
-                        20.64,
-                        35.71
+                        19.92,
+                        17.89
                     ],
                     [
-                        20.64,
-                        40.65
+                        19.92,
+                        20.64
                     ],
                     [
-                        17.89,
-                        40.65
+                        14.98,
+                        20.64
                     ],
                     [
-                        17.89,
-                        35.71
+                        14.98,
+                        17.89
                     ]
                 ]
             }
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R42D1"
-            ]
+            "object": []
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -2930,7 +2916,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "numberOfWindows": {
             "type": "Property",
@@ -2964,24 +2950,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        20.85,
-                        35.84
+                        0.18,
+                        20.85
                     ],
                     [
-                        22.4,
-                        35.84
+                        20.15,
+                        20.85
                     ],
                     [
-                        22.4,
-                        55.81
+                        20.15,
+                        22.4
                     ],
                     [
-                        20.85,
-                        55.81
+                        0.18,
+                        22.4
                     ],
                     [
-                        20.85,
-                        35.84
+                        0.18,
+                        20.85
                     ]
                 ]
             }
@@ -3032,24 +3018,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        22.39,
-                        54.52
+                        0.23,
+                        22.39
                     ],
                     [
-                        25.36,
-                        54.52
+                        1.57,
+                        22.39
                     ],
                     [
-                        25.36,
-                        55.86
+                        1.57,
+                        25.36
                     ],
                     [
-                        22.39,
-                        55.86
+                        0.23,
+                        25.36
                     ],
                     [
-                        22.39,
-                        54.52
+                        0.23,
+                        22.39
                     ]
                 ]
             }
@@ -3057,7 +3043,8 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R45D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R45D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R46D1"
             ]
         },
         "windowsInRoom": {
@@ -3068,7 +3055,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 2
         },
         "numberOfWindows": {
             "type": "Property",
@@ -3102,24 +3089,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        22.55,
-                        49.7
+                        1.37,
+                        22.55
                     ],
                     [
-                        25.22,
-                        49.7
+                        5.93,
+                        22.55
                     ],
                     [
-                        25.22,
-                        54.26
+                        5.93,
+                        25.22
                     ],
                     [
-                        22.55,
-                        54.26
+                        1.37,
+                        25.22
                     ],
                     [
-                        22.55,
-                        49.7
+                        1.37,
+                        22.55
                     ]
                 ]
             }
@@ -3170,24 +3157,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        22.58,
-                        44.7
+                        6.13,
+                        22.58
                     ],
                     [
-                        25.46,
-                        44.7
+                        10.93,
+                        22.58
                     ],
                     [
-                        25.46,
-                        49.5
+                        10.93,
+                        25.46
                     ],
                     [
-                        22.58,
-                        49.5
+                        6.13,
+                        25.46
                     ],
                     [
-                        22.58,
-                        44.7
+                        6.13,
+                        22.58
                     ]
                 ]
             }
@@ -3236,33 +3223,31 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        22.58,
-                        39.49
+                        11.2,
+                        22.58
                     ],
                     [
-                        25.31,
-                        39.49
+                        16.14,
+                        22.58
                     ],
                     [
-                        25.31,
-                        44.43
+                        16.14,
+                        25.31
                     ],
                     [
-                        22.58,
-                        44.43
+                        11.2,
+                        25.31
                     ],
                     [
-                        22.58,
-                        39.49
+                        11.2,
+                        22.58
                     ]
                 ]
             }
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R49D1"
-            ]
+            "object": []
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -3270,7 +3255,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "numberOfWindows": {
             "type": "Property",
@@ -3304,24 +3289,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        22.58,
-                        37.63
+                        16.47,
+                        22.58
                     ],
                     [
-                        25.29,
-                        37.63
+                        18.0,
+                        22.58
                     ],
                     [
-                        25.29,
-                        39.16
+                        18.0,
+                        25.29
                     ],
                     [
-                        22.58,
-                        39.16
+                        16.47,
+                        25.29
                     ],
                     [
-                        22.58,
-                        37.63
+                        16.47,
+                        22.58
                     ]
                 ]
             }
@@ -3372,24 +3357,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        25.58,
-                        37.59
+                        13.34,
+                        25.58
                     ],
                     [
-                        28.56,
-                        37.59
+                        18.04,
+                        25.58
                     ],
                     [
-                        28.56,
-                        42.29
+                        18.04,
+                        28.56
                     ],
                     [
-                        25.58,
-                        42.29
+                        13.34,
+                        28.56
                     ],
                     [
-                        25.58,
-                        37.59
+                        13.34,
+                        25.58
                     ]
                 ]
             }
@@ -3440,24 +3425,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        28.75,
-                        37.59
+                        13.34,
+                        28.75
                     ],
                     [
-                        31.75,
-                        37.59
+                        18.04,
+                        28.75
                     ],
                     [
-                        31.75,
-                        42.29
+                        18.04,
+                        31.75
                     ],
                     [
-                        28.75,
-                        42.29
+                        13.34,
+                        31.75
                     ],
                     [
-                        28.75,
-                        37.59
+                        13.34,
+                        28.75
                     ]
                 ]
             }
@@ -3508,24 +3493,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        31.94,
-                        37.59
+                        13.34,
+                        31.94
                     ],
                     [
-                        34.94,
-                        37.59
+                        18.04,
+                        31.94
                     ],
                     [
-                        34.94,
-                        42.29
+                        18.04,
+                        34.94
                     ],
                     [
-                        31.94,
-                        42.29
+                        13.34,
+                        34.94
                     ],
                     [
-                        31.94,
-                        37.59
+                        13.34,
+                        31.94
                     ]
                 ]
             }
@@ -3576,24 +3561,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        35.13,
-                        37.59
+                        13.34,
+                        35.13
                     ],
                     [
-                        38.81,
-                        37.59
+                        18.04,
+                        35.13
                     ],
                     [
-                        38.81,
-                        42.29
+                        18.04,
+                        38.81
                     ],
                     [
-                        35.13,
-                        42.29
+                        13.34,
+                        38.81
                     ],
                     [
-                        35.13,
-                        37.59
+                        13.34,
+                        35.13
                     ]
                 ]
             }
@@ -3644,24 +3629,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        38.9,
-                        37.61
+                        16.34,
+                        38.9
                     ],
                     [
-                        42.31,
-                        37.61
+                        18.02,
+                        38.9
                     ],
                     [
-                        42.31,
-                        39.29
+                        18.02,
+                        42.31
                     ],
                     [
-                        38.9,
-                        39.29
+                        16.34,
+                        42.31
                     ],
                     [
-                        38.9,
-                        37.61
+                        16.34,
+                        38.9
                     ]
                 ]
             }
@@ -3712,24 +3697,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        38.91,
-                        39.42
+                        13.3,
+                        38.91
                     ],
                     [
-                        42.31,
-                        39.42
+                        16.21,
+                        38.91
                     ],
                     [
-                        42.31,
-                        42.33
+                        16.21,
+                        42.31
                     ],
                     [
-                        38.91,
-                        42.33
+                        13.3,
+                        42.31
                     ],
                     [
-                        38.91,
-                        39.42
+                        13.3,
+                        38.91
                     ]
                 ]
             }
@@ -3737,9 +3722,7 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R55D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R54D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R53D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R55D1"
             ]
         },
         "windowsInRoom": {
@@ -3748,7 +3731,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 3
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -3782,24 +3765,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        25.75,
-                        42.67
+                        6.38,
+                        25.75
                     ],
                     [
-                        43.14,
-                        42.67
+                        12.96,
+                        25.75
                     ],
                     [
-                        43.14,
-                        49.25
+                        12.96,
+                        43.14
                     ],
                     [
-                        25.75,
-                        49.25
+                        6.38,
+                        43.14
                     ],
                     [
-                        25.75,
-                        42.67
+                        6.38,
+                        25.75
                     ]
                 ]
             }
@@ -3850,24 +3833,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        25.51,
-                        49.59
+                        0.19,
+                        25.51
                     ],
                     [
-                        38.66,
-                        49.59
+                        6.42,
+                        25.51
                     ],
                     [
-                        38.66,
-                        55.82
+                        6.42,
+                        38.66
                     ],
                     [
-                        25.51,
-                        55.82
+                        0.19,
+                        38.66
                     ],
                     [
-                        25.51,
-                        49.59
+                        0.19,
+                        25.51
                     ]
                 ]
             }
@@ -3919,24 +3902,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        38.9,
-                        49.55
+                        1.28,
+                        38.9
                     ],
                     [
-                        42.98,
-                        49.55
+                        6.08,
+                        38.9
                     ],
                     [
-                        42.98,
-                        54.35
+                        6.08,
+                        42.98
                     ],
                     [
-                        38.9,
-                        54.35
+                        1.28,
+                        42.98
                     ],
                     [
-                        38.9,
-                        49.55
+                        1.28,
+                        38.9
                     ]
                 ]
             }
@@ -3944,7 +3927,8 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R58D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R58D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R59D1"
             ]
         },
         "windowsInRoom": {
@@ -3953,7 +3937,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 2
         },
         "numberOfWindows": {
             "type": "Property",
@@ -3987,24 +3971,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        38.9,
-                        54.56
+                        0.22,
+                        38.9
                     ],
                     [
-                        43.33,
-                        54.56
+                        1.51,
+                        38.9
                     ],
                     [
-                        43.33,
-                        55.85
+                        1.51,
+                        43.33
                     ],
                     [
-                        38.9,
-                        55.85
+                        0.22,
+                        43.33
                     ],
                     [
-                        38.9,
-                        54.56
+                        0.22,
+                        38.9
                     ]
                 ]
             }
@@ -4012,7 +3996,8 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R59D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R59D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R58D1"
             ]
         },
         "windowsInRoom": {
@@ -4023,7 +4008,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 2
         },
         "numberOfWindows": {
             "type": "Property",
@@ -4057,24 +4042,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        43.36,
-                        36.04
+                        0.22,
+                        43.36
                     ],
                     [
-                        44.75,
-                        36.04
+                        20.03,
+                        43.36
                     ],
                     [
-                        44.75,
-                        55.85
+                        20.03,
+                        44.75
                     ],
                     [
-                        43.36,
-                        55.85
+                        0.22,
+                        44.75
                     ],
                     [
-                        43.36,
-                        36.04
+                        0.22,
+                        43.36
                     ]
                 ]
             }
@@ -4128,24 +4113,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        22.44,
-                        36.05
+                        18.22,
+                        22.44
                     ],
                     [
-                        43.31,
-                        36.05
+                        19.58,
+                        22.44
                     ],
                     [
-                        43.31,
-                        37.41
+                        19.58,
+                        43.31
                     ],
                     [
-                        22.44,
-                        37.41
+                        18.22,
+                        43.31
                     ],
                     [
-                        22.44,
-                        36.05
+                        18.22,
+                        22.44
                     ]
                 ]
             }
@@ -4194,24 +4179,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        35.57,
-                        34.87
+                        19.82,
+                        35.57
                     ],
                     [
-                        39.27,
-                        34.87
+                        20.76,
+                        35.57
                     ],
                     [
-                        39.27,
-                        35.81
+                        20.76,
+                        39.27
                     ],
                     [
-                        35.57,
-                        35.81
+                        19.82,
+                        39.27
                     ],
                     [
-                        35.57,
-                        34.87
+                        19.82,
+                        35.57
                     ]
                 ]
             }
@@ -4262,24 +4247,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        39.57,
-                        34.78
+                        19.81,
+                        39.57
                     ],
                     [
-                        44.76,
-                        34.78
+                        20.85,
+                        39.57
                     ],
                     [
-                        44.76,
-                        35.82
+                        20.85,
+                        44.76
                     ],
                     [
-                        39.57,
-                        35.82
+                        19.81,
+                        44.76
                     ],
                     [
-                        39.57,
-                        34.78
+                        19.81,
+                        39.57
                     ]
                 ]
             }
@@ -4287,8 +4272,7 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R63D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R64D2"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R63D1"
             ]
         },
         "windowsInRoom": {
@@ -4297,7 +4281,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 2
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -4331,24 +4315,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        35.63,
-                        25.35
+                        21.06,
+                        35.63
                     ],
                     [
-                        44.75,
-                        25.35
+                        30.28,
+                        35.63
                     ],
                     [
-                        44.75,
-                        34.57
+                        30.28,
+                        44.75
                     ],
                     [
-                        35.63,
-                        34.57
+                        21.06,
+                        44.75
                     ],
                     [
-                        35.63,
-                        25.35
+                        21.06,
+                        35.63
                     ]
                 ]
             }
@@ -4403,24 +4387,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        35.62,
-                        19.93
+                        30.53,
+                        35.62
                     ],
                     [
-                        44.76,
-                        19.93
+                        35.7,
+                        35.62
                     ],
                     [
-                        44.76,
-                        25.1
+                        35.7,
+                        44.76
                     ],
                     [
-                        35.62,
-                        25.1
+                        30.53,
+                        44.76
                     ],
                     [
-                        35.62,
-                        19.93
+                        30.53,
+                        35.62
                     ]
                 ]
             }
@@ -4469,24 +4453,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        18.34,
-                        20.45
+                        20.12,
+                        18.34
                     ],
                     [
-                        35.4,
-                        20.45
+                        35.18,
+                        18.34
                     ],
                     [
-                        35.4,
-                        35.51
+                        35.18,
+                        35.4
                     ],
                     [
-                        18.34,
-                        35.51
+                        20.12,
+                        35.4
                     ],
                     [
-                        18.34,
-                        20.45
+                        20.12,
+                        18.34
                     ]
                 ]
             }
@@ -4538,24 +4522,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        18.16,
-                        18.58
+                        35.78,
+                        18.16
                     ],
                     [
-                        44.86,
-                        18.58
+                        37.05,
+                        18.16
                     ],
                     [
-                        44.86,
-                        19.85
+                        37.05,
+                        44.86
                     ],
                     [
-                        18.16,
-                        19.85
+                        35.78,
+                        44.86
                     ],
                     [
-                        18.16,
-                        18.58
+                        35.78,
+                        18.16
                     ]
                 ]
             }
@@ -4606,24 +4590,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        18.14,
-                        16.76
+                        37.48,
+                        18.14
                     ],
                     [
-                        22.71,
-                        16.76
+                        38.87,
+                        18.14
                     ],
                     [
-                        22.71,
-                        18.15
+                        38.87,
+                        22.71
                     ],
                     [
-                        18.14,
-                        18.15
+                        37.48,
+                        22.71
                     ],
                     [
-                        18.14,
-                        16.76
+                        37.48,
+                        18.14
                     ]
                 ]
             }
@@ -4675,24 +4659,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        18.39,
-                        2.83
+                        40.21,
+                        18.39
                     ],
                     [
-                        22.72,
-                        2.83
+                        52.8,
+                        18.39
                     ],
                     [
-                        22.72,
-                        15.42
+                        52.8,
+                        22.72
                     ],
                     [
-                        18.39,
-                        15.42
+                        40.21,
+                        22.72
                     ],
                     [
-                        18.39,
-                        2.83
+                        40.21,
+                        18.39
                     ]
                 ]
             }
@@ -4741,24 +4725,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        18.14,
-                        0.16
+                        54.08,
+                        18.14
                     ],
                     [
-                        22.71,
-                        0.16
+                        55.47,
+                        18.14
                     ],
                     [
-                        22.71,
-                        1.55
+                        55.47,
+                        22.71
                     ],
                     [
-                        18.14,
-                        1.55
+                        54.08,
+                        22.71
                     ],
                     [
-                        18.14,
-                        0.16
+                        54.08,
+                        18.14
                     ]
                 ]
             }
@@ -4810,31 +4794,34 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        22.76,
-                        0.07
+                        37.44,
+                        22.76
                     ],
                     [
-                        29.75,
-                        0.07
+                        55.56,
+                        22.76
                     ],
                     [
-                        29.75,
-                        18.19
+                        55.56,
+                        29.75
                     ],
                     [
-                        22.76,
-                        18.19
+                        37.44,
+                        29.75
                     ],
                     [
-                        22.76,
-                        0.07
+                        37.44,
+                        22.76
                     ]
                 ]
             }
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": []
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R70D2",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R68D2"
+            ]
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -4842,7 +4829,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 0
+            "value": 2
         },
         "numberOfWindows": {
             "type": "Property",
@@ -4876,24 +4863,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        31.56,
-                        12.57
+                        37.35,
+                        31.56
                     ],
                     [
-                        32.94,
-                        12.57
+                        43.06,
+                        31.56
                     ],
                     [
-                        32.94,
-                        18.28
+                        43.06,
+                        32.94
                     ],
                     [
-                        31.56,
-                        18.28
+                        37.35,
+                        32.94
                     ],
                     [
-                        31.56,
-                        12.57
+                        37.35,
+                        31.56
                     ]
                 ]
             }
@@ -4944,24 +4931,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        31.63,
-                        6.22
+                        43.34,
+                        31.63
                     ],
                     [
-                        32.98,
-                        6.22
+                        49.41,
+                        31.63
                     ],
                     [
-                        32.98,
-                        12.29
+                        49.41,
+                        32.98
                     ],
                     [
-                        31.63,
-                        12.29
+                        43.34,
+                        32.98
                     ],
                     [
-                        31.63,
-                        6.22
+                        43.34,
+                        31.63
                     ]
                 ]
             }
@@ -5012,24 +4999,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        31.63,
-                        0.02
+                        49.69,
+                        31.63
                     ],
                     [
-                        32.98,
-                        0.02
+                        55.61,
+                        31.63
                     ],
                     [
-                        32.98,
-                        5.94
+                        55.61,
+                        32.98
                     ],
                     [
-                        31.63,
-                        5.94
+                        49.69,
+                        32.98
                     ],
                     [
-                        31.63,
-                        0.02
+                        49.69,
+                        31.63
                     ]
                 ]
             }
@@ -5080,24 +5067,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        33.28,
-                        0.04
+                        43.33,
+                        33.28
                     ],
                     [
-                        36.75,
-                        0.04
+                        55.59,
+                        33.28
                     ],
                     [
-                        36.75,
-                        12.3
+                        55.59,
+                        36.75
                     ],
                     [
-                        33.28,
-                        12.3
+                        43.33,
+                        36.75
                     ],
                     [
-                        33.28,
-                        0.04
+                        43.33,
+                        33.28
                     ]
                 ]
             }
@@ -5105,9 +5092,7 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R75D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R73D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R74D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R75D1"
             ]
         },
         "windowsInRoom": {
@@ -5116,7 +5101,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 3
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -5150,24 +5135,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        36.79,
-                        0.02
+                        52.15,
+                        36.79
                     ],
                     [
-                        38.78,
-                        0.02
+                        55.61,
+                        36.79
                     ],
                     [
-                        38.78,
-                        3.48
+                        55.61,
+                        38.78
                     ],
                     [
-                        36.79,
-                        3.48
+                        52.15,
+                        38.78
                     ],
                     [
-                        36.79,
-                        0.02
+                        52.15,
+                        36.79
                     ]
                 ]
             }
@@ -5216,24 +5201,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        34.35,
-                        12.59
+                        40.49,
+                        34.35
                     ],
                     [
-                        37.45,
-                        12.59
+                        43.04,
+                        34.35
                     ],
                     [
-                        37.45,
-                        15.14
+                        43.04,
+                        37.45
                     ],
                     [
-                        34.35,
-                        15.14
+                        40.49,
+                        37.45
                     ],
                     [
-                        34.35,
-                        12.59
+                        40.49,
+                        34.35
                     ]
                 ]
             }
@@ -5241,7 +5226,8 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R77D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R77D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R78D1"
             ]
         },
         "windowsInRoom": {
@@ -5250,7 +5236,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 2
         },
         "numberOfWindows": {
             "type": "Property",
@@ -5284,24 +5270,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        34.35,
-                        15.75
+                        37.33,
+                        34.35
                     ],
                     [
-                        37.45,
-                        15.75
+                        39.88,
+                        34.35
                     ],
                     [
-                        37.45,
-                        18.3
+                        39.88,
+                        37.45
                     ],
                     [
-                        34.35,
-                        18.3
+                        37.33,
+                        37.45
                     ],
                     [
-                        34.35,
-                        15.75
+                        37.33,
+                        34.35
                     ]
                 ]
             }
@@ -5309,8 +5295,7 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R78D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R72D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R78D1"
             ]
         },
         "windowsInRoom": {
@@ -5319,7 +5304,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 2
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -5353,24 +5338,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        37.7,
-                        12.33
+                        37.12,
+                        37.7
                     ],
                     [
-                        39.06,
-                        12.33
+                        43.3,
+                        37.7
                     ],
                     [
-                        39.06,
-                        18.51
+                        43.3,
+                        39.06
                     ],
                     [
-                        37.7,
-                        18.51
+                        37.12,
+                        39.06
                     ],
                     [
-                        37.7,
-                        12.33
+                        37.12,
+                        37.7
                     ]
                 ]
             }
@@ -5383,9 +5368,7 @@
         },
         "windowsInRoom": {
             "type": "Relationship",
-            "object": [
-                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R82W1"
-            ]
+            "object": []
         },
         "numberOfDoors": {
             "type": "Property",
@@ -5393,7 +5376,7 @@
         },
         "numberOfWindows": {
             "type": "Property",
-            "value": 1
+            "value": 0
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
@@ -5423,24 +5406,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        39.33,
-                        12.59
+                        37.31,
+                        39.33
                     ],
                     [
-                        43.25,
-                        12.59
+                        43.04,
+                        39.33
                     ],
                     [
-                        43.25,
-                        18.32
+                        43.04,
+                        43.25
                     ],
                     [
-                        39.33,
-                        18.32
+                        37.31,
+                        43.25
                     ],
                     [
-                        39.33,
-                        12.59
+                        37.31,
+                        39.33
                     ]
                 ]
             }
@@ -5492,24 +5475,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        43.5,
-                        12.58
+                        37.1,
+                        43.5
                     ],
                     [
-                        44.86,
-                        12.58
+                        43.05,
+                        43.5
                     ],
                     [
-                        44.86,
-                        18.53
+                        43.05,
+                        44.86
                     ],
                     [
-                        43.5,
-                        18.53
+                        37.1,
+                        44.86
                     ],
                     [
-                        43.5,
-                        12.58
+                        37.1,
+                        43.5
                     ]
                 ]
             }
@@ -5520,7 +5503,9 @@
         },
         "windowsInRoom": {
             "type": "Relationship",
-            "object": []
+            "object": [
+                "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R67W1"
+            ]
         },
         "numberOfDoors": {
             "type": "Property",
@@ -5528,7 +5513,7 @@
         },
         "numberOfWindows": {
             "type": "Property",
-            "value": 0
+            "value": 1
         },
         "@context": [
             "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Room",
@@ -5558,31 +5543,33 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        37.0,
-                        10.86
+                        43.31,
+                        37.0
                     ],
                     [
-                        44.97,
-                        10.86
+                        44.77,
+                        37.0
                     ],
                     [
-                        44.97,
-                        12.32
+                        44.77,
+                        44.97
                     ],
                     [
-                        37.0,
-                        12.32
+                        43.31,
+                        44.97
                     ],
                     [
-                        37.0,
-                        10.86
+                        43.31,
+                        37.0
                     ]
                 ]
             }
         },
         "DoorsInRoom": {
             "type": "Relationship",
-            "object": []
+            "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R79D1"
+            ]
         },
         "windowsInRoom": {
             "type": "Relationship",
@@ -5592,7 +5579,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 0
+            "value": 1
         },
         "numberOfWindows": {
             "type": "Property",
@@ -5626,24 +5613,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        40.84,
-                        7.09
+                        45.04,
+                        40.84
                     ],
                     [
-                        44.95,
-                        7.09
+                        48.54,
+                        40.84
                     ],
                     [
-                        44.95,
-                        10.59
+                        48.54,
+                        44.95
                     ],
                     [
-                        40.84,
-                        10.59
+                        45.04,
+                        44.95
                     ],
                     [
-                        40.84,
-                        7.09
+                        45.04,
+                        40.84
                     ]
                 ]
             }
@@ -5696,24 +5683,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        37.03,
-                        3.74
+                        45.04,
+                        37.03
                     ],
                     [
-                        40.59,
-                        3.74
+                        51.89,
+                        37.03
                     ],
                     [
-                        40.59,
-                        10.59
+                        51.89,
+                        40.59
                     ],
                     [
-                        37.03,
-                        10.59
+                        45.04,
+                        40.59
                     ],
                     [
-                        37.03,
-                        3.74
+                        45.04,
+                        37.03
                     ]
                 ]
             }
@@ -5764,24 +5751,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        40.84,
-                        3.76
+                        48.83,
+                        40.84
                     ],
                     [
-                        44.96,
-                        3.76
+                        51.87,
+                        40.84
                     ],
                     [
-                        44.96,
-                        6.8
+                        51.87,
+                        44.96
                     ],
                     [
-                        40.84,
-                        6.8
+                        48.83,
+                        44.96
                     ],
                     [
-                        40.84,
-                        3.76
+                        48.83,
+                        40.84
                     ]
                 ]
             }
@@ -5832,24 +5819,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        39.07,
-                        0.07
+                        52.16,
+                        39.07
                     ],
                     [
-                        44.95,
-                        0.07
+                        55.56,
+                        39.07
                     ],
                     [
-                        44.95,
-                        3.47
+                        55.56,
+                        44.95
                     ],
                     [
-                        39.07,
-                        3.47
+                        52.16,
+                        44.95
                     ],
                     [
-                        39.07,
-                        0.07
+                        52.16,
+                        39.07
                     ]
                 ]
             }
@@ -5900,24 +5887,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        8.34,
-                        39.11
+                        7.32,
+                        8.34
                     ],
                     [
-                        10.09,
-                        39.11
+                        16.52,
+                        8.34
                     ],
                     [
-                        10.09,
-                        48.31
+                        16.52,
+                        10.09
                     ],
                     [
-                        8.34,
-                        48.31
+                        7.32,
+                        10.09
                     ],
                     [
-                        8.34,
-                        39.11
+                        7.32,
+                        8.34
                     ]
                 ]
             }
@@ -5966,24 +5953,24 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        3.58,
-                        34.54
+                        7.32,
+                        3.58
                     ],
                     [
-                        4.93,
-                        34.54
+                        21.09,
+                        3.58
                     ],
                     [
-                        4.93,
-                        48.31
+                        21.09,
+                        4.93
                     ],
                     [
-                        3.58,
-                        48.31
+                        7.32,
+                        4.93
                     ],
                     [
-                        3.58,
-                        34.54
+                        7.32,
+                        3.58
                     ]
                 ]
             }
@@ -5991,6 +5978,8 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R1D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R33D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R35D1"
             ]
         },
@@ -6000,7 +5989,7 @@
         },
         "numberOfDoors": {
             "type": "Property",
-            "value": 1
+            "value": 3
         },
         "numberOfWindows": {
             "type": "Property",
@@ -7344,9 +7333,9 @@
             "type": "Relationship",
             "object": [
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R20D10",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R5D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R7D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R6D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R5D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R4D1"
             ]
         },
@@ -7415,11 +7404,11 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R16D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R13D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R14D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R16D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R15D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R12D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R15D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R13D1"
             ]
         },
         "windowsInRoom": {
@@ -8840,9 +8829,9 @@
         "DoorsInRoom": {
             "type": "Relationship",
             "object": [
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R36D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R37D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R36D1"
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1"
             ]
         },
         "windowsInRoom": {
@@ -8913,8 +8902,8 @@
             "type": "Relationship",
             "object": [
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R43D1",
-                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R40D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R38D1",
+                "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R40D1",
                 "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F1R39D1"
             ]
         },

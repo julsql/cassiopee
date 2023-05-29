@@ -381,7 +381,7 @@ def verify_coordinates():
         afficher(affichage, "Étage {}".format(floor))
         return rooms, winds, doors
     
-    for flr in range(0, 1):
+    for flr in range(0, 2):
 
         rooms, winds, doors = get_all_rectangles(flr)
         overlap = check_overlap_all(rooms)
@@ -443,7 +443,7 @@ def add_relations(relation_1, relation_2):
             if room_json["id"] == relation_1:
                 # Right room
                 if relation_2 not in room_json["windowsInRoom"]["object"]:
-                    print("La fenêtre {} est également dans la pièce {}".format(relation_2.split(":")[-1], relation_1.split(":")[-1]))
+                    #print("La fenêtre {} est également dans la pièce {}".format(relation_2.split(":")[-1], relation_1.split(":")[-1]))
                     room_json["windowsInRoom"]["object"].append(relation_2) # Add windows id
                     room_json["numberOfWindows"]["value"] += 1 # Increment related windows number
         write(rooms_file, rooms_json) # Write in the JSON rooms file
@@ -453,7 +453,7 @@ def add_relations(relation_1, relation_2):
             if room_json["id"] == relation_1:
                 # Right room
                 if relation_2 not in room_json["DoorsInRoom"]["object"]:
-                    print("La porte {} est également dans la pièce {}".format(relation_2.split(":")[-1], relation_1.split(":")[-1]))
+                    #print("La porte {} est également dans la pièce {}".format(relation_2.split(":")[-1], relation_1.split(":")[-1]))
                     room_json["DoorsInRoom"]["object"].append(relation_2) # Add doors id
                     room_json["numberOfDoors"]["value"] += 1 # Increment related doors number
         write(rooms_file, rooms_json) # Write in the JSON rooms file
