@@ -30,6 +30,9 @@ flutter:
     - json/rooms.json
     - json/doors.json
     - json/windows.json
+    - obj/floor_0_rooms.obj
+    - obj/floor_0_doors.obj
+    - obj/floor_0_windows.obj
     - obj/floor_1_rooms.obj
     - obj/floor_1_doors.obj
     - obj/floor_1_windows.obj

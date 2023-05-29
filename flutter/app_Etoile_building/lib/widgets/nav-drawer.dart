@@ -73,6 +73,16 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.home_filled),
+            title: Text('3D Ground floor of the Etoile building'),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => TriDim(0)),
+              ),
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.home_filled),
             title: Text('3D First floor of the Etoile building'),
             onTap: () => {
               Navigator.push(

@@ -146,7 +146,7 @@ def create_obj(floor):
     merged.export(output_path)
     add_color(output_path, "blue")
 
-
+create_obj(0)
 create_obj(1)
 create_obj(2)
 create_obj(3)
