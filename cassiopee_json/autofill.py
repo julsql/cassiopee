@@ -387,7 +387,7 @@ def verify_coordinates():
         overlap = check_overlap_all(rooms)
         if overlap == set():
             print("Il n'y a aucun chevauchement dans les pièces de l'étage {}".format(flr))
-        for i, j in overlap:
+        for i, j in overlap: 
             # afficher({i: rooms[i], j: rooms[j]}, "Pièce n°{} et {}".format(i, j))
             print("Les pièces {} et {} se chevauchent".format(i, j))
         
