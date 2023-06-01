@@ -86,6 +86,7 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
+<<<<<<< HEAD
                         16.87,
                         3.31
                     ],
@@ -103,6 +104,25 @@
                     ],
                     [
                         16.87,
+=======
+                        16.26,
+                        3.31
+                    ],
+                    [
+                        16.26,
+                        3.47
+                    ],
+                    [
+                        17.16,
+                        3.47
+                    ],
+                    [
+                        17.16,
+                        3.31
+                    ],
+                    [
+                        16.26,
+>>>>>>> 9cce689928621d2936d2229a258e2bfc58fa098d
                         3.31
                     ]
                 ]
@@ -200,6 +220,7 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
+<<<<<<< HEAD
                         21.46,
                         11.64
                     ],
@@ -218,6 +239,26 @@
                     [
                         21.46,
                         11.64
+=======
+                        21.29,
+                        11.38
+                    ],
+                    [
+                        21.45,
+                        11.38
+                    ],
+                    [
+                        21.45,
+                        12.28
+                    ],
+                    [
+                        21.29,
+                        12.28
+                    ],
+                    [
+                        21.29,
+                        11.38
+>>>>>>> 9cce689928621d2936d2229a258e2bfc58fa098d
                     ]
                 ]
             }
@@ -246,16 +287,62 @@
                         3.57
                     ],
                     [
+<<<<<<< HEAD
                         27.825,
                         3.57
                     ],
                     [
                         27.825,
+=======
+                        28.06,
+                        3.57
+                    ],
+                    [
+                        28.06,
+>>>>>>> 9cce689928621d2936d2229a258e2bfc58fa098d
                         3.41
                     ],
                     [
                         26.57,
                         3.41
+                    ]
+                ]
+            }
+        },
+        "@context": [
+            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Door",
+            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        ]
+    },
+    {
+        "id": "urn:ngsi-ld:Door:SmartCitiesdomain:SmartBuildings:B1F0R6D2",
+        "type": "Door",
+        "relativePosition": {
+            "type": "Property",
+            "value": {
+                "type": "Polygon",
+                "measurementUnit": "m",
+                "Dimensions": "2D",
+                "coordinates": [
+                    [
+                        26.52,
+                        -0.11
+                    ],
+                    [
+                        26.52,
+                        0.05
+                    ],
+                    [
+                        28.06,
+                        0.05
+                    ],
+                    [
+                        28.06,
+                        -0.11
+                    ],
+                    [
+                        26.52,
+                        -0.11
                     ]
                 ]
             }
@@ -4114,23 +4201,23 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-                        28.67,
+                        28.77,
                         3.22
                     ],
                     [
-                        28.67,
+                        28.77,
                         3.38
                     ],
                     [
-                        29.57,
+                        29.67,
                         3.38
                     ],
                     [
-                        29.57,
+                        29.67,
                         3.22
                     ],
                     [
-                        28.67,
+                        28.77,
                         3.22
                     ]
                 ]
