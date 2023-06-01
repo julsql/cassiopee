@@ -86,43 +86,23 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-<<<<<<< HEAD
-                        17.13,
+                        16.45,
                         -0.15
                     ],
                     [
-                        17.13,
+                        16.45,
                         0.01
                     ],
                     [
-                        18.07,
+                        17.39,
                         0.01
                     ],
                     [
-                        18.07,
+                        17.39,
                         -0.15
                     ],
                     [
-                        17.13,
-=======
-                        16.39,
-                        -0.15
-                    ],
-                    [
-                        16.39,
-                        0.01
-                    ],
-                    [
-                        17.33,
-                        0.01
-                    ],
-                    [
-                        17.33,
-                        -0.15
-                    ],
-                    [
-                        16.39,
->>>>>>> 9cce689928621d2936d2229a258e2bfc58fa098d
+                        16.45,
                         -0.15
                     ]
                 ]
@@ -134,47 +114,6 @@
         ]
     },
     {
-<<<<<<< HEAD
-        "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R3W3",
-        "type": "Window",
-        "relativePosition": {
-            "type": "Property",
-            "value": {
-                "type": "Polygon",
-                "measurementUnit": "m",
-                "Dimensions": "2D",
-                "coordinates": [
-                    [
-                        11.3,
-                        11.5
-                    ],
-                    [
-                        11.46,
-                        11.5
-                    ],
-                    [
-                        11.46,
-                        12.44
-                    ],
-                    [
-                        11.3,
-                        12.44
-                    ],
-                    [
-                        11.3,
-                        11.5
-                    ]
-                ]
-            }
-        },
-        "@context": [
-            "https://raw.githubusercontent.com/SAMSGBLab/iotspaces-DataModels/main/Building/type-definitions.json#Window",
-            "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-        ]
-    },
-    {
-=======
->>>>>>> 9cce689928621d2936d2229a258e2bfc58fa098d
         "id": "urn:ngsi-ld:Window:SmartCitiesdomain:SmartBuildings:B1F0R4W1",
         "type": "Window",
         "relativePosition": {
@@ -299,43 +238,23 @@
                 "Dimensions": "2D",
                 "coordinates": [
                     [
-<<<<<<< HEAD
-                        25.61,
+                        25.35,
                         -0.01
                     ],
                     [
-                        25.61,
+                        25.35,
                         0.15
                     ],
                     [
-                        26.55,
+                        26.29,
                         0.15
                     ],
                     [
-                        26.55,
+                        26.29,
                         -0.01
                     ],
                     [
-                        25.61,
-=======
-                        25.18,
-                        -0.01
-                    ],
-                    [
-                        25.18,
-                        0.15
-                    ],
-                    [
-                        26.12,
-                        0.15
-                    ],
-                    [
-                        26.12,
-                        -0.01
-                    ],
-                    [
-                        25.18,
->>>>>>> 9cce689928621d2936d2229a258e2bfc58fa098d
+                        25.35,
                         -0.01
                     ]
                 ]
