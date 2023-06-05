@@ -10,7 +10,7 @@ class AboutUs extends StatelessWidget {
     Widget textSection = const Padding(
       padding: EdgeInsets.all(32),
       child: Text(
-        'Texte essai',
+        'Projet réalisé par Juliette Debono, Inès Kacer, Iris Marjollet et Sarah Zakon',
         softWrap: true,
       ),
     );
