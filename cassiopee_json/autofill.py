@@ -381,13 +381,13 @@ def verify_coordinates():
         afficher(affichage, "Étage {}".format(floor))
         return rooms, winds, doors
     
-    for flr in range(0, 2):
+    for flr in range(0, 5):
 
         rooms, winds, doors = get_all_rectangles(flr)
         overlap = check_overlap_all(rooms)
         if overlap == set():
             print("Il n'y a aucun chevauchement dans les pièces de l'étage {}".format(flr))
-        for i, j in overlap:
+        for i, j in overlap: 
             # afficher({i: rooms[i], j: rooms[j]}, "Pièce n°{} et {}".format(i, j))
             print("Les pièces {} et {} se chevauchent".format(i, j))
         
