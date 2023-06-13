@@ -1,73 +1,27 @@
 # Etoile Building
 
-This project is an application to visualize the IoT devices of the Etoile Building of the Telecom SudParis campus
+This project is an application to visualise the IoT devices of the Etoile Building of the Telecom SudParis campus
 
-## Installer flutter pour linux
+The implementation of the flutter framework allows us to present visually the data on the created JSON files
 
-1. installer :
-    ```sudo snap install flutter --classic```
-2. vérifier où en est l'installation et voir ce qu'il reste à installer (tout doit être en vert à la fin)
-    ```flutter doctor```
-3. regarder le détail de ce qu'il manque :
-    ```flutter doctor -v```
-4. pour régler le problème qui concerne google chrome :
-    a. télécharger google chrome : [https://www.google.com/intl/fr/chrome/gsem/download/?brand=YTUH&gclid=CjwKCAjwiOCgBhAgEiwAjv5whB1bmDt1a7EU6PeNsJ6ybn_QzYBENdoCe1jFyz33cis8Yjox7neOgxoCn04QAvD_BwE&gclsrc=aw.ds](https://www.google.com/intl/fr/chrome/gsem/download/?brand=YTUH&gclid=CjwKCAjwiOCgBhAgEiwAjv5whB1bmDt1a7EU6PeNsJ6ybn_QzYBENdoCe1jFyz33cis8Yjox7neOgxoCn04QAvD_BwE&gclsrc=aw.ds)
-    b. se placer dans le dossier où on a télécharger puis commande :
-        ```sudo dpkg -i google-chrome-stable_current_amd64.deb```
-    c. commande :
-       ```export CHROME_EXECUTABLE=/usr/bin/google-chrome```
-5. pour régler le problème lié à java et à PATH :
-    ```export PATH="$PATH:/usr/bin/java"```
-6. pour régler le problème avec JAVA_HOME :
-    ```export JAVA_HOME=$(/usr/bin/java)```
-7. pour régler le problème avec android studio :
-    ```flutter config --android-studio-dir=```
 
-## Installer flutter sur mac
+##Main
 
-> Il faut avoir Chrome installé
+The main.dart file initialises and launches the app 
 
-1. Télécharger l'archive [https://docs.flutter.dev/get-started/install/macos](https://docs.flutter.dev/get-started/install/macos)
+##Home
 
-2. extraire l'archive dans le fichier où l'on veut le stocker
+The home.dart file sets up the websites home page
 
-```cd ~/development```
-```unzip ~/Downloads/flutter_macos_3.10.2-stable.zip```
+##Widgets
 
-1. Ajouter la commande Flutter
+In the the widgets folder there is only the nav-drawer.dart file which is callable from any page . It allows the user to navigate between the different pages of the website
 
-   ```export PATH="\$PATH:$HOME/flutter/bin"```
+##Floor
 
-2. vérifier où en est l'installation et voir ce qu'il reste à installer (tout doit être en vert à la fin)
-    ```flutter doctor```
+The floor.dart file sets up the page which visualises the 2D floor plan for each floor 
 
-## les ressources utilisées
 
-site avec tuto flutter :
-    [https://docs.flutter.dev/development/ui/layout/tutorial#step-1-diagram-the-layout](https://docs.flutter.dev/development/ui/layout/tutorial#step-1-diagram-the-layout)
-exemple de projet utilisant des fichier JSON :
-    [https://flutter.github.io/samples/jsonexample.html](https://flutter.github.io/samples/jsonexample.html)
+##Floor 3D
 
-## Run Flutter
-
-Dans le répertoire racine du projet Futter :
-
-    ```flutter run -d chrome```
-
-Lorsqu'on modifie pudspec.yaml :
-
-    ```flutter pub get```
-
-## Comment fonctionne Flutter
-
-les widgets basiques :
-    - Text
-    - Row, Column : layout horizontal ou vertical
-    - Stack : widgets qui sont placés les uns sur les autres (on peut ensuite utiliser le widget Positioned comme enfant de Stack pour placer les éléments les uns par rapport aux autres)
-    - Container : élément visuel rectangle. Il peut être décoré avec BoxDecoration pour changer le fond, le contour... Il peut aussi avoir des marges (margins), padding et des contraintes de taille. On peut le transformer en élément 3D avec une matrice.
-
-## How to code the application
-
-ajouter une image :
-    - ajouter l'image à pubspec.yaml avant
-  
+The floor.dart file sets up the page which visualises the 3D floor plan for each floor 
