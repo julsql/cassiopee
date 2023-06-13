@@ -1,42 +1,38 @@
 # cassiopee_json
 
-## Remplir les étages
+Help to fullfil the json file of the building. Different steps.
 
-Pour remplir les fenêtres et les portes, aller dans coordinates_1.json (1=numéro étage)
-et remplir les valeurs MESURÉES À LA RÈGLE comme ça :
-    [
-        ref,
-        mesure,
-        [[fenêtre1, fenêtre2, fenêtre3], [porte1, porte2]],
-        …
-    ]
+## Fullfil the floors
 
-avec fenêtre1 = [distance, type, mur]…
+In the folder [json_hand](json_hand) fullfil the files of the floors. It's a json array with each rooms of the floors. The informations are taken from the [floor plans](/cassiopee_json/2d-plans/B%C3%A2timent%20%C3%89toile.pdf).
 
-exemple :
-    [
-        4,
-        4,
-        [[[111 , 0, 3],[74, 1, 0],[23, 1, 0]],[[46, 0, 2]]],
-        [[[0, 0, 0],[204, 0, 0]],[[18.5, 0, 2]]],
-        [[[0, 1, 0],[408, 0, 0]],[[18.5, 0, 2]]]
-    ]
+[id, name, bottom left coordinate: [x, y], length, width, windows, doors]
 
-chaque étage est un tableau de valeurs :
+windows/doors: array of all the windows/doors in the rooms
+[distance, type, wall]
 
-    [id, nom, coin_bas_gauche, longueur, largeur, windows : [dist, type, mur], doors : [dist, type, mur]]
+* wall is on wich wall is the windows/doors (0: left wall, 1: upper wall, 2: right wall, 3: bottom wall)
+* type is the length (0: simple, 2: double, 3: triple)
+* distance is the distance from the left wall if the windows/doors is on a vertical wall and distance from the bottom wall if the wall is horizontal (see the map of the building).
 
 ex :
 
     [1, "Laboratoire", [0, 0], 763, 328, [[0, 1, 1], [0, 1, 1]], [[0, 1, 1], [0, 1, 1]]]
 
-Attention à prendre en compte l'épaisseur des murs : 13,5cm (l'ajouter quand vous mettez les coordoonées de la pièce)
+Warning: consider the thickness of the wall in the coordinates of the windows. If a window/door is in two rooms, add it to only one room.
 
 ![aide pour les longueur/largeur](/cassiopee_json/2d-plans/aide.jpeg)
 
+Some doors are not connected to a wall, they can be added in the file [doors.json](json_hand/doors.json)
+[floor, room_id, bottom-left coordinates: [x, y], type, wall]
+
 ## The files
 
+Once the json_hand file is fullfiled, run [autofil.py](/cassiopee_json/autofill.py).
+
 autofill.py creates the JSON file with the relations thanks to the text files in json.
+
+It use templates.json to formalize the json-ld fils.
 
 >It also adds relations for windows and doors that are in common with 2 rooms!
 
@@ -48,53 +44,44 @@ The files created are in JSON:
 * doors.json
 * windows.json
 
-## Epaisseur des murs
+## The trimesh
 
-### Mur creux
+Once the 2D json-ld files created, run totrimesh.py. It will create json_trimesh file (same as before but with the coordinates in trimesh) and the objects file .obj of each floors, separating rooms, doors and windows add adding colors. These files will be used in the Flutter app.
 
-* Petit : 6,75 cm
-* Normal : 13,5 cm
+## Measures
 
-### Mur plein
+### Large Window
 
-* Petit : 10,125 cm
-* Normal : 13,5 cm
-* Grand : 20,25 cm
+* Height: 177cm
+* Width: 190cm
+* Height under window: 81cm
+* Wall thickness: 10cm
 
-## Mesures
+### Small window
 
-### Grande Fenêtre
+* Height: 177cm
+* Width: 94cm
 
-* Hauteur: 177cm
-* Largeur : 190cm
-* Hauteur sous fenêtre : 81cm
-* Épaisseur mur : 10cm
+### Triple window
 
-### Petite fenêtre
+* Width: 288cm
 
-* Hauteur : idem, 177cm
-* Largeur : 94cm
-
-### Triple fenêtre
-
-* Largeur : 288cm
-
-### Hauteur plafond
+### Ceiling height
 
 * 363cm
 
-## Mur
+## Wall
 
-* Mur 1 : 10cm
-* Mur 2 : 14cm
-* Mur toilettes : 7.5cm
+* Wall 1: 10cm
+* Wall 2: 14cm
+* Toilet wall: 7.5cm
 
-### Porte
+### Door
 
-* hauteur : 204cm
-* Largeur : 90cm
+* Height: 204cm
+* Width: 90cm
 
-### Placard couloir
+### Hallway cupboard
 
-* largeur : 102cm
-* hauteur : 206cm
+* width: 102cm
+* height: 206cm
