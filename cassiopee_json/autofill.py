@@ -381,7 +381,7 @@ def verify_coordinates():
         afficher(affichage, "Étage {}".format(floor))
         return rooms, winds, doors
     
-    for flr in range(0, 5):
+    for flr in range(0, 1):
 
         rooms, winds, doors = get_all_rectangles(flr)
         overlap = check_overlap_all(rooms)
@@ -511,11 +511,10 @@ def additional_doors(filename):
 initialize() # Empty JSON files
 
 add_floor(path + "json_hand/floor_0.json", 0)
-add_floor(path + "json_hand/floor_1.json", 1)
-add_floor(path + "json_hand/floor_2.json", 2)
-add_floor(path + "json_hand/floor_3.json", 3)
-add_floor(path + "json_hand/floor_4.json", 4)
-
+# add_floor(path + "json_hand/floor_1.json", 1)
+# add_floor(path + "json_hand/floor_2.json", 2)
+# add_floor(path + "json_hand/floor_3.json", 3)
+# add_floor(path + "json_hand/floor_4.json", 4)
 
 additional_doors(path + "json_hand/doors.json")
 
