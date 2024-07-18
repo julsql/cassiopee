@@ -2,7 +2,7 @@
 
 ## Visualizing Dynamic Properties of the ETOILE Building using Web Technologies
 
-A cassiopée project made at Telecom SudParis by Juliette Debono, Sarah Zakon, Inès Kacer and Iris Marjollet
+A cassiopée project made at Telecom SudParis by Jul. SQL, Sarah Z., Inès K. and Iris M.
 
 ## Goal
 
